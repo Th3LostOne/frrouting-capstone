@@ -1,0 +1,457 @@
+[
+  {
+    "identifier": "26489",
+    "sequence": 1,
+    "sent_unix": 1792424410.9209921,
+    "reply_unix": 1792424410.9210732,
+    "rtt_ms": 0.081
+  },
+  {
+    "identifier": "26489",
+    "sequence": 2,
+    "sent_unix": 1792424411.026853,
+    "reply_unix": 1792424411.0269651,
+    "rtt_ms": 0.112
+  },
+  {
+    "identifier": "26489",
+    "sequence": 3,
+    "sent_unix": 1792424411.1309502,
+    "reply_unix": 1792424411.1311042,
+    "rtt_ms": 0.154
+  },
+  {
+    "identifier": "26489",
+    "sequence": 4,
+    "sent_unix": 1792424411.2359877,
+    "reply_unix": 1792424411.2363575,
+    "rtt_ms": 0.37
+  },
+  {
+    "identifier": "26489",
+    "sequence": 5,
+    "sent_unix": 1792424411.337832,
+    "reply_unix": 1792424411.338247,
+    "rtt_ms": 0.415
+  },
+  {
+    "identifier": "26489",
+    "sequence": 6,
+    "sent_unix": 1792424411.4385428,
+    "reply_unix": 1792424411.4388564,
+    "rtt_ms": 0.314
+  },
+  {
+    "identifier": "26489",
+    "sequence": 7,
+    "sent_unix": 1792424411.540811,
+    "reply_unix": 1792424411.5410202,
+    "rtt_ms": 0.209
+  },
+  {
+    "identifier": "26489",
+    "sequence": 8,
+    "sent_unix": 1792424411.642742,
+    "reply_unix": 1792424411.64311,
+    "rtt_ms": 0.368
+  },
+  {
+    "identifier": "26489",
+    "sequence": 9,
+    "sent_unix": 1792424411.7484713,
+    "reply_unix": 1792424411.7488854,
+    "rtt_ms": 0.414
+  },
+  {
+    "identifier": "26489",
+    "sequence": 10,
+    "sent_unix": 1792424411.8496592,
+    "reply_unix": 1792424411.8498123,
+    "rtt_ms": 0.153
+  },
+  {
+    "identifier": "26489",
+    "sequence": 11,
+    "sent_unix": 1792424411.9561584,
+    "reply_unix": 1792424411.9563632,
+    "rtt_ms": 0.205
+  },
+  {
+    "identifier": "26489",
+    "sequence": 12,
+    "sent_unix": 1792424412.0602624,
+    "reply_unix": 1792424412.0604334,
+    "rtt_ms": 0.171
+  },
+  {
+    "identifier": "26489",
+    "sequence": 13,
+    "sent_unix": 1792424412.1657677,
+    "reply_unix": 1792424412.166019,
+    "rtt_ms": 0.251
+  },
+  {
+    "identifier": "26489",
+    "sequence": 14,
+    "sent_unix": 1792424412.2778249,
+    "reply_unix": 1792424412.2782242,
+    "rtt_ms": 0.399
+  },
+  {
+    "identifier": "26489",
+    "sequence": 15,
+    "sent_unix": 1792424412.381484,
+    "reply_unix": 1792424412.3819313,
+    "rtt_ms": 0.447
+  },
+  {
+    "identifier": "26489",
+    "sequence": 16,
+    "sent_unix": 1792424412.4856198,
+    "reply_unix": 1792424412.485902,
+    "rtt_ms": 0.282
+  },
+  {
+    "identifier": "26489",
+    "sequence": 17,
+    "sent_unix": 1792424412.5909781,
+    "reply_unix": 1792424412.5913188,
+    "rtt_ms": 0.341
+  },
+  {
+    "identifier": "26489",
+    "sequence": 18,
+    "sent_unix": 1792424412.6920817,
+    "reply_unix": 1792424412.6925797,
+    "rtt_ms": 0.498
+  },
+  {
+    "identifier": "26489",
+    "sequence": 19,
+    "sent_unix": 1792424412.7977207,
+    "reply_unix": 1792424412.7980502,
+    "rtt_ms": 0.329
+  },
+  {
+    "identifier": "26489",
+    "sequence": 20,
+    "sent_unix": 1792424412.899727,
+    "reply_unix": 1792424412.9000607,
+    "rtt_ms": 0.334
+  },
+  {
+    "identifier": "26489",
+    "sequence": 21,
+    "sent_unix": 1792424413.0015912,
+    "reply_unix": 1792424413.0019965,
+    "rtt_ms": 0.405
+  },
+  {
+    "identifier": "26489",
+    "sequence": 22,
+    "sent_unix": 1792424413.1030486,
+    "reply_unix": 1792424413.1033843,
+    "rtt_ms": 0.336
+  },
+  {
+    "identifier": "26489",
+    "sequence": 23,
+    "sent_unix": 1792424413.2047129,
+    "reply_unix": 1792424413.2049341,
+    "rtt_ms": 0.221
+  },
+  {
+    "identifier": "26489",
+    "sequence": 24,
+    "sent_unix": 1792424413.3070853,
+    "reply_unix": 1792424413.3072367,
+    "rtt_ms": 0.151
+  },
+  {
+    "identifier": "26489",
+    "sequence": 25,
+    "sent_unix": 1792424413.411084,
+    "reply_unix": 1792424413.4113867,
+    "rtt_ms": 0.303
+  },
+  {
+    "identifier": "26489",
+    "sequence": 26,
+    "sent_unix": 1792424413.5164409,
+    "reply_unix": 1792424413.5170608,
+    "rtt_ms": 0.62
+  },
+  {
+    "identifier": "26489",
+    "sequence": 27,
+    "sent_unix": 1792424413.6197164,
+    "reply_unix": 1792424413.6200836,
+    "rtt_ms": 0.367
+  },
+  {
+    "identifier": "26489",
+    "sequence": 28,
+    "sent_unix": 1792424413.7203956,
+    "reply_unix": 1792424413.72078,
+    "rtt_ms": 0.384
+  },
+  {
+    "identifier": "26489",
+    "sequence": 29,
+    "sent_unix": 1792424413.821582,
+    "reply_unix": 1792424413.8219297,
+    "rtt_ms": 0.348
+  },
+  {
+    "identifier": "26489",
+    "sequence": 30,
+    "sent_unix": 1792424413.926511,
+    "reply_unix": 1792424413.926936,
+    "rtt_ms": 0.425
+  },
+  {
+    "identifier": "26489",
+    "sequence": 31,
+    "sent_unix": 1792424414.0271683,
+    "reply_unix": 1792424414.0278263,
+    "rtt_ms": 0.658
+  },
+  {
+    "identifier": "26489",
+    "sequence": 32,
+    "sent_unix": 1792424414.127604,
+    "reply_unix": 1792424414.1276839,
+    "rtt_ms": 0.08
+  },
+  {
+    "identifier": "26489",
+    "sequence": 33,
+    "sent_unix": 1792424414.235503,
+    "reply_unix": 1792424414.235669,
+    "rtt_ms": 0.166
+  },
+  {
+    "identifier": "26489",
+    "sequence": 34,
+    "sent_unix": 1792424414.3368106,
+    "reply_unix": 1792424414.3368704,
+    "rtt_ms": 0.06
+  },
+  {
+    "identifier": "26489",
+    "sequence": 35,
+    "sent_unix": 1792424414.444665,
+    "reply_unix": 1792424414.4447331,
+    "rtt_ms": 0.068
+  },
+  {
+    "identifier": "26489",
+    "sequence": 36,
+    "sent_unix": 1792424414.5468168,
+    "reply_unix": 1792424414.5468602,
+    "rtt_ms": 0.043
+  },
+  {
+    "identifier": "26489",
+    "sequence": 37,
+    "sent_unix": 1792424414.6508713,
+    "reply_unix": 1792424414.6509347,
+    "rtt_ms": 0.063
+  },
+  {
+    "identifier": "26489",
+    "sequence": 38,
+    "sent_unix": 1792424414.7584765,
+    "reply_unix": 1792424414.7586126,
+    "rtt_ms": 0.136
+  },
+  {
+    "identifier": "26489",
+    "sequence": 39,
+    "sent_unix": 1792424414.8671536,
+    "reply_unix": 1792424414.8672483,
+    "rtt_ms": 0.095
+  },
+  {
+    "identifier": "26489",
+    "sequence": 40,
+    "sent_unix": 1792424414.9719996,
+    "reply_unix": 1792424414.9720807,
+    "rtt_ms": 0.081
+  },
+  {
+    "identifier": "26489",
+    "sequence": 41,
+    "sent_unix": 1792424415.077065,
+    "reply_unix": 1792424415.0772183,
+    "rtt_ms": 0.153
+  },
+  {
+    "identifier": "26489",
+    "sequence": 42,
+    "sent_unix": 1792424415.178952,
+    "reply_unix": 1792424415.1791766,
+    "rtt_ms": 0.225
+  },
+  {
+    "identifier": "26489",
+    "sequence": 43,
+    "sent_unix": 1792424415.2833366,
+    "reply_unix": 1792424415.2835045,
+    "rtt_ms": 0.168
+  },
+  {
+    "identifier": "26489",
+    "sequence": 44,
+    "sent_unix": 1792424415.3872614,
+    "reply_unix": 1792424415.3874166,
+    "rtt_ms": 0.155
+  },
+  {
+    "identifier": "26489",
+    "sequence": 45,
+    "sent_unix": 1792424415.49405,
+    "reply_unix": 1792424415.494304,
+    "rtt_ms": 0.254
+  },
+  {
+    "identifier": "26489",
+    "sequence": 46,
+    "sent_unix": 1792424415.6079364,
+    "reply_unix": 1792424415.6082158,
+    "rtt_ms": 0.279
+  },
+  {
+    "identifier": "26489",
+    "sequence": 47,
+    "sent_unix": 1792424415.711366,
+    "reply_unix": 1792424415.7116668,
+    "rtt_ms": 0.301
+  },
+  {
+    "identifier": "26489",
+    "sequence": 48,
+    "sent_unix": 1792424415.823377,
+    "reply_unix": 1792424415.8235278,
+    "rtt_ms": 0.151
+  },
+  {
+    "identifier": "26489",
+    "sequence": 49,
+    "sent_unix": 1792424415.932567,
+    "reply_unix": 1792424415.9327958,
+    "rtt_ms": 0.229
+  },
+  {
+    "identifier": "26489",
+    "sequence": 50,
+    "sent_unix": 1792424416.0356953,
+    "reply_unix": 1792424416.0359735,
+    "rtt_ms": 0.278
+  },
+  {
+    "identifier": "26489",
+    "sequence": 51,
+    "sent_unix": 1792424416.13637,
+    "reply_unix": 1792424416.1364818,
+    "rtt_ms": 0.112
+  },
+  {
+    "identifier": "26489",
+    "sequence": 52,
+    "sent_unix": 1792424416.2429948,
+    "reply_unix": 1792424416.243222,
+    "rtt_ms": 0.227
+  },
+  {
+    "identifier": "26489",
+    "sequence": 53,
+    "sent_unix": 1792424416.347209,
+    "reply_unix": 1792424416.3473938,
+    "rtt_ms": 0.185
+  },
+  {
+    "identifier": "26489",
+    "sequence": 54,
+    "sent_unix": 1792424416.4494395,
+    "reply_unix": 1792424416.4498131,
+    "rtt_ms": 0.374
+  },
+  {
+    "identifier": "26489",
+    "sequence": 55,
+    "sent_unix": 1792424416.5544028,
+    "reply_unix": 1792424416.5547051,
+    "rtt_ms": 0.302
+  },
+  {
+    "identifier": "26489",
+    "sequence": 56,
+    "sent_unix": 1792424416.655127,
+    "reply_unix": 1792424416.6553638,
+    "rtt_ms": 0.237
+  },
+  {
+    "identifier": "26489",
+    "sequence": 57,
+    "sent_unix": 1792424416.763275,
+    "reply_unix": 1792424416.7636545,
+    "rtt_ms": 0.38
+  },
+  {
+    "identifier": "26489",
+    "sequence": 58,
+    "sent_unix": 1792424416.869878,
+    "reply_unix": 1792424416.8712976,
+    "rtt_ms": 1.42
+  },
+  {
+    "identifier": "26489",
+    "sequence": 59,
+    "sent_unix": 1792424416.973967,
+    "reply_unix": 1792424416.9745433,
+    "rtt_ms": 0.576
+  },
+  {
+    "identifier": "26489",
+    "sequence": 60,
+    "sent_unix": 1792424417.0782697,
+    "reply_unix": 1792424417.078546,
+    "rtt_ms": 0.276
+  },
+  {
+    "identifier": "26489",
+    "sequence": 61,
+    "sent_unix": 1792424417.1810832,
+    "reply_unix": 1792424417.1813865,
+    "rtt_ms": 0.303
+  },
+  {
+    "identifier": "26489",
+    "sequence": 62,
+    "sent_unix": 1792424417.283252,
+    "reply_unix": 1792424417.2835798,
+    "rtt_ms": 0.328
+  },
+  {
+    "identifier": "26489",
+    "sequence": 63,
+    "sent_unix": 1792424417.3853498,
+    "reply_unix": 1792424417.3857107,
+    "rtt_ms": 0.361
+  },
+  {
+    "identifier": "26489",
+    "sequence": 64,
+    "sent_unix": 1792424417.486966,
+    "reply_unix": 1792424417.487216,
+    "rtt_ms": 0.25
+  },
+  {
+    "identifier": "26489",
+    "sequence": 65,
+    "sent_unix": 1792424417.5891118,
+    "reply_unix": 1792424417.5893664,
+    "rtt_ms": 0.255
+  }
+]

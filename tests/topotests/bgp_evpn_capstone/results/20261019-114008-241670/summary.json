@@ -1,0 +1,41 @@
+{
+  "robot": "host11",
+  "ip": "45.0.0.11",
+  "mac": "00:00:00:00:00:11",
+  "source": "leaf1",
+  "destination": "leaf2",
+  "source_revision": "088a2f77068cf1737e0d09f505e2328d884d4571",
+  "working_tree_diff": "diff --git a/tests/topotests/bgp_evpn_capstone/.DS_Store b/tests/topotests/bgp_evpn_capstone/.DS_Store\nindex ce15b54221..82ff5e3ea4 100644\nBinary files a/tests/topotests/bgp_evpn_capstone/.DS_Store and b/tests/topotests/bgp_evpn_capstone/.DS_Store differ\n",
+  "probe_interval_seconds": 0.1,
+  "validation_passed": true,
+  "learning_method": "gratuitous_arp",
+  "move_start_unix": 1792424413.936917,
+  "attached_unix": 1792424414.0075161,
+  "attachment_change_ms": 70.541,
+  "learning_trigger_unix": 1792424414.0076182,
+  "learning_command_completed_unix": 1792424414.4820387,
+  "traffic": {
+    "captured_requests": 65,
+    "matched_replies": 65,
+    "unmatched_requests": 0,
+    "loss_percent": 0.0
+  },
+  "first_of_three_successful_replies_after_attachment_ms": 20.31,
+  "three_reply_confirmation_from_move_start_ms": 298.752,
+  "before_move": {
+    "requests": 30,
+    "unmatched_requests": 0,
+    "loss_percent": 0.0
+  },
+  "move_to_recovery_confirmation": {
+    "requests": 3,
+    "unmatched_requests": 0,
+    "loss_percent": 0.0
+  },
+  "after_recovery_confirmation": {
+    "requests": 32,
+    "unmatched_requests": 0,
+    "loss_percent": 0.0
+  },
+  "measurement_note": "100 ms sampled ICMP observations at controller eth0. Unmatched requests must be interpreted alongside capture.log and ping.log. Recovery values include learning/probe timing and are not exact EVPN convergence times. The report identifies the explicit learning stimulus; its process startup is included in observed recovery. Route snapshots are untimed before/after observations, not route-churn or control-plane-delay measurements."
+}

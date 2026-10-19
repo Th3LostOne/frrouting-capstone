@@ -1,0 +1,41 @@
+{
+  "robot": "host11",
+  "ip": "45.0.0.11",
+  "mac": "00:00:00:00:00:11",
+  "source": "leaf1",
+  "destination": "leaf2",
+  "source_revision": "088a2f77068cf1737e0d09f505e2328d884d4571",
+  "working_tree_diff": "",
+  "probe_interval_seconds": 0.1,
+  "validation_passed": true,
+  "learning_method": "gratuitous_arp",
+  "move_start_unix": 1792384151.3378987,
+  "attached_unix": 1792384151.3652189,
+  "attachment_change_ms": 27.308,
+  "learning_trigger_unix": 1792384151.3652475,
+  "learning_command_completed_unix": 1792384151.7519832,
+  "traffic": {
+    "captured_requests": 63,
+    "matched_replies": 62,
+    "unmatched_requests": 1,
+    "loss_percent": 1.587
+  },
+  "first_of_three_successful_replies_after_attachment_ms": 103.99,
+  "three_reply_confirmation_from_move_start_ms": 338.958,
+  "before_move": {
+    "requests": 29,
+    "unmatched_requests": 0,
+    "loss_percent": 0.0
+  },
+  "move_to_recovery_confirmation": {
+    "requests": 4,
+    "unmatched_requests": 1,
+    "loss_percent": 25.0
+  },
+  "after_recovery_confirmation": {
+    "requests": 30,
+    "unmatched_requests": 0,
+    "loss_percent": 0.0
+  },
+  "measurement_note": "100 ms sampled ICMP observations at controller eth0. Unmatched requests must be interpreted alongside capture.log and ping.log. Recovery values include learning/probe timing and are not exact EVPN convergence times. The report identifies the explicit learning stimulus; its process startup is included in observed recovery. Route snapshots are untimed before/after observations, not route-churn or control-plane-delay measurements."
+}
