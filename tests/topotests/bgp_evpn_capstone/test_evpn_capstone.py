@@ -152,7 +152,7 @@ def _viz_publish_topology():
     "Send the fabric nodes and links to the visualizer, if it is running."
     if not _viz_post({"action": "RESET"}):
         logger.info("Visualizer not reachable at %s, skipping", VISUALIZER_URL)
-        return
+        return False
 
     for spine in SPINES:
         _viz_post({"action": "ADD_NODE", "id": spine, "type": "spine"})
@@ -167,6 +167,29 @@ def _viz_publish_topology():
     for leaf, spec in LEAVES.items():
         for host in spec["hosts"]:
             _viz_post({"action": "ADD_LINK", "source": leaf, "target": host})
+    return True
+
+
+def _viz_publish_configs(tgen):
+    "Send each node's configuration so the visualizer can show it on click."
+    for rname, router in tgen.routers().items():
+        _viz_post(
+            {
+                "action": "NODE_CONFIG",
+                "id": rname,
+                "config": router.vtysh_cmd("show running-config"),
+            }
+        )
+    host_cmd = "ip -br addr; ip -br link; ip route"
+    for spec in LEAVES.values():
+        for host in spec["hosts"]:
+            _viz_post(
+                {
+                    "action": "NODE_CONFIG",
+                    "id": host,
+                    "config": tgen.net[host].cmd(host_cmd),
+                }
+            )
 
 
 def _leaf_route_counts(router):
@@ -316,7 +339,8 @@ def setup_module(mod):
 
     tgen.start_router()
 
-    _viz_publish_topology()
+    if _viz_publish_topology():
+        _viz_publish_configs(tgen)
 
     if ENABLE_LIVE_ROUTE_GRAPH:
         _sampler_stop.clear()

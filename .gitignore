@@ -82,6 +82,7 @@
 
 ### other garbage
 
+.DS_Store
 .nfs*
 .arch-inventory
 .arch-ids

@@ -46,6 +46,11 @@
 
         .toggle-row { display: flex; align-items: center; gap: 8px; }
         .toggle-row input { accent-color: #4da6ff; }
+
+        #config-panel { display: none; position: absolute; top: 10px; right: 10px; bottom: 10px; width: 45vw; z-index: 10; background: rgba(0,0,0,0.85); border: 1px solid #333; border-radius: 8px; padding: 15px; box-sizing: border-box; flex-direction: column; }
+        #config-panel header { display: flex; justify-content: space-between; align-items: center; }
+        #config-panel pre { flex: 1; overflow: auto; margin: 10px 0 0; font-size: 12px; white-space: pre; }
+        #config-close { background: none; border: 1px solid #666; color: white; cursor: pointer; border-radius: 4px; }
     </style>
 </head>
 <body>
@@ -67,6 +72,11 @@
     <!-- container element where vis-network renders the topology graph -->
     <div id="mynetwork"></div>
     <div id="packet-layer"></div>
+
+    <div id="config-panel">
+        <header><h3 id="config-title" style="margin: 0;"></h3><button id="config-close">Close</button></header>
+        <pre id="config-body"></pre>
+    </div>
 
     <!-- client-side logic for creating graph objects and processing live events -->
     <script>
@@ -493,6 +503,27 @@
         };
         var network = new vis.Network(container, data, options);
 
+        var nodeConfigs = new Map();
+        var configPanel = document.getElementById('config-panel');
+        var configTitle = document.getElementById('config-title');
+        var configBody = document.getElementById('config-body');
+
+        function showNodeConfig(id) {
+            configTitle.textContent = id;
+            configBody.textContent = nodeConfigs.get(id) || 'No configuration received for this node.';
+            configPanel.style.display = 'flex';
+        }
+
+        document.getElementById('config-close').addEventListener('click', function() {
+            configPanel.style.display = 'none';
+        });
+
+        network.on('click', function(params) {
+            if (params.nodes.length > 0) {
+                showNodeConfig(params.nodes[0]);
+            }
+        });
+
         var socket = io.connect('http://' + document.domain + ':' + location.port);
 
         socket.on('network_event', function(msg) {
@@ -561,6 +592,12 @@
             }
             else if (msg.action === 'PACKET_FLOW') {
                 animatePacketFlow(msg.packet_type, msg.source, msg.target, msg.vm);
+            }
+            else if (msg.action === 'NODE_CONFIG') {
+                nodeConfigs.set(msg.id, msg.config);
+                if (configPanel.style.display === 'flex' && configTitle.textContent === msg.id) {
+                    showNodeConfig(msg.id);
+                }
             }
         });
     </script>
