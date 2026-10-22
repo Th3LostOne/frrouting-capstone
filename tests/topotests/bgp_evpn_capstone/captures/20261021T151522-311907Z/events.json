@@ -1,0 +1,18 @@
+[
+  {
+    "event": "baseline_learned",
+    "unix_time": 1792595725.6739235
+  },
+  {
+    "event": "move_call_start",
+    "unix_time": 1792595727.6794505
+  },
+  {
+    "event": "move_call_end",
+    "unix_time": 1792595727.7470784
+  },
+  {
+    "event": "new_location_observed",
+    "unix_time": 1792595728.3389947
+  }
+]
