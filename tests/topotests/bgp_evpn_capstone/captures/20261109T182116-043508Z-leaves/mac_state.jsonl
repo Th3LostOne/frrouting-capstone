@@ -1,0 +1,3 @@
+{"unix_time": 1794248481.07113, "leaf": "leaf1", "state": {"type": "absent"}}
+{"unix_time": 1794248481.1184094, "leaf": "leaf2", "state": {"type": "local", "intf": "eth-host11", "localSequence": 1, "remoteSequence": 0}}
+{"unix_time": 1794248481.1807094, "leaf": "leaf1", "state": {"type": "remote", "remoteVtep": "10.0.0.2", "localSequence": 0, "remoteSequence": 1}}

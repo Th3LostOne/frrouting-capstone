@@ -1,0 +1,19 @@
+{"unix_time": 1794248477.4326763, "line": "fe80::6c1f:84ff:fec7:2aa6 dev eth-spine2 lladdr 6e:1f:84:c7:2a:a6 router REACHABLE"}
+{"unix_time": 1794248477.4351718, "line": "fe80::b08f:98ff:fec8:eef2 dev eth-spine1 lladdr b2:8f:98:c8:ee:f2 router REACHABLE"}
+{"unix_time": 1794248478.9367216, "line": "45.0.0.11 dev br1000 lladdr 00:00:00:00:00:11 STALE"}
+{"unix_time": 1794248481.0312045, "line": "Deleted dev eth-host11 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1794248481.0347915, "line": "Deleted dev eth-host11 lladdr d6:cc:00:69:61:67 PERMANENT"}
+{"unix_time": 1794248481.0351212, "line": "Deleted dev eth-host11 lladdr d6:cc:00:69:61:67 PERMANENT"}
+{"unix_time": 1794248481.0534053, "line": "Deleted ff02::1:ff69:6167 dev eth-host11 lladdr 33:33:ff:69:61:67 NOARP"}
+{"unix_time": 1794248481.0537002, "line": "Deleted ff02::16 dev eth-host11 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1794248481.0912066, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1794248481.1570983, "line": "dev vni1000 lladdr 00:00:00:00:00:11 extern_learn  REACHABLE"}
+{"unix_time": 1794248481.1588185, "line": "dev vni1000 lladdr 00:00:00:00:00:11 extern_learn  REACHABLE"}
+{"unix_time": 1794248481.1597898, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:11 extern_learn  REACHABLE"}
+{"unix_time": 1794248481.1604428, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1794248481.8758183, "line": "45.0.0.11 dev br1000 lladdr 00:00:00:00:00:11 extern_learn  NOARP proto zebra "}
+{"unix_time": 1794248481.925581, "line": "10.0.0.2 dev br500 lladdr f2:22:f3:34:d6:76 extern_learn  NOARP proto zebra "}
+{"unix_time": 1794248481.9258518, "line": "dev vni500 lladdr f2:22:f3:34:d6:76 extern_learn  REACHABLE"}
+{"unix_time": 1794248481.9259539, "line": "dev vni500 lladdr f2:22:f3:34:d6:76 extern_learn  REACHABLE"}
+{"unix_time": 1794248481.9260578, "line": "10.0.0.2 dev vni500 lladdr f2:22:f3:34:d6:76 extern_learn  REACHABLE"}
+{"unix_time": 1794248481.926134, "line": "dev vni500 lladdr f2:22:f3:34:d6:76 REACHABLE"}

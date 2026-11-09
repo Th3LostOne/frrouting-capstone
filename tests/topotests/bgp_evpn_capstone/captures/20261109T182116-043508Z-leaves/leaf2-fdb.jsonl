@@ -1,0 +1,11 @@
+{"unix_time": 1794248479.1033957, "line": "22:77:55:e3:73:11 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794248479.1040034, "line": "22:77:55:e3:73:11 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794248479.1042118, "line": "22:77:55:e3:73:11 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794248479.1043422, "line": "22:77:55:e3:73:11 dev vni500 self "}
+{"unix_time": 1794248481.0740736, "line": "d6:cc:00:69:61:67 dev eth-host11 master br1000 permanent"}
+{"unix_time": 1794248481.0755847, "line": "d6:cc:00:69:61:67 dev eth-host11 vlan 1 master br1000 permanent"}
+{"unix_time": 1794248481.091251, "line": "00:00:00:00:00:11 dev eth-host11 master br1000 "}
+{"unix_time": 1794248481.2034225, "line": "Deleted 22:77:55:e3:73:11 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794248481.2050612, "line": "Deleted 22:77:55:e3:73:11 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794248481.2053225, "line": "Deleted 22:77:55:e3:73:11 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794248481.2091162, "line": "Deleted 22:77:55:e3:73:11 dev vni500 self "}

@@ -1,0 +1,47 @@
+[
+  {
+    "event": "capture_started",
+    "unix_time": 1794248478.0818965,
+    "linktype": {
+      "leaf1": "LINUX_SLL2",
+      "leaf2": "LINUX_SLL2"
+    }
+  },
+  {
+    "event": "baseline_learned",
+    "unix_time": 1794248479.01586
+  },
+  {
+    "event": "probes_started",
+    "unix_time": 1794248479.1049526,
+    "probes": {
+      "host12": "45.0.0.11",
+      "host21": "45.0.0.11"
+    },
+    "interval_s": 0.05
+  },
+  {
+    "event": "move_call_start",
+    "unix_time": 1794248481.0144928
+  },
+  {
+    "event": "move_call_end",
+    "unix_time": 1794248481.0904627
+  },
+  {
+    "event": "learn_host_start",
+    "unix_time": 1794248481.0904715
+  },
+  {
+    "event": "learn_host_end",
+    "unix_time": 1794248481.8941936
+  },
+  {
+    "event": "new_location_observed",
+    "unix_time": 1794248481.9120264
+  },
+  {
+    "event": "probes_stopped",
+    "unix_time": 1794248484.9257565
+  }
+]

@@ -1,0 +1,193 @@
+# leaf2 after unix_time=1794248485.0964186
+
+### ip -o link show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000\    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth-spine1@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000\    link/ether c2:29:8f:89:a9:4d brd ff:ff:ff:ff:ff:ff link-netnsid 0
+3: eth-spine2@if8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000\    link/ether 5e:0d:a7:0b:0c:2d brd ff:ff:ff:ff:ff:ff link-netnsid 1
+4: eth-host21@if14: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br1000 state UP mode DEFAULT group default qlen 1000\    link/ether 1a:58:c5:6e:fc:18 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+5: eth-host22@if15: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br1000 state UP mode DEFAULT group default qlen 1000\    link/ether 92:82:f2:02:cf:fb brd ff:ff:ff:ff:ff:ff link-netnsid 3
+6: VRF500: <NOARP,MASTER,UP,LOWER_UP> mtu 65575 qdisc noqueue state UP mode DEFAULT group default qlen 1000\    link/ether 72:93:8d:3d:06:39 brd ff:ff:ff:ff:ff:ff
+7: br500: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master VRF500 state UP mode DEFAULT group default qlen 1000\    link/ether f2:22:f3:34:d6:76 brd ff:ff:ff:ff:ff:ff
+8: vni500: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br500 state UNKNOWN mode DEFAULT group default qlen 1000\    link/ether f2:22:f3:34:d6:76 brd ff:ff:ff:ff:ff:ff
+9: br1000: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master VRF500 state UP mode DEFAULT group default qlen 1000\    link/ether 00:00:5e:00:01:01 brd ff:ff:ff:ff:ff:ff
+10: vni1000: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br1000 state UNKNOWN mode DEFAULT group default qlen 1000\    link/ether 92:0e:58:68:bf:7d brd ff:ff:ff:ff:ff:ff
+11: eth-host11@if12: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br1000 state UP mode DEFAULT group default qlen 1000\    link/ether d6:cc:00:69:61:67 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+
+### bridge fdb show br br1000
+00:00:00:00:00:21 dev eth-host21 master br1000 
+1a:58:c5:6e:fc:18 dev eth-host21 vlan 1 master br1000 permanent
+1a:58:c5:6e:fc:18 dev eth-host21 master br1000 permanent
+33:33:00:00:00:01 dev eth-host21 self permanent
+33:33:00:00:00:02 dev eth-host21 self permanent
+01:00:5e:00:00:01 dev eth-host21 self permanent
+33:33:ff:6e:fc:18 dev eth-host21 self permanent
+33:33:ff:00:00:00 dev eth-host21 self permanent
+00:00:00:00:00:22 dev eth-host22 master br1000 
+92:82:f2:02:cf:fb dev eth-host22 vlan 1 master br1000 permanent
+92:82:f2:02:cf:fb dev eth-host22 master br1000 permanent
+33:33:00:00:00:01 dev eth-host22 self permanent
+33:33:00:00:00:02 dev eth-host22 self permanent
+01:00:5e:00:00:01 dev eth-host22 self permanent
+33:33:ff:02:cf:fb dev eth-host22 self permanent
+33:33:ff:00:00:00 dev eth-host22 self permanent
+33:33:00:00:00:01 dev br1000 self permanent
+33:33:00:00:00:02 dev br1000 self permanent
+01:00:5e:00:00:6a dev br1000 self permanent
+33:33:00:00:00:6a dev br1000 self permanent
+01:00:5e:00:00:01 dev br1000 self permanent
+33:33:ff:00:01:01 dev br1000 self permanent
+33:33:ff:00:00:00 dev br1000 self permanent
+00:00:5e:00:01:01 dev br1000 vlan 1 master br1000 permanent
+00:00:5e:00:01:01 dev br1000 master br1000 permanent
+00:00:00:00:00:42 dev vni1000 vlan 1 extern_learn master br1000 
+00:00:00:00:00:42 dev vni1000 extern_learn master br1000 
+00:00:00:00:00:41 dev vni1000 vlan 1 extern_learn master br1000 
+00:00:00:00:00:41 dev vni1000 extern_learn master br1000 
+00:00:00:00:00:31 dev vni1000 vlan 1 extern_learn master br1000 
+00:00:00:00:00:31 dev vni1000 extern_learn master br1000 
+00:00:00:00:00:32 dev vni1000 vlan 1 extern_learn master br1000 
+00:00:00:00:00:32 dev vni1000 extern_learn master br1000 
+00:00:00:00:00:11 dev vni1000 vlan 1 extern_learn master br1000 
+00:00:00:00:00:12 dev vni1000 vlan 1 extern_learn master br1000 
+00:00:00:00:00:12 dev vni1000 extern_learn master br1000 
+92:0e:58:68:bf:7d dev vni1000 vlan 1 master br1000 permanent
+92:0e:58:68:bf:7d dev vni1000 master br1000 permanent
+00:00:00:00:00:00 dev vni1000 dst 10.0.0.1 self permanent
+00:00:00:00:00:00 dev vni1000 dst 10.0.0.3 self permanent
+00:00:00:00:00:00 dev vni1000 dst 10.0.0.4 self permanent
+00:00:00:00:00:12 dev vni1000 dst 10.0.0.1 self extern_learn 
+00:00:00:00:00:42 dev vni1000 dst 10.0.0.4 self extern_learn 
+00:00:00:00:00:11 dev vni1000 dst 10.0.0.1 self extern_learn 
+00:00:00:00:00:41 dev vni1000 dst 10.0.0.4 self extern_learn 
+00:00:00:00:00:32 dev vni1000 dst 10.0.0.3 self extern_learn 
+00:00:00:00:00:31 dev vni1000 dst 10.0.0.3 self extern_learn 
+d6:cc:00:69:61:67 dev eth-host11 vlan 1 master br1000 permanent
+d6:cc:00:69:61:67 dev eth-host11 master br1000 permanent
+00:00:00:00:00:11 dev eth-host11 master br1000 
+33:33:00:00:00:01 dev eth-host11 self permanent
+33:33:00:00:00:02 dev eth-host11 self permanent
+01:00:5e:00:00:01 dev eth-host11 self permanent
+33:33:ff:69:61:67 dev eth-host11 self permanent
+33:33:ff:00:00:00 dev eth-host11 self permanent
+
+### ip neigh show
+45.0.0.11 dev br1000 lladdr 00:00:00:00:00:11 STALE
+10.0.0.5 dev br500 lladdr 06:90:43:ff:63:d0 extern_learn  NOARP proto zebra 
+169.254.0.1 dev eth-spine2 lladdr 1e:7c:4f:0d:25:eb PERMANENT proto zebra 
+169.254.0.1 dev eth-spine1 lladdr c6:a7:d8:bd:a4:ff PERMANENT proto zebra 
+fe80::c4a7:d8ff:febd:a4ff dev eth-spine1 lladdr c6:a7:d8:bd:a4:ff router REACHABLE
+fe80::1c7c:4fff:fe0d:25eb dev eth-spine2 lladdr 1e:7c:4f:0d:25:eb router REACHABLE
+
+### show evpn mac vni 1000
+Number of MACs (local and remote) known for this VNI: 8
+Flags: N=sync-neighs, I=local-inactive, P=peer-active, X=peer-proxy
+MAC               Type   Flags Intf/Remote ES/VTEP                     VLAN  Seq #'s
+00:00:00:00:00:41 remote       10.0.0.4                                      0/0
+00:00:00:00:00:31 remote       10.0.0.3                                      0/0
+00:00:00:00:00:42 remote       10.0.0.4                                      0/0
+00:00:00:00:00:21 local        eth-host21                                    0/0
+00:00:00:00:00:11 local        eth-host11                                    1/0
+00:00:00:00:00:22 local        eth-host22                                    0/0
+00:00:00:00:00:32 remote       10.0.0.3                                      0/0
+00:00:00:00:00:12 remote       10.0.0.1                                      0/0
+
+### show evpn arp-cache vni 1000
+Number of ARPs (local and remote) known for this VNI: 1
+Flags: I=local-inactive, P=peer-active, X=peer-proxy
+Neighbor  Type   Flags State    MAC               Remote ES/VTEP Seq #'s
+45.0.0.11 local        active   00:00:00:00:00:11  1/0
+
+### show bgp l2vpn evpn route type macip
+BGP table version is 14, local router ID is 10.0.0.2
+Status codes:  s suppressed, d damped, h history, u unsorted, * valid, > best, = multipath,
+               i internal, r RIB-failure, S Stale, R Removed
+Origin codes:  i - IGP, e - EGP, ? - incomplete
+EVPN type-1 prefix: [1]:[EthTag]:[ESI]:[IPlen]:[VTEP-IP]:[Frag-id]
+EVPN type-2 prefix: [2]:[EthTag]:[MAClen]:[MAC]:[IPlen]:[IP]
+EVPN type-3 prefix: [3]:[EthTag]:[IPlen]:[OrigIP]
+EVPN type-4 prefix: [4]:[ESI]:[IPlen]:[OrigIP]
+EVPN type-5 prefix: [5]:[EthTag]:[IPlen]:[IP]
+
+   Network          Next Hop            Metric LocPrf Weight Path
+                    Extended Community
+Route Distinguisher: 10.0.0.1:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:12] RD 10.0.0.1:1000
+                    10.0.0.1(spine1)
+                                                             0 65000 65011 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:12] RD 10.0.0.1:1000
+                    10.0.0.1(spine2)
+                                                             0 65000 65011 i
+                    RT:1000:1000 ET:8
+Route Distinguisher: 10.0.0.2:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:11] RD 10.0.0.2:1000
+                    10.0.0.2(leaf2)                    32768 i
+                    ET:8 RT:1000:1000 MM:1
+ *>  [2]:[0]:[48]:[00:00:00:00:00:11]:[32]:[45.0.0.11] RD 10.0.0.2:1000
+                    10.0.0.2(leaf2)                    32768 i
+                    ET:8 RT:1000:1000 RT:500:500 Rmac:f2:22:f3:34:d6:76 MM:1
+ *>  [2]:[0]:[48]:[00:00:00:00:00:21] RD 10.0.0.2:1000
+                    10.0.0.2(leaf2)                    32768 i
+                    ET:8 RT:1000:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:22] RD 10.0.0.2:1000
+                    10.0.0.2(leaf2)                    32768 i
+                    ET:8 RT:1000:1000
+Route Distinguisher: 10.0.0.3:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:31] RD 10.0.0.3:1000
+                    10.0.0.3(spine2)
+                                                             0 65000 65013 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:31] RD 10.0.0.3:1000
+                    10.0.0.3(spine1)
+                                                             0 65000 65013 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:32] RD 10.0.0.3:1000
+                    10.0.0.3(spine2)
+                                                             0 65000 65013 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:32] RD 10.0.0.3:1000
+                    10.0.0.3(spine1)
+                                                             0 65000 65013 i
+                    RT:1000:1000 ET:8
+Route Distinguisher: 10.0.0.4:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:41] RD 10.0.0.4:1000
+                    10.0.0.4(spine1)
+                                                             0 65000 65014 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:41] RD 10.0.0.4:1000
+                    10.0.0.4(spine2)
+                                                             0 65000 65014 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:42] RD 10.0.0.4:1000
+                    10.0.0.4(spine1)
+                                                             0 65000 65014 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:42] RD 10.0.0.4:1000
+                    10.0.0.4(spine2)
+                                                             0 65000 65014 i
+                    RT:1000:1000 ET:8
+Route Distinguisher: 10.0.0.5:2000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:51] RD 10.0.0.5:2000
+                    10.0.0.5(spine2)
+                                                             0 65000 65015 i
+                    RT:2000:2000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:51] RD 10.0.0.5:2000
+                    10.0.0.5(spine1)
+                                                             0 65000 65015 i
+                    RT:2000:2000 ET:8
+
+Displayed 10 prefixes (16 paths) (of requested type)
+
+### show ip route vrf VRF500
+Codes: K - kernel route, C - connected, L - local, S - static,
+       R - RIP, O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,
+       T - Table, v - VNC, V - VNC-Direct, A - Babel, D - SHARP,
+       F - PBR, f - OpenFabric, t - Table-Direct,
+       > - selected route, * - FIB route, q - queued, r - rejected, b - backup
+       t - trapped, o - offload failure
+
+IPv4 unicast VRF VRF500:
+B>* 20.0.0.0/24 [20/0] via 10.0.0.5, br500 onlink, weight 1, 00:00:09
+                       via 10.0.0.5, br500 onlink (dup), weight 1, 00:00:09
+C>* 45.0.0.0/24 is directly connected, br1000, weight 1, 00:00:13
+L>* 45.0.0.1/32 is directly connected, br1000, weight 1, 00:00:13
