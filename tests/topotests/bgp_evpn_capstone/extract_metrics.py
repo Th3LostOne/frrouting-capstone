@@ -4,6 +4,11 @@ extract_metrics.py - save the capstone mobility metrics from leaf captures.
 
     python3 extract_metrics.py captures/<stamp>-leaves                 # one run
     python3 extract_metrics.py captures/*-leaves --out metrics.csv     # many runs, one row each
+    python3 extract_metrics.py ... --detailed                          # every intermediate timestamp
+
+Default CSV columns: run, movement_timestamp, direction, evpn_update_ms,
+l2_convergence_ms, l3_convergence_ms, reachability_recovery_ms, packet_loss, notes.
+The list below documents the --detailed columns the defaults are taken from.
 
 Input: folders written by capture_leaf_traffic.py (leaf1.pcap, leaf2.pcap,
 events.json; the *-fdb/neigh.jsonl and probe-*.log files are used when present).
@@ -267,6 +272,19 @@ def extract(folder, mac, ip, gateway="45.0.0.1"):
     return row
 
 
+# Default output: one column per capstone metric. --detailed writes everything above.
+SIMPLE_COLS = [                                     # (csv column, internal key)
+    ("run", "capture_folder"),
+    ("movement_timestamp", "move_call_start_utc"),  # 1. movement timestamp (T0, UTC)
+    ("direction", "direction"),
+    ("evpn_update_ms", "mac_adv_tx_ms"),            # 2. new leaf sends the EVPN update
+    ("l2_convergence_ms", "evpn_l2_convergence_ms"),#    old leaf now forwards to the new leaf
+    ("l3_convergence_ms", "evpn_l3_convergence_ms"),#    old leaf has the robot's IP route
+    ("reachability_recovery_ms", "reachability_recovery_ms"),  # 3. first ping reply after the move
+    ("packet_loss", "packet_loss_total"),           # 4. pings lost during the move
+    ("notes", "notes"),                             # empty unless something could not be measured
+]
+
 FIRST_COLS = ["capture_folder", "move_call_start_utc", "direction", "old_leaf", "new_leaf",
               "old_vtep", "new_vtep", "move_call_end_ms", "detach_ms", "detach_kernel_ms", "attach_ms",
               "withdraw_tx_ms", "mac_adv_tx_ms", "mac_mobility_seq", "mac_rx_remote_ms",
@@ -284,6 +302,8 @@ def main():
     ap.add_argument("--mac", default="00:00:00:00:00:11")
     ap.add_argument("--ip", default="45.0.0.11")
     ap.add_argument("--gateway", default="45.0.0.1", help="anycast gateway the robot ARPs for")
+    ap.add_argument("--detailed", action="store_true",
+                    help="write every intermediate timestamp (and a .json copy), not just the metrics")
     a = ap.parse_args()
     rows = []
     for folder in a.folders:
@@ -299,13 +319,21 @@ def main():
               f"L2 {r.get('evpn_l2_convergence_ms')} ms  L3 {r.get('evpn_l3_convergence_ms')} ms  "
               f"reach {r.get('reachability_recovery_ms')} ms  lost {r.get('packet_loss_total')}"
               + (f"  [{r['notes']}]" if r.get("notes") else ""))
-    extra = sorted({k for r in rows for k in r} - set(FIRST_COLS) - {"notes"})
-    cols = FIRST_COLS + extra + ["notes"]
-    with open(a.out, "w", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=cols); w.writeheader(); w.writerows(rows)
-    with open(os.path.splitext(a.out)[0] + ".json", "w") as fh:
-        json.dump(rows, fh, indent=2)
-    print(f"\nwrote {len(rows)} run(s) to {a.out} (+ .json)")
+    if a.detailed:
+        extra = sorted({k for r in rows for k in r} - set(FIRST_COLS) - {"notes"})
+        cols = FIRST_COLS + extra + ["notes"]
+        with open(a.out, "w", newline="") as fh:
+            w = csv.DictWriter(fh, fieldnames=cols); w.writeheader(); w.writerows(rows)
+        with open(os.path.splitext(a.out)[0] + ".json", "w") as fh:
+            json.dump(rows, fh, indent=2)
+        print(f"\nwrote {len(rows)} run(s) to {a.out} (+ .json), detailed")
+    else:
+        with open(a.out, "w", newline="") as fh:
+            w = csv.writer(fh)
+            w.writerow([c for c, _ in SIMPLE_COLS])
+            for r in rows:
+                w.writerow(["" if r.get(k) is None else r.get(k) for _, k in SIMPLE_COLS])
+        print(f"\nwrote {len(rows)} run(s) to {a.out}")
 
 
 if __name__ == "__main__":
