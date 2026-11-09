@@ -7,7 +7,7 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from bgp_evpn_capstone import single_robot_movement as movement
+from . import single_robot_movement as movement
 
 lab = movement.lab
 setup_module = lab.setup_module

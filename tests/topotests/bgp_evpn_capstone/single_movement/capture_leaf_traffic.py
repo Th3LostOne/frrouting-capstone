@@ -44,10 +44,10 @@ from pathlib import Path
 # Make "bgp_evpn_capstone" (and topotests' "lib") importable no matter how this
 # file is started - same trick test_evpn_capstone.py / mobility_moves.py use.
 CWD = os.path.dirname(os.path.realpath(__file__))
-sys.path.append(os.path.join(CWD, "../"))
+sys.path.append(os.path.join(CWD, "../.."))
 
-from bgp_evpn_capstone import single_robot_movement as movement  # noqa: E402
-from bgp_evpn_capstone import capture_single_robot_movement as single  # noqa: E402
+from bgp_evpn_capstone.single_movement import capture_single_robot_movement as single  # noqa: E402
+from bgp_evpn_capstone.single_movement import single_robot_movement as movement  # noqa: E402
 
 lab = movement.lab
 setup_module = lab.setup_module
