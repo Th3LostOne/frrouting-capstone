@@ -1,2 +1,2 @@
 run,movement_timestamp,direction,evpn_update_ms,l2_convergence_ms,l3_convergence_ms,reachability_recovery_ms,packet_loss,notes
-20261109T182116-043508Z-leaves,2026-11-09T18:21:21.014+00:00,leaf1->leaf2,,,861.3,119.0,2,no BGP MAC advert from the new leaf in the pcap
+20261109T182116-043508Z-leaves,2026-11-09T18:21:21.014+00:00,leaf1->leaf2,126.8,145.6,861.3,119.0,2,
