@@ -1,0 +1,160 @@
+{
+  "pcap": "spine1-bgp.pcap",
+  "t0_epoch": 1792595725.65073,
+  "spine_asn": 65000,
+  "events": [
+    {
+      "event": "baseline_learned",
+      "t": 0.023194
+    },
+    {
+      "event": "move_call_start",
+      "t": 2.028721
+    },
+    {
+      "event": "move_call_end",
+      "t": 2.096349
+    },
+    {
+      "event": "new_location_observed",
+      "t": 2.688265
+    }
+  ],
+  "names": {},
+  "local_ips": [
+    "fe80::94cc:9dff:feff:eb61",
+    "fe80::a00a:b4ff:fe23:5018",
+    "fe80::e432:e4ff:feef:623c",
+    "fe80::f841:f6ff:fe64:8e06",
+    "fe80::fca2:38ff:feab:c33f"
+  ],
+  "sessions": {
+    "fe80::19:ebff:feec:863e": {
+      "peer_asn": 65011,
+      "keepalive_interval_s": 3.001,
+      "likely_hold_time_s": 9.003
+    },
+    "fe80::405c:beff:fe45:cffb": {
+      "peer_asn": 65015,
+      "keepalive_interval_s": 3.001,
+      "likely_hold_time_s": 9.003
+    },
+    "fe80::4c40:9dff:fe7e:bf0b": {
+      "peer_asn": 65014,
+      "keepalive_interval_s": 3.002,
+      "likely_hold_time_s": 9.006
+    },
+    "fe80::5cec:6eff:fe7c:1e00": {
+      "peer_asn": 65013,
+      "keepalive_interval_s": 2.999,
+      "likely_hold_time_s": 8.997
+    },
+    "fe80::e86e:9ff:fe3d:af2": {
+      "peer_asn": 65012,
+      "keepalive_interval_s": 3.001,
+      "likely_hold_time_s": 9.003
+    }
+  },
+  "bytes": {
+    "capture_seconds": 4.602983,
+    "packets": 117,
+    "per_category": {
+      "UPDATE": {
+        "packets": 40,
+        "bgp_bytes": 4936,
+        "ip_bytes": 7816,
+        "ethernet_bytes": 8376
+      },
+      "TCP ACK only": {
+        "packets": 57,
+        "bgp_bytes": 0,
+        "ip_bytes": 4104,
+        "ethernet_bytes": 4902
+      },
+      "KEEPALIVE": {
+        "packets": 20,
+        "bgp_bytes": 380,
+        "ip_bytes": 1820,
+        "ethernet_bytes": 2100
+      }
+    },
+    "update_breakdown": {
+      "origin advert": {
+        "nlri_rows": 3,
+        "bgp_bytes": 374
+      },
+      "reflected advert": {
+        "nlri_rows": 15,
+        "bgp_bytes": 1930
+      },
+      "echo (AS-loop, dropped)": {
+        "nlri_rows": 12,
+        "bgp_bytes": 1592
+      },
+      "withdraw": {
+        "nlri_rows": 20,
+        "bgp_bytes": 1040
+      }
+    },
+    "total_ip_bytes": 13740,
+    "total_ethernet_bytes": 15378
+  },
+  "macs": {
+    "00:00:00:00:00:11": {
+      "vtep": "10.0.0.2",
+      "rd": "10.0.0.2:1000"
+    }
+  },
+  "moves": [
+    {
+      "mac": "00:00:00:00:00:11",
+      "old_vtep": "10.0.0.1",
+      "old_rd": "10.0.0.1:1000",
+      "new_vtep": "10.0.0.2",
+      "new_rd": "10.0.0.2:1000",
+      "t_new_first": 2.146123,
+      "ip": "45.0.0.11",
+      "mac_mobility_seq": 1,
+      "old_leaf_asn": 65011,
+      "new_leaf_asn": 65012,
+      "t_move_call_start": 2.028721,
+      "t_trigger": 2.094309,
+      "t_old_withdraw_rx": 2.094309,
+      "t_old_withdraw_tx_last": 2.146198,
+      "t_new_mac_rx": 2.146123,
+      "t_new_mac_tx_last": 2.197327,
+      "t_new_macip_rx": 2.652792,
+      "t_new_macip_tx_last": 2.703304,
+      "t_last_echo": 2.754595,
+      "peers_updated": 5,
+      "metrics_ms": {
+        "withdraw_to_new_advert_at_spine": 51.814,
+        "spine_processing_mac": 51.007,
+        "spine_processing_macip": 50.445,
+        "spine_fanout_spread_mac": 0.197,
+        "mac_to_macip_gap_at_new_leaf": 506.669,
+        "L2_control_plane_convergence": 103.018,
+        "L3_host_route_convergence": 608.995,
+        "no_route_window_remote_leaves_L2": 50.932,
+        "no_hostroute_window_remote_leaves_L3": 557.039,
+        "until_last_echo": 660.286
+      },
+      "metrics_from_move_call_ms": {
+        "old_leaf_withdraw_seen": 65.588,
+        "new_leaf_mac_advert_seen": 117.402,
+        "new_leaf_macip_advert_seen": 624.071,
+        "L2_converged_all_peers": 168.606,
+        "L3_converged_all_peers": 674.583
+      },
+      "move_overhead": {
+        "packets": 57,
+        "updates": 30,
+        "update_bgp_bytes": 3614,
+        "ip_bytes_all": 7718,
+        "ethernet_bytes_all": 8516
+      },
+      "old_leaf": "AS65011",
+      "new_leaf": "AS65012"
+    }
+  ]
+}

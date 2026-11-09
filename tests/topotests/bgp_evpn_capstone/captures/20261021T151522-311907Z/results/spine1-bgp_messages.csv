@@ -1,0 +1,71 @@
+frame,t,dir,peer,msg,kind,action,route_type,nlri,rd,mac,ip,vni_l2,vni_l3,next_hop,as_path,mac_mob_seq,sticky,ext_comms,bgp_bytes
+1,0.0,rx,fe80::19:ebff:feec:863e,UPDATE,origin advert,advertise,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.1,65011,,,encap:VXLAN RT:1000:1000 RT:500:500 rmac:86:cf:c8:80:51:69,127
+3,0.051229,tx,fe80::19:ebff:feec:863e,UPDATE,reflected advert,advertise,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.1,65000 65011,,,RT:500:500 RT:1000:1000 encap:VXLAN rmac:86:cf:c8:80:51:69,131
+5,0.051287,tx,fe80::e86e:9ff:fe3d:af2,UPDATE,reflected advert,advertise,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.1,65000 65011,,,RT:500:500 RT:1000:1000 encap:VXLAN rmac:86:cf:c8:80:51:69,131
+7,0.051318,tx,fe80::4c40:9dff:fe7e:bf0b,UPDATE,reflected advert,advertise,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.1,65000 65011,,,RT:500:500 RT:1000:1000 encap:VXLAN rmac:86:cf:c8:80:51:69,131
+9,0.051337,tx,fe80::5cec:6eff:fe7c:1e00,UPDATE,reflected advert,advertise,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.1,65000 65011,,,RT:500:500 RT:1000:1000 encap:VXLAN rmac:86:cf:c8:80:51:69,131
+11,0.051357,tx,fe80::405c:beff:fe45:cffb,UPDATE,reflected advert,advertise,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.1,65000 65011,,,RT:500:500 RT:1000:1000 encap:VXLAN rmac:86:cf:c8:80:51:69,131
+13,0.102642,rx,fe80::5cec:6eff:fe7c:1e00,UPDATE,"echo (AS-loop, dropped)",advertise,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.1,65013 65000 65011,,,RT:500:500 RT:1000:1000 encap:VXLAN rmac:86:cf:c8:80:51:69,135
+14,0.102849,rx,fe80::e86e:9ff:fe3d:af2,UPDATE,"echo (AS-loop, dropped)",advertise,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.1,65012 65000 65011,,,RT:500:500 RT:1000:1000 encap:VXLAN rmac:86:cf:c8:80:51:69,135
+15,0.102938,rx,fe80::4c40:9dff:fe7e:bf0b,UPDATE,"echo (AS-loop, dropped)",advertise,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.1,65014 65000 65011,,,RT:500:500 RT:1000:1000 encap:VXLAN rmac:86:cf:c8:80:51:69,135
+16,0.103655,rx,fe80::405c:beff:fe45:cffb,UPDATE,"echo (AS-loop, dropped)",advertise,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.1,65015 65000 65011,,,RT:500:500 RT:1000:1000 encap:VXLAN rmac:86:cf:c8:80:51:69,135
+21,0.519734,tx,fe80::19:ebff:feec:863e,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+23,0.51989,rx,fe80::19:ebff:feec:863e,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+25,0.750435,rx,fe80::e86e:9ff:fe3d:af2,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+27,0.750725,tx,fe80::e86e:9ff:fe3d:af2,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+29,1.098601,rx,fe80::5cec:6eff:fe7c:1e00,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+31,1.099492,tx,fe80::5cec:6eff:fe7c:1e00,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+33,1.352478,rx,fe80::4c40:9dff:fe7e:bf0b,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+35,1.3527,tx,fe80::4c40:9dff:fe7e:bf0b,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+37,1.600313,tx,fe80::405c:beff:fe45:cffb,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+39,1.602622,rx,fe80::405c:beff:fe45:cffb,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+41,2.094309,rx,fe80::19:ebff:feec:863e,UPDATE,withdraw,withdraw,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,0,,,,,,,104
+41,2.094309,rx,fe80::19:ebff:feec:863e,UPDATE,withdraw,withdraw,2,MAC,10.0.0.1:1000,00:00:00:00:00:11,,0,,,,,,,104
+43,2.146086,tx,fe80::19:ebff:feec:863e,UPDATE,withdraw,withdraw,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,0,,,,,,,104
+43,2.146086,tx,fe80::19:ebff:feec:863e,UPDATE,withdraw,withdraw,2,MAC,10.0.0.1:1000,00:00:00:00:00:11,,0,,,,,,,104
+44,2.146123,rx,fe80::e86e:9ff:fe3d:af2,UPDATE,origin advert,advertise,2,MAC,10.0.0.2:1000,00:00:00:00:00:11,,1000,,10.0.0.2,65012,1,0,encap:VXLAN RT:1000:1000,112
+45,2.146145,tx,fe80::e86e:9ff:fe3d:af2,UPDATE,withdraw,withdraw,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,0,,,,,,,104
+45,2.146145,tx,fe80::e86e:9ff:fe3d:af2,UPDATE,withdraw,withdraw,2,MAC,10.0.0.1:1000,00:00:00:00:00:11,,0,,,,,,,104
+47,2.14616,tx,fe80::5cec:6eff:fe7c:1e00,UPDATE,withdraw,withdraw,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,0,,,,,,,104
+47,2.14616,tx,fe80::5cec:6eff:fe7c:1e00,UPDATE,withdraw,withdraw,2,MAC,10.0.0.1:1000,00:00:00:00:00:11,,0,,,,,,,104
+49,2.146176,tx,fe80::4c40:9dff:fe7e:bf0b,UPDATE,withdraw,withdraw,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,0,,,,,,,104
+49,2.146176,tx,fe80::4c40:9dff:fe7e:bf0b,UPDATE,withdraw,withdraw,2,MAC,10.0.0.1:1000,00:00:00:00:00:11,,0,,,,,,,104
+51,2.146198,tx,fe80::405c:beff:fe45:cffb,UPDATE,withdraw,withdraw,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,0,,,,,,,104
+51,2.146198,tx,fe80::405c:beff:fe45:cffb,UPDATE,withdraw,withdraw,2,MAC,10.0.0.1:1000,00:00:00:00:00:11,,0,,,,,,,104
+54,2.19713,tx,fe80::19:ebff:feec:863e,UPDATE,reflected advert,advertise,2,MAC,10.0.0.2:1000,00:00:00:00:00:11,,1000,,10.0.0.2,65000 65012,1,0,RT:1000:1000 encap:VXLAN,116
+56,2.197139,rx,fe80::4c40:9dff:fe7e:bf0b,UPDATE,withdraw,withdraw,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,0,,,,,,,104
+56,2.197139,rx,fe80::4c40:9dff:fe7e:bf0b,UPDATE,withdraw,withdraw,2,MAC,10.0.0.1:1000,00:00:00:00:00:11,,0,,,,,,,104
+57,2.197197,rx,fe80::405c:beff:fe45:cffb,UPDATE,withdraw,withdraw,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,0,,,,,,,104
+57,2.197197,rx,fe80::405c:beff:fe45:cffb,UPDATE,withdraw,withdraw,2,MAC,10.0.0.1:1000,00:00:00:00:00:11,,0,,,,,,,104
+59,2.197215,rx,fe80::e86e:9ff:fe3d:af2,UPDATE,withdraw,withdraw,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,0,,,,,,,104
+59,2.197215,rx,fe80::e86e:9ff:fe3d:af2,UPDATE,withdraw,withdraw,2,MAC,10.0.0.1:1000,00:00:00:00:00:11,,0,,,,,,,104
+60,2.197265,tx,fe80::405c:beff:fe45:cffb,UPDATE,reflected advert,advertise,2,MAC,10.0.0.2:1000,00:00:00:00:00:11,,1000,,10.0.0.2,65000 65012,1,0,RT:1000:1000 encap:VXLAN,116
+62,2.197306,tx,fe80::e86e:9ff:fe3d:af2,UPDATE,reflected advert,advertise,2,MAC,10.0.0.2:1000,00:00:00:00:00:11,,1000,,10.0.0.2,65000 65012,1,0,RT:1000:1000 encap:VXLAN,116
+64,2.19732,tx,fe80::5cec:6eff:fe7c:1e00,UPDATE,reflected advert,advertise,2,MAC,10.0.0.2:1000,00:00:00:00:00:11,,1000,,10.0.0.2,65000 65012,1,0,RT:1000:1000 encap:VXLAN,116
+66,2.197327,tx,fe80::4c40:9dff:fe7e:bf0b,UPDATE,reflected advert,advertise,2,MAC,10.0.0.2:1000,00:00:00:00:00:11,,1000,,10.0.0.2,65000 65012,1,0,RT:1000:1000 encap:VXLAN,116
+68,2.197368,rx,fe80::5cec:6eff:fe7c:1e00,UPDATE,withdraw,withdraw,2,MAC+IP,10.0.0.1:1000,00:00:00:00:00:11,45.0.0.11,0,,,,,,,104
+68,2.197368,rx,fe80::5cec:6eff:fe7c:1e00,UPDATE,withdraw,withdraw,2,MAC,10.0.0.1:1000,00:00:00:00:00:11,,0,,,,,,,104
+70,2.248015,rx,fe80::4c40:9dff:fe7e:bf0b,UPDATE,"echo (AS-loop, dropped)",advertise,2,MAC,10.0.0.2:1000,00:00:00:00:00:11,,1000,,10.0.0.2,65014 65000 65012,1,0,RT:1000:1000 encap:VXLAN,120
+71,2.248063,rx,fe80::405c:beff:fe45:cffb,UPDATE,"echo (AS-loop, dropped)",advertise,2,MAC,10.0.0.2:1000,00:00:00:00:00:11,,1000,,10.0.0.2,65015 65000 65012,1,0,RT:1000:1000 encap:VXLAN,120
+72,2.248077,rx,fe80::19:ebff:feec:863e,UPDATE,"echo (AS-loop, dropped)",advertise,2,MAC,10.0.0.2:1000,00:00:00:00:00:11,,1000,,10.0.0.2,65011 65000 65012,1,0,RT:1000:1000 encap:VXLAN,120
+74,2.24814,rx,fe80::5cec:6eff:fe7c:1e00,UPDATE,"echo (AS-loop, dropped)",advertise,2,MAC,10.0.0.2:1000,00:00:00:00:00:11,,1000,,10.0.0.2,65013 65000 65012,1,0,RT:1000:1000 encap:VXLAN,120
+78,2.652792,rx,fe80::e86e:9ff:fe3d:af2,UPDATE,origin advert,advertise,2,MAC+IP,10.0.0.2:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.2,65012,1,0,encap:VXLAN RT:1000:1000 RT:500:500 rmac:72:9b:d7:e2:90:12,135
+80,2.703237,tx,fe80::19:ebff:feec:863e,UPDATE,reflected advert,advertise,2,MAC+IP,10.0.0.2:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.2,65000 65012,1,0,RT:500:500 RT:1000:1000 encap:VXLAN rmac:72:9b:d7:e2:90:12,139
+82,2.703267,tx,fe80::5cec:6eff:fe7c:1e00,UPDATE,reflected advert,advertise,2,MAC+IP,10.0.0.2:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.2,65000 65012,1,0,RT:500:500 RT:1000:1000 encap:VXLAN rmac:72:9b:d7:e2:90:12,139
+83,2.703277,tx,fe80::e86e:9ff:fe3d:af2,UPDATE,reflected advert,advertise,2,MAC+IP,10.0.0.2:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.2,65000 65012,1,0,RT:500:500 RT:1000:1000 encap:VXLAN rmac:72:9b:d7:e2:90:12,139
+85,2.703291,tx,fe80::405c:beff:fe45:cffb,UPDATE,reflected advert,advertise,2,MAC+IP,10.0.0.2:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.2,65000 65012,1,0,RT:500:500 RT:1000:1000 encap:VXLAN rmac:72:9b:d7:e2:90:12,139
+87,2.703304,tx,fe80::4c40:9dff:fe7e:bf0b,UPDATE,reflected advert,advertise,2,MAC+IP,10.0.0.2:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.2,65000 65012,1,0,RT:500:500 RT:1000:1000 encap:VXLAN rmac:72:9b:d7:e2:90:12,139
+90,2.753578,rx,fe80::405c:beff:fe45:cffb,UPDATE,"echo (AS-loop, dropped)",advertise,2,MAC+IP,10.0.0.2:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.2,65015 65000 65012,1,0,RT:500:500 RT:1000:1000 encap:VXLAN rmac:72:9b:d7:e2:90:12,143
+92,2.753685,rx,fe80::5cec:6eff:fe7c:1e00,UPDATE,"echo (AS-loop, dropped)",advertise,2,MAC+IP,10.0.0.2:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.2,65013 65000 65012,1,0,RT:500:500 RT:1000:1000 encap:VXLAN rmac:72:9b:d7:e2:90:12,143
+94,2.753727,rx,fe80::19:ebff:feec:863e,UPDATE,"echo (AS-loop, dropped)",advertise,2,MAC+IP,10.0.0.2:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.2,65011 65000 65012,1,0,RT:500:500 RT:1000:1000 encap:VXLAN rmac:72:9b:d7:e2:90:12,143
+96,2.754595,rx,fe80::4c40:9dff:fe7e:bf0b,UPDATE,"echo (AS-loop, dropped)",advertise,2,MAC+IP,10.0.0.2:1000,00:00:00:00:00:11,45.0.0.11,1000,500,10.0.0.2,65014 65000 65012,1,0,RT:500:500 RT:1000:1000 encap:VXLAN rmac:72:9b:d7:e2:90:12,143
+98,3.520325,tx,fe80::19:ebff:feec:863e,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+99,3.520352,rx,fe80::19:ebff:feec:863e,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+102,3.75183,tx,fe80::e86e:9ff:fe3d:af2,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+104,3.752255,rx,fe80::e86e:9ff:fe3d:af2,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+106,4.098403,tx,fe80::5cec:6eff:fe7c:1e00,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+108,4.098487,rx,fe80::5cec:6eff:fe7c:1e00,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+110,4.35515,tx,fe80::4c40:9dff:fe7e:bf0b,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+112,4.355418,rx,fe80::4c40:9dff:fe7e:bf0b,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+114,4.601478,tx,fe80::405c:beff:fe45:cffb,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
+116,4.602965,rx,fe80::405c:beff:fe45:cffb,KEEPALIVE,keepalive,,,,,,,,,,,,,,19
