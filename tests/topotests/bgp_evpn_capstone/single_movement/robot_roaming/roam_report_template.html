@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robot Roaming Sync</title>
+<style>
+:root {
+  --bg: #f6f5f1; --panel: #fff; --ink: #1d1f24; --muted: #646a73; --line: #dcd9d1; --grid: #ebe8e1;
+  --ok: #1a8a52; --warn: #c27a00; --bad: #c8372d; --dup: #8a3fb8; --idle: #a3a8b0; --accent: #2a5bd7;
+  --leaf1: #2a6fdb; --leaf2: #1a9e5c; --leaf3: #e08a00; --leaf4: #7a5cc7; --leaf5: #5c6b7a;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #15171b; --panel: #1d2026; --ink: #e8e9ec; --muted: #9aa1ab; --line: #30343c; --grid: #262a31;
+  --ok: #3cc47c; --warn: #f0a531; --bad: #f2645a; --dup: #b77ce6; --idle: #6b717b; --accent: #6d95ff; } }
+:root[data-theme="dark"] { --bg: #15171b; --panel: #1d2026; --ink: #e8e9ec; --muted: #9aa1ab; --line: #30343c; --grid: #262a31;
+  --ok: #3cc47c; --warn: #f0a531; --bad: #f2645a; --dup: #b77ce6; --idle: #6b717b; --accent: #6d95ff; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.45 var(--sans); }
+main { max-width: 1240px; margin: 0 auto; padding: 24px 16px 64px; }
+h1 { font-size: 22px; margin: 0 0 4px; }
+h2 { font-size: 14px; margin: 0 0 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin-top: 16px; }
+.head { display: flex; gap: 16px; align-items: flex-start; flex-wrap: wrap; }
+.grow { flex: 1 1 420px; min-width: 0; }
+.verdict { font: 700 13px var(--sans); letter-spacing: .06em; padding: 6px 12px; border-radius: 6px; color: #fff; background: var(--ok); }
+.verdict.BROKEN { background: var(--bad); } .verdict.brief { background: var(--warn); }
+.meta { color: var(--muted); font-size: 12.5px; display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.meta b { color: var(--ink); }
+.two { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 16px; }
+@media (max-width: 900px) { .two { grid-template-columns: 1fr; } }
+svg { display: block; width: 100%; height: auto; }
+svg text { font-family: var(--sans); }
+svg text:not([fill]) { fill: var(--ink); }
+.controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 10px; }
+.controls input[type=range] { flex: 1 1 240px; accent-color: var(--accent); }
+button { font: 600 12.5px var(--sans); background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; cursor: pointer; }
+button:hover { border-color: var(--accent); } button.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+button.brk { color: var(--bad); border-color: var(--bad); }
+.tnow { font: 700 18px var(--mono); }
+.row { display: grid; grid-template-columns: 110px 1fr auto; gap: 8px; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--grid); font-size: 13px; }
+.pill { font: 700 11px var(--sans); padding: 2px 8px; border-radius: 99px; color: #fff; white-space: nowrap; }
+.synced { background: var(--ok); } .stale { background: var(--bad); } .missing { background: var(--idle); } .mixed { background: var(--warn); } .transit { background: var(--idle); } .dup { background: var(--dup); }
+.chip { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+.small { font-size: 12px; color: var(--muted); }
+.banner { margin: 8px 0; padding: 8px 10px; border-radius: 6px; font-weight: 600; font-size: 13px; }
+.banner.bad { background: color-mix(in srgb, var(--bad) 14%, transparent); color: var(--bad); }
+.banner.ok { background: color-mix(in srgb, var(--ok) 14%, transparent); color: var(--ok); }
+.banner.idle { background: var(--grid); color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--grid); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: .04em; }
+td.num { font-family: var(--mono); white-space: nowrap; }
+tr.click { cursor: pointer; } tr.click:hover td { background: var(--grid); }
+.tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+.scroll { overflow-x: auto; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--muted); margin-top: 8px; }
+.hbar { height: 12px; background: var(--accent); border-radius: 3px; }
+</style>
+</head>
+<body>
+<main>
+  <section class="panel head">
+    <div class="grow">
+      <h1 id="title">Robot roaming — is the controller in sync?</h1>
+      <div id="headline" style="font-size:16px;margin:6px 0"></div>
+      <div class="meta" id="meta"></div>
+    </div>
+    <div class="verdict" id="verdict"></div>
+  </section>
+
+  <section class="panel">
+    <h2>The fabric at a moment in time</h2>
+    <div class="two">
+      <div>
+        <svg id="topo" viewBox="0 0 900 470"></svg>
+        <div class="legend">
+          <span><span class="chip" style="background:var(--ok)"></span>agrees with where the robot is</span>
+          <span><span class="chip" style="background:var(--bad)"></span>points at a leaf the robot left</span>
+          <span><span class="chip" style="background:var(--warn)"></span>old and new at once</span>
+          <span><span class="chip" style="background:var(--idle)"></span>nothing / robot in transit</span>
+          <span><span class="chip" style="background:var(--dup)"></span>MAC flagged duplicate</span>
+          <span>● moving dots = robot RT-2 captured in the pcaps (hollow = withdraw)</span>
+        </div>
+      </div>
+      <div>
+        <div class="tnow" id="tnow"></div>
+        <div id="banner"></div>
+        <div id="state"></div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="play">▶ Play</button><button id="speed">Speed ×0.25</button>
+      <button id="prev">◀ step</button><button id="next">step ▶</button>
+      <button id="tobreak" class="brk">Jump to first break</button>
+      <input type="range" id="slider" min="0" max="2000" step="1">
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Timeline — red bands: the controller's router disagrees with the robot</h2>
+    <div class="tabs" id="zoom"></div>
+    <div class="scroll"><svg id="lanes" viewBox="0 0 1100 400"></svg></div>
+    <div class="legend" id="lleg"></div>
+  </section>
+
+  <section class="panel">
+    <h2>Out-of-sync windows</h2>
+    <div class="scroll"><table id="windows"></table></div>
+  </section>
+
+  <section class="panel">
+    <h2>How the update travelled, per move</h2>
+    <div class="tabs" id="flowtabs"></div>
+    <div class="scroll"><svg id="flow" viewBox="0 0 900 400"></svg></div>
+  </section>
+
+  <section class="panel">
+    <h2>Where the time goes (all moves)</h2>
+    <div class="scroll"><table id="stages"></table></div>
+  </section>
+
+  <section class="panel">
+    <h2>Moves</h2>
+    <div class="scroll"><table id="hops"></table></div>
+  </section>
+
+  <section class="panel">
+    <h2>Metrics</h2>
+    <table id="metrics"></table>
+  </section>
+</main>
+<script id="data" type="application/json">/*__REPORT_DATA__*/null</script>
+<script>
+"use strict";
+const D = JSON.parse(document.getElementById("data").textContent);
+const $ = (id) => document.getElementById(id);
+const NS = "http://www.w3.org/2000/svg";
+const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const LC = (l) => (/^leaf[1-5]$/.test(l || "") ? css("--" + l) : css("--idle"));
+const fmt = (t) => (t == null ? "–" : (t >= 0 ? "+" : "") + Math.round(t) + " ms");
+const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+function el(tag, a, p, text) { const e = document.createElementNS(NS, tag); for (const k in a || {}) if (a[k] != null) e.setAttribute(k, a[k]); if (text != null) e.textContent = text; if (p) p.appendChild(e); return e; }
+function at(series, t) { if (!series || !series.length) return null; let lo = 0, hi = series.length - 1, r = 0; while (lo <= hi) { const m = (lo + hi) >> 1; if (series[m].t <= t) { r = m; lo = m + 1; } else hi = m - 1; } return series[r]; }
+function status(owners, actual) {
+  if (actual == null) return "transit";
+  if (!owners || !owners.length) return "missing";
+  if (owners.length === 1 && owners[0] === actual) return "synced";
+  return owners.includes(actual) ? "mixed" : "stale";
+}
+const SC = { synced: "--ok", stale: "--bad", missing: "--idle", mixed: "--warn", transit: "--idle", dup: "--dup" };
+const ST = { synced: "in sync", stale: "STALE", missing: "no route", mixed: "old + new", transit: "in transit", dup: "DUPLICATE" };
+const [T_MIN, T_MAX] = D.range_ms;
+let T = D.break_ms != null ? D.break_ms : 0;
+const L5 = D.leaf5, V = D.views;
+const nodesLeaves = [...D.robot_leaves, L5];
+
+// header
+$("headline").textContent = D.headline;
+$("verdict").textContent = D.verdict;
+$("verdict").className = "verdict " + (D.verdict === "BROKEN" ? "BROKEN" : D.verdict === "IN SYNC" ? "" : "brief");
+$("meta").innerHTML = [["Robot", D.robot.name + " " + D.robot.mac + " / " + D.robot.ip],
+  ["Controller", D.controller.name + " " + D.controller.ip + " behind " + D.controller.leaf],
+  ["Walk", D.robot.home + " → " + D.path.join(" → ")], ["Dwell", D.dwell_s + " s"], ["Break budget", D.budget_ms + " ms"]]
+  .map(([k, v]) => `<span>${k}: <b>${esc(v)}</b></span>`).join("");
+
+function stateAt(t) {
+  const truth = (at(D.truth, t) || {}).leaf || null;
+  const s = { truth, leaves: {}, spines: {} };
+  for (const l of D.robot_leaves) { const v = at(V[l + ":mac"], t) || { owners: [] }; s.leaves[l] = Object.assign({ st: v.dup ? "dup" : status(v.owners, truth) }, v); }
+  for (const sp of D.spines) { const v = at(V[sp + ":bgp"], t) || { owners: [] }; s.spines[sp] = Object.assign({ st: status(v.owners, truth) }, v); }
+  const b = at(V[L5 + ":bgp"], t) || { best: [], owners: [] }, f = at(V[L5 + ":route"], t) || { owners: [] };
+  s.best = Object.assign({ st: status(b.best, truth) }, b);
+  s.fib = Object.assign({ st: status(f.owners, truth) }, f);
+  s.gap = ((D.probes.controller || {}).gaps || []).find((g) => g.a <= t && t <= g.b) || null;
+  s.win = D.windows.find((w) => w.start_ms <= t && t <= w.end_ms) || null;
+  return s;
+}
+
+// ------------------------------------------------------------ topology ---
+const POS = {};
+nodesLeaves.forEach((l, i) => (POS[l] = { x: 90 + i * 180, y: 210 }));
+D.spines.forEach((s, i) => (POS[s] = { x: 450 + (i - (D.spines.length - 1) / 2) * 280, y: 60 }));
+POS.controller = { x: POS[L5].x, y: 360 };
+function drawTopo(t) {
+  const svg = $("topo"); svg.innerHTML = "";
+  const S = stateAt(t);
+  const defs = el("defs", {}, svg);
+  for (const k in SC) { const m = el("marker", { id: "a-" + k, viewBox: "0 0 10 10", refX: 9, refY: 5, markerWidth: 6, markerHeight: 6, orient: "auto-start-reverse" }, defs); el("path", { d: "M0,0L10,5L0,10z", fill: css(SC[k]) }, m); }
+  const g = el("g", {}, svg);
+  for (const sp of D.spines) for (const l of nodesLeaves) el("line", { x1: POS[sp].x, y1: POS[sp].y + 16, x2: POS[l].x, y2: POS[l].y - 18, stroke: css("--line") }, g);
+  // RT-2 in flight
+  for (const r of D.rt2) {
+    if (r.t > t || r.t < t - 220 || !POS[r.node]) continue;
+    const age = (t - r.t) / 220, wd = r.action === "withdraw";
+    const col = wd ? css("--bad") : LC(r.nh);
+    if (r.dir === "tx" && r.peer && POS[r.peer]) {
+      const a = POS[r.node], b = POS[r.peer], up = a.y > b.y;
+      const x = a.x + (b.x - a.x) * age, y = (a.y + (up ? -18 : 16)) + ((b.y + (up ? 16 : -18)) - (a.y + (up ? -18 : 16))) * age;
+      el("circle", { cx: x, cy: y, r: 6, fill: wd ? css("--panel") : col, stroke: col, "stroke-width": 2.5 }, g);
+    } else if (r.dir === "rx") {
+      el("circle", { cx: POS[r.node].x, cy: POS[r.node].y, r: 30 + age * 18, fill: "none", stroke: col, "stroke-width": 2, opacity: 1 - age }, g);
+    }
+  }
+  // spines
+  for (const sp of D.spines) {
+    const p = POS[sp], v = S.spines[sp];
+    el("rect", { x: p.x - 46, y: p.y - 16, width: 92, height: 32, rx: 6, fill: css("--panel"), stroke: css("--muted") }, g);
+    el("text", { x: p.x, y: p.y + 5, "text-anchor": "middle", "font-size": 13, "font-weight": 700 }, g, sp);
+    const label = v.owners.length ? "holds " + v.owners.join(", ") : "no route";
+    el("rect", { x: p.x + 52, y: p.y - 10, width: 8 + label.length * 6.4, height: 20, rx: 10, fill: css(SC[v.st]) }, g);
+    el("text", { x: p.x + 56, y: p.y + 4, "font-size": 11, "font-weight": 700, fill: "#fff" }, g, label);
+  }
+  // leaf5 FIB arrow: where the controller's traffic to the robot goes
+  for (const o of S.fib.owners) if (POS[o] && o !== L5) {
+    const a = POS[L5], b = POS[o], dip = 60 + Math.abs(a.x - b.x) * 0.12;
+    el("path", { d: `M${a.x - 30},${a.y + 20} C${a.x - 30},${a.y + dip + 20} ${b.x + 24},${b.y + dip + 20} ${b.x + 24},${b.y + 22}`, fill: "none", stroke: css(SC[S.fib.st]), "stroke-width": 4, "marker-end": `url(#a-${S.fib.st})` }, g);
+  }
+  // leaves
+  for (const l of nodesLeaves) {
+    const p = POS[l];
+    el("rect", { x: p.x - 44, y: p.y - 18, width: 88, height: 36, rx: 7, fill: css("--panel"), stroke: LC(l), "stroke-width": 2.5 }, g);
+    el("text", { x: p.x, y: p.y + 5, "text-anchor": "middle", "font-size": 13, "font-weight": 700 }, g, l);
+    if (l === L5) {
+      const items = [["BGP best → " + (S.best.best.join(",") || "none"), S.best.st], ["/32 → " + (S.fib.owners.join(",") || "none"), S.fib.st]];
+      items.forEach(([txt, st], i) => { el("rect", { x: p.x - 62, y: p.y - 66 + i * 22, width: 124, height: 19, rx: 9, fill: css(SC[st]) }, g); el("text", { x: p.x, y: p.y - 52 + i * 22, "text-anchor": "middle", "font-size": 11, "font-weight": 700, fill: "#fff" }, g, txt); });
+    } else {
+      const v = S.leaves[l];
+      const txt = v.dup ? "DUP" : !v.owners.length ? "no entry" : v.owners[0] === l ? "local" : "→ " + v.owners[0];
+      el("rect", { x: p.x - 40, y: p.y + 24, width: 80, height: 18, rx: 9, fill: css(SC[v.st]) }, g);
+      el("text", { x: p.x, y: p.y + 37, "text-anchor": "middle", "font-size": 11, "font-weight": 700, fill: "#fff" }, g, txt);
+      if (v.seq != null) el("text", { x: p.x, y: p.y + 56, "text-anchor": "middle", "font-size": 10.5, fill: css("--muted") }, g, "seq " + v.seq);
+    }
+  }
+  // controller
+  const c = POS.controller, cOk = S.fib.st === "synced" || S.fib.st === "transit";
+  el("line", { x1: POS[L5].x, y1: POS[L5].y + 18, x2: c.x, y2: c.y - 16, stroke: css("--line"), "stroke-width": 2 }, g);
+  el("rect", { x: c.x - 62, y: c.y - 16, width: 124, height: 32, rx: 8, fill: css("--panel"), stroke: S.gap ? css("--bad") : css("--muted"), "stroke-width": S.gap ? 3 : 1.2 }, g);
+  el("text", { x: c.x, y: c.y + 5, "text-anchor": "middle", "font-size": 13, "font-weight": 700 }, g, "controller");
+  el("text", { x: c.x, y: c.y + 34, "text-anchor": "middle", "font-size": 11.5, fill: S.gap ? css("--bad") : css("--muted") }, g, S.gap ? "pings to robot failing" : "pings to robot OK");
+  // robot
+  let rx, label;
+  if (S.truth) { rx = POS[S.truth].x; label = "robot @ " + S.truth; }
+  else { const h = D.hops.find((h) => h.start_ms <= t && t < h.end_ms) || D.hops[0]; rx = (POS[h.src].x + POS[h.dst].x) / 2; label = "robot in transit"; }
+  if (S.truth) el("line", { x1: rx, y1: 400, x2: rx, y2: 264, stroke: LC(S.truth), "stroke-width": 4 }, g);
+  el("rect", { x: rx - 64, y: 400, width: 128, height: 32, rx: 16, fill: S.truth ? css("--ink") : css("--idle") }, g);
+  el("text", { x: rx, y: 421, "text-anchor": "middle", "font-size": 13, "font-weight": 700, fill: css("--panel") }, g, label);
+  if (!cOk) {
+    el("text", { x: 12, y: 24, "font-size": 13, "font-weight": 700, fill: css("--bad") }, g, "● CONTROLLER OUT OF SYNC: leaf5 says " + (S.fib.owners.join(",") || "nothing") + ", robot is at " + S.truth);
+  }
+  panel(t, S);
+}
+function panel(t, S) {
+  $("tnow").textContent = fmt(t);
+  const cls = S.fib.st;
+  const b = cls === "synced" ? ["ok", "Controller's router agrees: robot at " + S.truth]
+    : cls === "transit" ? ["idle", "Robot is between leaves (cable out)"]
+    : ["bad", "OUT OF SYNC — leaf5 routes the robot via " + (S.fib.owners.join(", ") || "nothing") + ", robot is at " + S.truth];
+  let html = `<div class="banner ${b[0]}">${esc(b[1])}</div>`;
+  if (S.win && S.win.causes.length) html += `<div class="small" style="margin-bottom:6px">Why: ${esc(S.win.causes[0].why)}</div>`;
+  const row = (name, txt, st) => `<div class="row"><span><span class="chip" style="background:${LC(name)}"></span>${esc(name)}</span><span>${esc(txt)}</span><span class="pill ${st}">${ST[st]}</span></div>`;
+  html += row("robot", S.truth ? "plugged into " + S.truth : "in transit", S.truth ? "synced" : "transit");
+  html += row(L5 + " /32", "controller traffic goes to " + (S.fib.owners.join(", ") || "nothing"), S.fib.st);
+  html += row(L5 + " BGP", "best path via " + (S.best.best.join(", ") || "nothing") + (S.best.owners.length > 1 ? " (has " + S.best.owners.join(", ") + ")" : ""), S.best.st);
+  for (const sp of D.spines) html += row(sp, "RT-2 routes from " + (S.spines[sp].owners.join(", ") || "nobody"), S.spines[sp].st);
+  for (const l of D.robot_leaves) { const v = S.leaves[l]; html += row(l, v.dup ? "MAC flagged duplicate" : !v.owners.length ? "no MAC entry" : v.owners[0] === l ? "robot is local" : "sends robot traffic to " + v.owners[0], v.st); }
+  const near = D.rt2.filter((r) => Math.abs(r.t - t) <= 150).slice(0, 8);
+  if (near.length) html += '<div class="small" style="margin-top:8px">RT-2 in the pcaps around now:</div>' + near.map((r) => `<div class="small">${fmt(r.t)} ${esc(r.node)} ${r.dir} ${r.action} ${esc(r.nlri)} ${r.nh ? "via " + esc(r.nh) : "rd " + esc(r.rd)}${r.peer ? (r.dir === "tx" ? " → " : " ← ") + esc(r.peer) : ""}${r.seq !== "" && r.seq != null ? " seq " + r.seq : ""}</div>`).join("");
+  $("banner").innerHTML = ""; $("state").innerHTML = html;
+}
+
+// ------------------------------------------------------------ timeline ---
+let VIEW = [T_MIN, T_MAX], LX = null;
+function drawLanes() {
+  const svg = $("lanes"); svg.innerHTML = "";
+  const lanes = [["truth", "robot is plugged into"], [L5 + ":route", "leaf5 /32 (controller)"], [L5 + ":bgp", "leaf5 BGP best"]]
+    .concat(D.spines.map((s) => [s + ":bgp", s + " holds RT-2 from"])).concat(D.robot_leaves.map((l) => [l + ":mac", l + " MAC table"]))
+    .concat([["rt2", "RT-2 seen in pcaps"], ["ping", "controller → robot ping"]]);
+  const L = 170, W = 1100, R = 12, LH = 24, TOP = 24, H = TOP + lanes.length * LH + 28;
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  const [a, b] = VIEW, X = (t) => L + ((Math.min(Math.max(t, a), b) - a) / (b - a)) * (W - L - R);
+  LX = X;
+  const g = el("g", {}, svg);
+  for (const w of D.windows) if (w.end_ms > a && w.start_ms < b) el("rect", { x: X(w.start_ms), y: TOP, width: Math.max(X(w.end_ms) - X(w.start_ms), 1.5), height: lanes.length * LH, fill: css("--bad"), opacity: 0.14 }, g);
+  const step = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000].find((s) => (b - a) / s <= 10) || 20000;
+  for (let t = Math.ceil(a / step) * step; t <= b; t += step) { el("line", { x1: X(t), y1: TOP, x2: X(t), y2: H - 22, stroke: css("--grid") }, g); el("text", { x: X(t), y: H - 6, "text-anchor": "middle", "font-size": 11, fill: css("--muted") }, g, (step >= 1000 ? t / 1000 + " s" : t + " ms")); }
+  for (const h of D.hops) if (h.attached_ms >= a && h.attached_ms <= b) el("text", { x: X(h.attached_ms) + 2, y: TOP - 6, "font-size": 10.5, fill: css("--muted") }, g, "→" + h.dst);
+  const segs = (ser, f) => (ser || []).forEach((s, k) => { const e = k + 1 < ser.length ? ser[k + 1].t : T_MAX; if (e < a || s.t > b) return; f(s, X(s.t), Math.max(X(e) - X(s.t), 0.6)); });
+  lanes.forEach(([id, label], i) => {
+    const y = TOP + i * LH;
+    el("text", { x: L - 8, y: y + 16, "text-anchor": "end", "font-size": 11.5 }, g, label);
+    el("line", { x1: L, y1: y + LH, x2: W - R, y2: y + LH, stroke: css("--grid") }, g);
+    if (id === "truth") segs(D.truth, (s, x, w) => el("rect", { x, y: y + 4, width: w, height: LH - 8, fill: s.leaf ? LC(s.leaf) : css("--idle"), opacity: s.leaf ? 1 : 0.4 }, g));
+    else if (id === "rt2") { for (const r of D.rt2) if (r.t >= a && r.t <= b) el("line", { x1: X(r.t), y1: y + 4, x2: X(r.t), y2: y + LH - 4, stroke: r.action === "withdraw" ? css("--bad") : LC(r.nh), "stroke-width": 1.6 }, g); }
+    else if (id === "ping") { el("rect", { x: X(a), y: y + 10, width: X(b) - X(a), height: 4, fill: css("--ok"), opacity: 0.35 }, g); for (const o of ((D.probes.controller || {}).gaps || [])) if (o.b > a && o.a < b) el("rect", { x: X(o.a), y: y + 4, width: Math.max(X(o.b) - X(o.a), 1.5), height: LH - 8, fill: css("--bad") }, g); }
+    else {
+      const field = id === L5 + ":bgp" ? "best" : "owners";
+      segs(V[id], (s, x, w) => {
+        const own = s[field] || [];
+        if (!own.length) el("rect", { x, y: y + 5, width: w, height: LH - 10, fill: css("--idle"), opacity: 0.3 }, g);
+        own.forEach((o, j) => el("rect", { x, y: y + 5 + j * (LH - 10) / own.length, width: w, height: (LH - 10) / own.length, fill: LC(o) }, g));
+        if (s.dup) el("rect", { x, y: y + 3, width: w, height: LH - 6, fill: "none", stroke: css("--dup"), "stroke-width": 2 }, g);
+      });
+    }
+  });
+  if (D.break_ms != null && D.break_ms >= a && D.break_ms <= b) el("line", { x1: X(D.break_ms), y1: TOP - 2, x2: X(D.break_ms), y2: H - 22, stroke: css("--bad"), "stroke-width": 2 }, g);
+  el("line", { id: "cursor", x1: X(T), y1: TOP - 4, x2: X(T), y2: H - 22, stroke: css("--accent"), "stroke-width": 2 }, svg);
+  svg.onclick = (ev) => { const r = svg.getBoundingClientRect(), x = ((ev.clientX - r.left) / r.width) * W; if (x >= L) seek(a + ((x - L) / (W - L - R)) * (b - a)); };
+}
+function zoomTabs() {
+  const tabs = [["Whole walk", [T_MIN, T_MAX]]];
+  if (D.break_ms != null) tabs.push(["First break", [D.break_ms - 500, D.break_ms + 2500]]);
+  D.hops.forEach((h) => tabs.push([`${h.hop}: ${h.src}→${h.dst}${h.never_synced ? " ⚠" : ""}`, [h.start_ms - 200, Math.min(h.end_ms, h.start_ms + Math.max(1500, (h.sync_ms || 0) + 800))]]));
+  $("zoom").innerHTML = "";
+  tabs.forEach(([n, r], i) => { const b = document.createElement("button"); b.textContent = n; if (i === 0) b.classList.add("on"); b.onclick = () => { [...$("zoom").children].forEach((x) => x.classList.remove("on")); b.classList.add("on"); VIEW = r; drawLanes(); seek(Math.max(r[0], Math.min(T, r[1]))); }; $("zoom").appendChild(b); });
+  $("lleg").innerHTML = nodesLeaves.map((l) => `<span><span class="chip" style="background:${LC(l)}"></span>${l}</span>`).join("") + '<span><span class="chip" style="background:var(--bad)"></span>withdraw / ping lost / out-of-sync band</span><span><span class="chip" style="border:2px solid var(--dup)"></span>duplicate</span>';
+}
+
+// ------------------------------------------------------------- windows ---
+function drawWindows() {
+  if (!D.windows.length) { $("windows").innerHTML = '<tr><td class="small">leaf5 never disagreed with the robot\'s position while it was plugged in.</td></tr>'; return; }
+  $("windows").innerHTML = "<tr><th>From</th><th>Length</th><th>Move</th><th>Robot at</th><th>leaf5 /32</th><th>leaf5 BGP best</th><th>Why (share of the window)</th></tr>" +
+    D.windows.map((w) => `<tr class="click" data-t="${w.start_ms}"><td class="num">${fmt(w.start_ms)}</td><td class="num">${w.open_at_end ? "≥ " : ""}${Math.round(w.ms)} ms ${w.ms > D.budget_ms || w.open_at_end ? '<span class="pill stale">break</span>' : ""}</td><td>${w.hop}</td><td>${esc(w.robot_at)}</td><td><span class="pill ${w.kind}">${esc(w.leaf5_route.join(", ") || "none")}</span></td><td>${esc(w.leaf5_best.join(", ") || "none")}</td><td class="small">${w.causes.map((c) => Math.round((c.ms / Math.max(w.ms, 1)) * 100) + "% " + esc(c.why)).join("<br>")}</td></tr>`).join("");
+  for (const r of $("windows").querySelectorAll("tr[data-t]")) r.onclick = () => seek(+r.dataset.t, true);
+}
+
+// ---------------------------------------------------------------- flow ---
+function drawFlow(i) {
+  const h = D.hops[i], svg = $("flow"); svg.innerHTML = "";
+  const g = el("g", {}, svg), X0 = 170, BW = 430, GAP = 30;
+  const defs = el("defs", {}, svg), m = el("marker", { id: "fa", viewBox: "0 0 10 10", refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: "auto" }, defs);
+  el("path", { d: "M0,0L10,5L0,10z", fill: css("--muted") }, m);
+  let y = 12;
+  const head = h.never_synced ? `NEVER caught up — stuck: ${h.stuck_at ? D.stage_labels[h.stuck_at] + " did not happen" : ""}` : `leaf5 in sync ${Math.round(h.sync_ms)} ms after the robot was plugged in`;
+  el("text", { x: X0, y: y + 14, "font-size": 14, "font-weight": 700, fill: h.never_synced ? css("--bad") : css("--ok") }, g, `Move ${h.hop}: ${h.src} → ${h.dst} · ${head}`);
+  y += 30;
+  const chain = [{ stage: "detached", label: "cable pulled from " + h.src, t_ms: h.detached_ms, delta_ms: null }, { stage: "attached", label: "robot plugged into " + h.dst, t_ms: h.attached_ms, delta_ms: h.detached_ms != null ? Math.round(h.attached_ms - h.detached_ms) : null }].concat(h.steps);
+  chain.forEach((s, k) => {
+    const missing = s.t_ms == null, slow = s.stage === h.slowest_step, stuck = s.stage === h.stuck_at;
+    const col = missing ? css("--bad") : slow ? css("--warn") : s.stage === "leaf5_fib" ? css("--ok") : css("--accent");
+    const node = el("g", { style: missing ? null : "cursor:pointer" }, g);
+    if (!missing) node.onclick = () => seek(s.t_ms, true);
+    el("rect", { x: X0, y, width: BW, height: 40, rx: 8, fill: css("--panel"), stroke: col, "stroke-width": missing || slow ? 2.6 : 1.5, "stroke-dasharray": missing ? "5 4" : null }, node);
+    el("rect", { x: X0, y, width: 6, height: 40, fill: col }, node);
+    el("text", { x: X0 + 16, y: y + 25, "font-size": 13 }, node, s.label);
+    el("text", { x: X0 - 12, y: y + 25, "text-anchor": "end", "font-size": 13, "font-weight": 600, "font-family": "var(--mono)", fill: missing ? css("--bad") : css("--ink") }, node, missing ? "never" : fmt(s.t_ms));
+    let note = "";
+    if (stuck) note = "STUCK HERE";
+    else if (slow) note = "slowest step";
+    if (s.stage === "spine_rx" || s.stage === "spine_tx_leaf5") note += (note ? " · " : "") + D.spines.map((sp) => sp + " " + fmt((h.per_spine[sp] || {})[s.stage === "spine_rx" ? "rx_ms" : "tx_leaf5_ms"])).join(", ");
+    if (s.stage === "dst_tx" && h.seq != null && h.seq !== "") note += (note ? " · " : "") + "MAC mobility seq " + h.seq;
+    if (note) el("text", { x: X0 + BW + 12, y: y + 25, "font-size": 11.5, "font-weight": stuck || slow ? 700 : 400, fill: stuck ? css("--bad") : slow ? css("--warn") : css("--muted") }, node, note);
+    y += 40;
+    if (k + 1 < chain.length) {
+      const d = chain[k + 1].delta_ms;
+      el("line", { x1: X0 + 40, y1: y + 2, x2: X0 + 40, y2: y + GAP - 3, stroke: css("--muted"), "stroke-width": 1.5, "marker-end": "url(#fa)" }, g);
+      el("text", { x: X0 + 52, y: y + GAP / 2 + 4, "font-size": 11.5, fill: chain[k + 1].stage === h.slowest_step ? css("--warn") : css("--muted") }, g, d == null ? "" : "Δ " + Math.round(d) + " ms");
+      y += GAP;
+    }
+  });
+  y += 14;
+  const wd = h.withdraw;
+  el("text", { x: X0, y: y + 12, "font-size": 12, fill: css("--muted") }, g, `Old route: ${h.src} withdraw sent ${fmt(wd.src_tx_ms)}, leaf5 received it ${fmt(wd.leaf5_rx_ms)}` + (h.late_old_updates ? ` · ${h.late_old_updates} stale RT-2 reached leaf5 after the new one` : "") + (h.dad_on.length ? ` · DAD flagged on ${h.dad_on.join(", ")}` : ""));
+  svg.setAttribute("viewBox", `0 0 900 ${y + 26}`);
+}
+function flowTabs() {
+  $("flowtabs").innerHTML = "";
+  let pick = D.hops.findIndex((h) => h.never_synced);
+  if (pick < 0) pick = D.hops.reduce((b, h, i) => ((h.sync_ms || 0) > (D.hops[b].sync_ms || 0) ? i : b), 0);
+  D.hops.forEach((h, i) => { const b = document.createElement("button"); b.textContent = `${h.hop}: ${h.src}→${h.dst}` + (h.never_synced ? " ⚠" : ` ${Math.round(h.sync_ms)}ms`); if (i === pick) b.classList.add("on"); b.onclick = () => { [...$("flowtabs").children].forEach((x) => x.classList.remove("on")); b.classList.add("on"); drawFlow(i); }; $("flowtabs").appendChild(b); });
+  drawFlow(pick);
+}
+
+// -------------------------------------------------------------- tables ---
+function tables() {
+  const mx = Math.max(1, ...D.stages.map((s) => s.max_ms || 0));
+  $("stages").innerHTML = "<tr><th>Step</th><th>Moves</th><th>Average</th><th>Worst</th><th style='width:40%'></th></tr>" + D.stages.map((s) => `<tr><td>${esc(s.label)}</td><td class="num">${s.n}</td><td class="num">${s.avg_ms == null ? "–" : s.avg_ms + " ms"}</td><td class="num">${s.max_ms == null ? "–" : s.max_ms + " ms"}</td><td><div class="hbar" style="width:${((s.avg_ms || 0) / mx) * 100}%"></div><div class="hbar" style="width:${((s.max_ms || 0) / mx) * 100}%;opacity:.35;margin-top:2px"></div></td></tr>`).join("");
+  const st = Object.keys(D.stage_labels).slice(1);
+  $("hops").innerHTML = "<tr><th>#</th><th>Move</th><th>Plugged in</th>" + st.map((k) => `<th>${esc(D.stage_labels[k])}</th>`).join("") + "<th>leaf5 caught up</th><th>Ctrl outage</th></tr>" +
+    D.hops.map((h) => `<tr class="click" data-t="${h.attached_ms}"><td>${h.hop}</td><td>${esc(h.src)}→${esc(h.dst)}</td><td class="num">${fmt(h.attached_ms)}</td>` + st.map((k) => `<td class="num" style="${h.stuck_at === k ? "color:var(--bad);font-weight:700" : ""}">${h.stages[k] == null ? "never" : "+" + Math.round(h.stages[k] - h.attached_ms)}</td>`).join("") + `<td>${h.never_synced ? '<span class="pill stale">never</span>' : Math.round(h.sync_ms) + " ms"}</td><td class="num">${Math.round(h.controller_outage_ms)} ms</td></tr>`).join("");
+  for (const r of $("hops").querySelectorAll("tr[data-t]")) r.onclick = () => seek(+r.dataset.t, true);
+  $("metrics").innerHTML = D.metrics.map((m) => `<tr><td>${esc(m.label)}</td><td class="num">${m.value == null ? "–" : esc(m.value)} ${esc(m.unit)}</td></tr>`).join("");
+}
+
+// ------------------------------------------------------------ controls ---
+const slider = $("slider");
+function seek(t, scroll) {
+  T = Math.max(T_MIN, Math.min(T_MAX, t));
+  slider.value = Math.round(((T - T_MIN) / (T_MAX - T_MIN)) * 2000);
+  drawTopo(T);
+  const c = document.getElementById("cursor"); if (c && LX) { c.setAttribute("x1", LX(T)); c.setAttribute("x2", LX(T)); }
+  if (scroll) $("topo").scrollIntoView({ behavior: "smooth", block: "center" });
+}
+slider.oninput = () => seek(T_MIN + (slider.value / 2000) * (T_MAX - T_MIN));
+const marks = [...new Set(D.rt2.map((r) => r.t).concat(D.events.map((e) => e.t)).concat(D.windows.map((w) => w.start_ms)))].sort((a, b) => a - b);
+$("next").onclick = () => { const n = marks.find((m) => m > T + 0.05); if (n != null) seek(n); };
+$("prev").onclick = () => { const n = [...marks].reverse().find((m) => m < T - 0.05); if (n != null) seek(n); };
+$("tobreak").onclick = () => seek(D.break_ms != null ? D.break_ms : 0);
+if (D.break_ms == null) $("tobreak").textContent = "Jump to first move";
+let play = null, speed = 0.25;
+$("speed").onclick = () => { speed = speed === 0.25 ? 1 : speed === 1 ? 0.05 : 0.25; $("speed").textContent = "Speed ×" + speed; };
+$("play").onclick = () => {
+  if (play) { cancelAnimationFrame(play); play = null; $("play").textContent = "▶ Play"; return; }
+  $("play").textContent = "❚❚ Pause"; let last = performance.now();
+  const tick = (now) => { const dt = (now - last) * speed; last = now; if (T + dt >= T_MAX) { seek(T_MAX); play = null; $("play").textContent = "▶ Play"; return; } seek(T + dt); play = requestAnimationFrame(tick); };
+  play = requestAnimationFrame(tick);
+};
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => { drawLanes(); flowTabs(); seek(T); });
+zoomTabs(); drawLanes(); drawWindows(); flowTabs(); tables(); seek(T);
+</script>
+</body>
+</html>
