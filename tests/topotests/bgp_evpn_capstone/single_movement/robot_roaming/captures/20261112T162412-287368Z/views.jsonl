@@ -1,0 +1,176 @@
+{"unix_time": 1794500660.973792, "node": "leaf1", "kind": "mac", "state": {"type": "local", "intf": "eth-host11", "localSequence": 0, "remoteSequence": 0, "detectionCount": 0, "isDuplicate": false}}
+{"unix_time": 1794500660.9744322, "node": "leaf2", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.1", "localSequence": 1, "remoteSequence": 0, "detectionCount": 0, "isDuplicate": false}}
+{"unix_time": 1794500660.9788258, "node": "leaf3", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.1", "localSequence": 1, "remoteSequence": 0, "detectionCount": 0, "isDuplicate": false}}
+{"unix_time": 1794500660.981505, "node": "leaf4", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.1", "localSequence": 1, "remoteSequence": 0, "detectionCount": 0, "isDuplicate": false}}
+{"unix_time": 1794500660.9846754, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.1"], "best": ["10.0.0.1"]}}
+{"unix_time": 1794500660.9856298, "node": "spine2", "kind": "bgp", "state": {"vteps": ["10.0.0.1"], "best": ["10.0.0.1"]}}
+{"unix_time": 1794500660.9918275, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.1"], "best": ["10.0.0.1"]}}
+{"unix_time": 1794500660.9950671, "node": "leaf5", "kind": "route", "state": {"protocol": "bgp", "vteps": ["10.0.0.1"]}}
+{"unix_time": 1794500663.1509132, "node": "leaf2", "kind": "mac", "state": {"type": "local", "intf": "eth-host11", "localSequence": 1, "remoteSequence": 0, "detectionCount": 1, "isDuplicate": false}}
+{"unix_time": 1794500663.1582732, "node": "leaf1", "kind": "mac", "state": {"type": "absent"}}
+{"unix_time": 1794500663.1614017, "node": "spine2", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500663.2094529, "node": "spine1", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500663.2188327, "node": "leaf3", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.2", "localSequence": 1, "remoteSequence": 1, "detectionCount": 0, "isDuplicate": false}}
+{"unix_time": 1794500663.2258313, "node": "leaf5", "kind": "route", "state": {"protocol": null, "vteps": []}}
+{"unix_time": 1794500663.229734, "node": "leaf4", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.2", "localSequence": 1, "remoteSequence": 1, "detectionCount": 0, "isDuplicate": false}}
+{"unix_time": 1794500663.2367098, "node": "leaf5", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500663.244093, "node": "leaf1", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.2", "localSequence": 0, "remoteSequence": 1, "detectionCount": 0, "isDuplicate": false}}
+{"unix_time": 1794500663.5979633, "node": "leaf4", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.2", "localSequence": 2, "remoteSequence": 1, "detectionCount": 0, "isDuplicate": false}}
+{"unix_time": 1794500663.6050467, "node": "leaf3", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.2", "localSequence": 2, "remoteSequence": 1, "detectionCount": 0, "isDuplicate": false}}
+{"unix_time": 1794500663.6682346, "node": "spine2", "kind": "bgp", "state": {"vteps": ["10.0.0.2"], "best": []}}
+{"unix_time": 1794500663.680334, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.2"], "best": ["10.0.0.2"]}}
+{"unix_time": 1794500663.6946843, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.2"], "best": []}}
+{"unix_time": 1794500663.7307272, "node": "leaf5", "kind": "route", "state": {"protocol": "bgp", "vteps": ["10.0.0.2"]}}
+{"unix_time": 1794500663.732584, "node": "spine2", "kind": "bgp", "state": {"vteps": ["10.0.0.2"], "best": ["10.0.0.2"]}}
+{"unix_time": 1794500663.753333, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.2"], "best": ["10.0.0.2"]}}
+{"unix_time": 1794500665.7567945, "node": "leaf3", "kind": "mac", "state": {"type": "local", "intf": "eth-host11", "localSequence": 2, "remoteSequence": 1, "detectionCount": 1, "isDuplicate": false}}
+{"unix_time": 1794500665.7638454, "node": "leaf2", "kind": "mac", "state": {"type": "absent"}}
+{"unix_time": 1794500665.8264341, "node": "leaf1", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.3", "localSequence": 0, "remoteSequence": 2, "detectionCount": 0, "isDuplicate": false}}
+{"unix_time": 1794500665.8267994, "node": "leaf4", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.3", "localSequence": 2, "remoteSequence": 2, "detectionCount": 0, "isDuplicate": false}}
+{"unix_time": 1794500665.8279572, "node": "spine2", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500665.8334339, "node": "leaf2", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.3", "localSequence": 1, "remoteSequence": 2, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500665.8355296, "node": "spine1", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500665.67916, "node": "leaf5", "kind": "route", "state": {"protocol": null, "vteps": []}}
+{"unix_time": 1794500665.6832752, "node": "leaf5", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500665.7546475, "node": "spine2", "kind": "bgp", "state": {"vteps": ["10.0.0.3"], "best": ["10.0.0.3"]}}
+{"unix_time": 1794500665.7571115, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.3"], "best": []}}
+{"unix_time": 1794500665.7589438, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.3"], "best": ["10.0.0.3"]}}
+{"unix_time": 1794500665.8248901, "node": "leaf5", "kind": "route", "state": {"protocol": "bgp", "vteps": ["10.0.0.3"]}}
+{"unix_time": 1794500665.8320525, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.3"], "best": ["10.0.0.3"]}}
+{"unix_time": 1794500667.9088178, "node": "leaf3", "kind": "mac", "state": {"type": "absent"}}
+{"unix_time": 1794500667.9759095, "node": "leaf4", "kind": "mac", "state": {"type": "local", "intf": "eth-host11", "localSequence": 3, "remoteSequence": 2, "detectionCount": 1, "isDuplicate": false}}
+{"unix_time": 1794500668.0478559, "node": "leaf3", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.4", "localSequence": 2, "remoteSequence": 3, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500668.0501933, "node": "spine2", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500668.050546, "node": "leaf1", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.4", "localSequence": 0, "remoteSequence": 3, "detectionCount": 0, "isDuplicate": false}}
+{"unix_time": 1794500668.0506494, "node": "spine1", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500668.0507474, "node": "leaf5", "kind": "route", "state": {"protocol": null, "vteps": []}}
+{"unix_time": 1794500668.05441, "node": "leaf5", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500668.0575616, "node": "leaf2", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.4", "localSequence": 1, "remoteSequence": 3, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500668.2767825, "node": "leaf1", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.4", "localSequence": 4, "remoteSequence": 3, "detectionCount": 0, "isDuplicate": false}}
+{"unix_time": 1794500668.2804704, "node": "leaf2", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.4", "localSequence": 4, "remoteSequence": 3, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500668.3493197, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.4"], "best": ["10.0.0.4"]}}
+{"unix_time": 1794500668.3526275, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.4"], "best": []}}
+{"unix_time": 1794500668.353187, "node": "spine2", "kind": "bgp", "state": {"vteps": ["10.0.0.4"], "best": ["10.0.0.4"]}}
+{"unix_time": 1794500668.429452, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.4"], "best": ["10.0.0.4"]}}
+{"unix_time": 1794500668.4298103, "node": "leaf5", "kind": "route", "state": {"protocol": "bgp", "vteps": ["10.0.0.4"]}}
+{"unix_time": 1794500670.42782, "node": "leaf4", "kind": "mac", "state": {"type": "absent"}}
+{"unix_time": 1794500670.46586, "node": "leaf1", "kind": "mac", "state": {"type": "local", "intf": "eth-host11", "localSequence": 4, "remoteSequence": 3, "detectionCount": 1, "isDuplicate": false}}
+{"unix_time": 1794500670.4953132, "node": "leaf4", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.1", "localSequence": 3, "remoteSequence": 4, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500670.5044222, "node": "leaf3", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.1", "localSequence": 2, "remoteSequence": 4, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500670.505108, "node": "leaf2", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.1", "localSequence": 4, "remoteSequence": 4, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500670.5052452, "node": "spine2", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500670.5271976, "node": "spine1", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500670.543148, "node": "leaf5", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500670.5929606, "node": "leaf5", "kind": "route", "state": {"protocol": null, "vteps": []}}
+{"unix_time": 1794500670.775395, "node": "leaf2", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.1", "localSequence": 5, "remoteSequence": 4, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500670.7879243, "node": "leaf3", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.1", "localSequence": 5, "remoteSequence": 4, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500670.8407247, "node": "spine2", "kind": "bgp", "state": {"vteps": ["10.0.0.1"], "best": []}}
+{"unix_time": 1794500670.844409, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.1"], "best": []}}
+{"unix_time": 1794500670.8507435, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.1"], "best": []}}
+{"unix_time": 1794500670.9050071, "node": "spine2", "kind": "bgp", "state": {"vteps": ["10.0.0.1"], "best": ["10.0.0.1"]}}
+{"unix_time": 1794500670.9077902, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.1"], "best": ["10.0.0.1"]}}
+{"unix_time": 1794500670.9117663, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.1"], "best": ["10.0.0.1"]}}
+{"unix_time": 1794500670.9707632, "node": "leaf5", "kind": "route", "state": {"protocol": "bgp", "vteps": ["10.0.0.1"]}}
+{"unix_time": 1794500672.90256, "node": "leaf1", "kind": "mac", "state": {"type": "absent"}}
+{"unix_time": 1794500672.9615703, "node": "leaf3", "kind": "mac", "state": {"type": "local", "intf": "eth-host11", "localSequence": 5, "remoteSequence": 4, "detectionCount": 3, "isDuplicate": false}}
+{"unix_time": 1794500673.0305262, "node": "spine1", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500673.0402257, "node": "leaf5", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500673.0404103, "node": "leaf2", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.3", "localSequence": 5, "remoteSequence": 5, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500673.0405009, "node": "leaf4", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.3", "localSequence": 3, "remoteSequence": 5, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500673.0423012, "node": "spine2", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500673.0442567, "node": "leaf5", "kind": "route", "state": {"protocol": null, "vteps": []}}
+{"unix_time": 1794500673.0620081, "node": "leaf1", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.3", "localSequence": 4, "remoteSequence": 5, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500673.1087768, "node": "spine2", "kind": "bgp", "state": {"vteps": ["10.0.0.3"], "best": []}}
+{"unix_time": 1794500673.1562133, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.3"], "best": []}}
+{"unix_time": 1794500673.1838949, "node": "spine2", "kind": "bgp", "state": {"vteps": ["10.0.0.3"], "best": ["10.0.0.3"]}}
+{"unix_time": 1794500673.2000287, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.3"], "best": []}}
+{"unix_time": 1794500673.2162135, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.3"], "best": ["10.0.0.3"]}}
+{"unix_time": 1794500673.24583, "node": "leaf5", "kind": "route", "state": {"protocol": "bgp", "vteps": ["10.0.0.3"]}}
+{"unix_time": 1794500673.259601, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.3"], "best": ["10.0.0.3"]}}
+{"unix_time": 1794500675.3880012, "node": "leaf3", "kind": "mac", "state": {"type": "absent"}}
+{"unix_time": 1794500675.394132, "node": "leaf2", "kind": "mac", "state": {"type": "local", "intf": "eth-host11", "localSequence": 6, "remoteSequence": 5, "detectionCount": 3, "isDuplicate": false}}
+{"unix_time": 1794500675.4509609, "node": "leaf3", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.2", "localSequence": 5, "remoteSequence": 6, "detectionCount": 4, "isDuplicate": false}}
+{"unix_time": 1794500675.4613402, "node": "leaf4", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.2", "localSequence": 3, "remoteSequence": 6, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500675.4626195, "node": "leaf1", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.2", "localSequence": 4, "remoteSequence": 6, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500675.4629538, "node": "spine1", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500675.468794, "node": "spine2", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500675.5327277, "node": "leaf5", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500675.5341609, "node": "leaf5", "kind": "route", "state": {"protocol": null, "vteps": []}}
+{"unix_time": 1794500675.68537, "node": "spine2", "kind": "bgp", "state": {"vteps": ["10.0.0.2"], "best": []}}
+{"unix_time": 1794500675.6857994, "node": "leaf1", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.2", "localSequence": 7, "remoteSequence": 6, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500675.6886795, "node": "leaf4", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.2", "localSequence": 7, "remoteSequence": 6, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500675.6925778, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.2"], "best": []}}
+{"unix_time": 1794500675.7458165, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.2"], "best": []}}
+{"unix_time": 1794500675.7509778, "node": "spine2", "kind": "bgp", "state": {"vteps": ["10.0.0.2"], "best": ["10.0.0.2"]}}
+{"unix_time": 1794500675.75246, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.2"], "best": ["10.0.0.2"]}}
+{"unix_time": 1794500675.8140864, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.2"], "best": ["10.0.0.2"]}}
+{"unix_time": 1794500675.8200955, "node": "leaf5", "kind": "route", "state": {"protocol": "bgp", "vteps": ["10.0.0.2"]}}
+{"unix_time": 1794500677.5555165, "node": "leaf2", "kind": "mac", "state": {"type": "absent"}}
+{"unix_time": 1794500677.555772, "node": "leaf4", "kind": "mac", "state": {"type": "local", "intf": "eth-host11", "localSequence": 7, "remoteSequence": 6, "detectionCount": 3, "isDuplicate": false}}
+{"unix_time": 1794500677.6254454, "node": "leaf2", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.4", "localSequence": 6, "remoteSequence": 7, "detectionCount": 4, "isDuplicate": false}}
+{"unix_time": 1794500677.6256106, "node": "leaf3", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.4", "localSequence": 5, "remoteSequence": 7, "detectionCount": 4, "isDuplicate": false}}
+{"unix_time": 1794500677.6320524, "node": "spine1", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500677.6354127, "node": "spine2", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500677.7070796, "node": "leaf5", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500677.7110689, "node": "leaf1", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.4", "localSequence": 7, "remoteSequence": 7, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500677.7144644, "node": "leaf5", "kind": "route", "state": {"protocol": null, "vteps": []}}
+{"unix_time": 1794500677.8651822, "node": "leaf3", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.4", "localSequence": 8, "remoteSequence": 7, "detectionCount": 4, "isDuplicate": false}}
+{"unix_time": 1794500677.8713067, "node": "leaf1", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.4", "localSequence": 8, "remoteSequence": 7, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500677.9360304, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.4"], "best": []}}
+{"unix_time": 1794500677.9401045, "node": "spine2", "kind": "bgp", "state": {"vteps": ["10.0.0.4"], "best": ["10.0.0.4"]}}
+{"unix_time": 1794500677.9407334, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.4"], "best": []}}
+{"unix_time": 1794500678.0062542, "node": "leaf5", "kind": "route", "state": {"protocol": "bgp", "vteps": ["10.0.0.4"]}}
+{"unix_time": 1794500678.0079198, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.4"], "best": ["10.0.0.4"]}}
+{"unix_time": 1794500678.010034, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.4"], "best": ["10.0.0.4"]}}
+{"unix_time": 1794500680.014495, "node": "leaf3", "kind": "mac", "state": {"type": "local", "intf": "eth-host11", "localSequence": 8, "remoteSequence": 7, "detectionCount": 5, "isDuplicate": true}}
+{"unix_time": 1794500680.015092, "node": "leaf4", "kind": "mac", "state": {"type": "absent"}}
+{"unix_time": 1794500680.08948, "node": "leaf4", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.3", "localSequence": 7, "remoteSequence": 8, "detectionCount": 4, "isDuplicate": false}}
+{"unix_time": 1794500680.089754, "node": "spine1", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500680.0913277, "node": "leaf1", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.3", "localSequence": 8, "remoteSequence": 8, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500680.0947871, "node": "leaf2", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.3", "localSequence": 6, "remoteSequence": 8, "detectionCount": 4, "isDuplicate": false}}
+{"unix_time": 1794500680.0969856, "node": "spine2", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500680.1465814, "node": "leaf5", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500680.1572082, "node": "leaf5", "kind": "route", "state": {"protocol": null, "vteps": []}}
+{"unix_time": 1794500680.228199, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.3"], "best": []}}
+{"unix_time": 1794500680.2325232, "node": "leaf2", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.3", "localSequence": 9, "remoteSequence": 8, "detectionCount": 4, "isDuplicate": false}}
+{"unix_time": 1794500680.234278, "node": "spine2", "kind": "bgp", "state": {"vteps": ["10.0.0.3"], "best": ["10.0.0.3"]}}
+{"unix_time": 1794500680.2691326, "node": "leaf1", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.3", "localSequence": 9, "remoteSequence": 8, "detectionCount": 2, "isDuplicate": false}}
+{"unix_time": 1794500680.3005583, "node": "leaf5", "kind": "route", "state": {"protocol": "bgp", "vteps": ["10.0.0.3"]}}
+{"unix_time": 1794500680.3010125, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.3"], "best": ["10.0.0.3"]}}
+{"unix_time": 1794500680.301117, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.3"], "best": ["10.0.0.3"]}}
+{"unix_time": 1794500682.3972702, "node": "leaf3", "kind": "mac", "state": {"type": "absent"}}
+{"unix_time": 1794500682.4087834, "node": "leaf1", "kind": "mac", "state": {"type": "local", "intf": "eth-host11", "localSequence": 9, "remoteSequence": 8, "detectionCount": 3, "isDuplicate": false}}
+{"unix_time": 1794500682.4591486, "node": "spine1", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500682.4631157, "node": "leaf4", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.1", "localSequence": 7, "remoteSequence": 9, "detectionCount": 4, "isDuplicate": false}}
+{"unix_time": 1794500682.4633684, "node": "spine2", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500682.468281, "node": "leaf2", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.1", "localSequence": 9, "remoteSequence": 9, "detectionCount": 4, "isDuplicate": false}}
+{"unix_time": 1794500682.4703522, "node": "leaf3", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.1", "localSequence": 8, "remoteSequence": 9, "detectionCount": 5, "isDuplicate": true}}
+{"unix_time": 1794500682.5183895, "node": "leaf5", "kind": "route", "state": {"protocol": null, "vteps": []}}
+{"unix_time": 1794500682.5433953, "node": "leaf5", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500682.6620455, "node": "leaf2", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.1", "localSequence": 10, "remoteSequence": 9, "detectionCount": 4, "isDuplicate": false}}
+{"unix_time": 1794500682.672373, "node": "leaf4", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.1", "localSequence": 10, "remoteSequence": 9, "detectionCount": 4, "isDuplicate": false}}
+{"unix_time": 1794500682.713219, "node": "spine2", "kind": "bgp", "state": {"vteps": ["10.0.0.1"], "best": []}}
+{"unix_time": 1794500682.7404234, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.1"], "best": []}}
+{"unix_time": 1794500682.7706084, "node": "spine2", "kind": "bgp", "state": {"vteps": ["10.0.0.1"], "best": ["10.0.0.1"]}}
+{"unix_time": 1794500682.7947075, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.1"], "best": []}}
+{"unix_time": 1794500682.7997103, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.1"], "best": ["10.0.0.1"]}}
+{"unix_time": 1794500682.8223846, "node": "leaf5", "kind": "route", "state": {"protocol": "bgp", "vteps": ["10.0.0.1"]}}
+{"unix_time": 1794500682.85373, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.1"], "best": ["10.0.0.1"]}}
+{"unix_time": 1794500684.7921164, "node": "leaf1", "kind": "mac", "state": {"type": "absent"}}
+{"unix_time": 1794500684.8262491, "node": "leaf2", "kind": "mac", "state": {"type": "local", "intf": "eth-host11", "localSequence": 10, "remoteSequence": 9, "detectionCount": 5, "isDuplicate": true}}
+{"unix_time": 1794500684.9100873, "node": "spine1", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500684.9133463, "node": "spine2", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500684.9152904, "node": "leaf3", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.2", "localSequence": 8, "remoteSequence": 10, "detectionCount": 5, "isDuplicate": true}}
+{"unix_time": 1794500684.91722, "node": "leaf4", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.2", "localSequence": 10, "remoteSequence": 10, "detectionCount": 4, "isDuplicate": false}}
+{"unix_time": 1794500684.9176493, "node": "leaf1", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.2", "localSequence": 9, "remoteSequence": 10, "detectionCount": 4, "isDuplicate": false}}
+{"unix_time": 1794500684.959564, "node": "leaf5", "kind": "bgp", "state": {"vteps": [], "best": []}}
+{"unix_time": 1794500684.9629023, "node": "leaf5", "kind": "route", "state": {"protocol": null, "vteps": []}}
+{"unix_time": 1794500685.1036093, "node": "leaf4", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.2", "localSequence": 11, "remoteSequence": 10, "detectionCount": 4, "isDuplicate": false}}
+{"unix_time": 1794500685.117499, "node": "leaf3", "kind": "mac", "state": {"type": "remote", "remoteVtep": "10.0.0.2", "localSequence": 11, "remoteSequence": 10, "detectionCount": 5, "isDuplicate": true}}
+{"unix_time": 1794500685.17396, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.2"], "best": []}}
+{"unix_time": 1794500685.1796732, "node": "spine2", "kind": "bgp", "state": {"vteps": ["10.0.0.2"], "best": []}}
+{"unix_time": 1794500685.2025, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.2"], "best": []}}
+{"unix_time": 1794500685.2369442, "node": "spine1", "kind": "bgp", "state": {"vteps": ["10.0.0.2"], "best": ["10.0.0.2"]}}
+{"unix_time": 1794500685.2406938, "node": "spine2", "kind": "bgp", "state": {"vteps": ["10.0.0.2"], "best": ["10.0.0.2"]}}
+{"unix_time": 1794500685.2600007, "node": "leaf5", "kind": "bgp", "state": {"vteps": ["10.0.0.2"], "best": ["10.0.0.2"]}}
+{"unix_time": 1794500685.2753844, "node": "leaf5", "kind": "route", "state": {"protocol": "bgp", "vteps": ["10.0.0.2"]}}

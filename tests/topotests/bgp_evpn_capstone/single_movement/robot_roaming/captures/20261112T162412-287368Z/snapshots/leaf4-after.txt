@@ -1,0 +1,224 @@
+
+### show evpn
+L2 VNIs: 1
+L3 VNIs: 1
+Advertise gateway mac-ip: No
+Advertise svi mac-ip: No
+Advertise svi mac: No
+Duplicate address detection: Enable
+  Detection max-moves 5, time 180
+EVPN MH:
+  mac-holdtime: 1080s, neigh-holdtime: 1080s
+  startup-delay: 180s, start-delay-timer: 00:02:11
+  uplink-cfg-cnt: 0, uplink-active-cnt: 0
+  protodown reasons: (startup-delay)
+
+### show evpn mac vni 1000
+Number of MACs (local and remote) known for this VNI: 8
+Flags: N=sync-neighs, I=local-inactive, P=peer-active, X=peer-proxy
+MAC               Type   Flags Intf/Remote ES/VTEP                     VLAN  Seq #'s
+00:00:00:00:00:41 local        eth-host41                                    0/0
+00:00:00:00:00:31 remote       10.0.0.3                                      1/0
+00:00:00:00:00:21 remote       10.0.0.2                                      1/0
+00:00:00:00:00:42 local        eth-host42                                    0/0
+00:00:00:00:00:22 remote       10.0.0.2                                      1/0
+00:00:00:00:00:11 remote       10.0.0.2                                      11/10
+00:00:00:00:00:32 remote       10.0.0.3                                      1/0
+00:00:00:00:00:12 remote       10.0.0.1                                      1/0
+
+### show evpn mac vni 1000 duplicate
+
+### show bgp l2vpn evpn route type macip
+BGP table version is 23, local router ID is 10.0.0.4
+Status codes:  s suppressed, d damped, h history, u unsorted, * valid, > best, = multipath,
+               i internal, r RIB-failure, S Stale, R Removed
+Origin codes:  i - IGP, e - EGP, ? - incomplete
+EVPN type-1 prefix: [1]:[EthTag]:[ESI]:[IPlen]:[VTEP-IP]:[Frag-id]
+EVPN type-2 prefix: [2]:[EthTag]:[MAClen]:[MAC]:[IPlen]:[IP]
+EVPN type-3 prefix: [3]:[EthTag]:[IPlen]:[OrigIP]
+EVPN type-4 prefix: [4]:[ESI]:[IPlen]:[OrigIP]
+EVPN type-5 prefix: [5]:[EthTag]:[IPlen]:[IP]
+
+   Network          Next Hop            Metric LocPrf Weight Path
+                    Extended Community
+Route Distinguisher: 10.0.0.1:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:12] RD 10.0.0.1:1000
+                    10.0.0.1(spine1)
+                                                             0 65000 65011 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:12] RD 10.0.0.1:1000
+                    10.0.0.1(spine2)
+                                                             0 65000 65011 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:12]:[32]:[45.0.0.12] RD 10.0.0.1:1000
+                    10.0.0.1(spine1)
+                                                             0 65000 65011 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:d6:32:ec:06:b8:4d
+ *=  [2]:[0]:[48]:[00:00:00:00:00:12]:[32]:[45.0.0.12] RD 10.0.0.1:1000
+                    10.0.0.1(spine2)
+                                                             0 65000 65011 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:d6:32:ec:06:b8:4d
+Route Distinguisher: 10.0.0.2:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:11] RD 10.0.0.2:1000
+                    10.0.0.2(spine1)
+                                                             0 65000 65012 i
+                    RT:1000:1000 ET:8 MM:10
+ *=  [2]:[0]:[48]:[00:00:00:00:00:11] RD 10.0.0.2:1000
+                    10.0.0.2(spine2)
+                                                             0 65000 65012 i
+                    RT:1000:1000 ET:8 MM:10
+ *>  [2]:[0]:[48]:[00:00:00:00:00:11]:[32]:[45.0.0.11] RD 10.0.0.2:1000
+                    10.0.0.2(spine1)
+                                                             0 65000 65012 i
+                    RT:500:500 RT:1000:1000 ET:8 MM:10 Rmac:86:cd:cc:94:08:3b
+ *=  [2]:[0]:[48]:[00:00:00:00:00:11]:[32]:[45.0.0.11] RD 10.0.0.2:1000
+                    10.0.0.2(spine2)
+                                                             0 65000 65012 i
+                    RT:500:500 RT:1000:1000 ET:8 MM:10 Rmac:86:cd:cc:94:08:3b
+ *>  [2]:[0]:[48]:[00:00:00:00:00:21] RD 10.0.0.2:1000
+                    10.0.0.2(spine1)
+                                                             0 65000 65012 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:21] RD 10.0.0.2:1000
+                    10.0.0.2(spine2)
+                                                             0 65000 65012 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:21]:[32]:[45.0.0.21] RD 10.0.0.2:1000
+                    10.0.0.2(spine1)
+                                                             0 65000 65012 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:86:cd:cc:94:08:3b
+ *=  [2]:[0]:[48]:[00:00:00:00:00:21]:[32]:[45.0.0.21] RD 10.0.0.2:1000
+                    10.0.0.2(spine2)
+                                                             0 65000 65012 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:86:cd:cc:94:08:3b
+ *>  [2]:[0]:[48]:[00:00:00:00:00:22] RD 10.0.0.2:1000
+                    10.0.0.2(spine1)
+                                                             0 65000 65012 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:22] RD 10.0.0.2:1000
+                    10.0.0.2(spine2)
+                                                             0 65000 65012 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:22]:[32]:[45.0.0.22] RD 10.0.0.2:1000
+                    10.0.0.2(spine1)
+                                                             0 65000 65012 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:86:cd:cc:94:08:3b
+ *=  [2]:[0]:[48]:[00:00:00:00:00:22]:[32]:[45.0.0.22] RD 10.0.0.2:1000
+                    10.0.0.2(spine2)
+                                                             0 65000 65012 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:86:cd:cc:94:08:3b
+Route Distinguisher: 10.0.0.3:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:31] RD 10.0.0.3:1000
+                    10.0.0.3(spine1)
+                                                             0 65000 65013 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:31] RD 10.0.0.3:1000
+                    10.0.0.3(spine2)
+                                                             0 65000 65013 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:31]:[32]:[45.0.0.31] RD 10.0.0.3:1000
+                    10.0.0.3(spine1)
+                                                             0 65000 65013 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:ce:43:38:c6:f5:69
+ *=  [2]:[0]:[48]:[00:00:00:00:00:31]:[32]:[45.0.0.31] RD 10.0.0.3:1000
+                    10.0.0.3(spine2)
+                                                             0 65000 65013 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:ce:43:38:c6:f5:69
+ *>  [2]:[0]:[48]:[00:00:00:00:00:32] RD 10.0.0.3:1000
+                    10.0.0.3(spine1)
+                                                             0 65000 65013 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:32] RD 10.0.0.3:1000
+                    10.0.0.3(spine2)
+                                                             0 65000 65013 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:32]:[32]:[45.0.0.32] RD 10.0.0.3:1000
+                    10.0.0.3(spine1)
+                                                             0 65000 65013 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:ce:43:38:c6:f5:69
+ *=  [2]:[0]:[48]:[00:00:00:00:00:32]:[32]:[45.0.0.32] RD 10.0.0.3:1000
+                    10.0.0.3(spine2)
+                                                             0 65000 65013 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:ce:43:38:c6:f5:69
+Route Distinguisher: 10.0.0.4:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:41] RD 10.0.0.4:1000
+                    10.0.0.4(leaf4)                    32768 i
+                    ET:8 RT:1000:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:41]:[32]:[45.0.0.41] RD 10.0.0.4:1000
+                    10.0.0.4(leaf4)                    32768 i
+                    ET:8 RT:1000:1000 RT:500:500 Rmac:6e:76:f6:6f:9d:79
+ *>  [2]:[0]:[48]:[00:00:00:00:00:42] RD 10.0.0.4:1000
+                    10.0.0.4(leaf4)                    32768 i
+                    ET:8 RT:1000:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:42]:[32]:[45.0.0.42] RD 10.0.0.4:1000
+                    10.0.0.4(leaf4)                    32768 i
+                    ET:8 RT:1000:1000 RT:500:500 Rmac:6e:76:f6:6f:9d:79
+Route Distinguisher: 10.0.0.5:2000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:51] RD 10.0.0.5:2000
+                    10.0.0.5(spine1)
+                                                             0 65000 65015 i
+                    RT:2000:2000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:51] RD 10.0.0.5:2000
+                    10.0.0.5(spine2)
+                                                             0 65000 65015 i
+                    RT:2000:2000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:51]:[32]:[20.0.0.51] RD 10.0.0.5:2000
+                    10.0.0.5(spine1)
+                                                             0 65000 65015 i
+                    RT:500:500 RT:2000:2000 ET:8 Rmac:6e:3a:eb:96:2e:3f
+ *=  [2]:[0]:[48]:[00:00:00:00:00:51]:[32]:[20.0.0.51] RD 10.0.0.5:2000
+                    10.0.0.5(spine2)
+                                                             0 65000 65015 i
+                    RT:500:500 RT:2000:2000 ET:8 Rmac:6e:3a:eb:96:2e:3f
+
+Displayed 18 prefixes (32 paths) (of requested type)
+
+### bridge fdb show br br1000
+00:00:00:00:00:41 dev eth-host41 master br1000 
+ae:fb:48:d6:ff:bb dev eth-host41 vlan 1 master br1000 permanent
+ae:fb:48:d6:ff:bb dev eth-host41 master br1000 permanent
+33:33:00:00:00:01 dev eth-host41 self permanent
+33:33:00:00:00:02 dev eth-host41 self permanent
+01:00:5e:00:00:01 dev eth-host41 self permanent
+33:33:ff:d6:ff:bb dev eth-host41 self permanent
+33:33:ff:00:00:00 dev eth-host41 self permanent
+00:00:00:00:00:42 dev eth-host42 master br1000 
+0a:67:45:4a:e0:95 dev eth-host42 vlan 1 master br1000 permanent
+0a:67:45:4a:e0:95 dev eth-host42 master br1000 permanent
+33:33:00:00:00:01 dev eth-host42 self permanent
+33:33:00:00:00:02 dev eth-host42 self permanent
+01:00:5e:00:00:01 dev eth-host42 self permanent
+33:33:ff:4a:e0:95 dev eth-host42 self permanent
+33:33:ff:00:00:00 dev eth-host42 self permanent
+33:33:00:00:00:01 dev br1000 self permanent
+33:33:00:00:00:02 dev br1000 self permanent
+01:00:5e:00:00:6a dev br1000 self permanent
+33:33:00:00:00:6a dev br1000 self permanent
+01:00:5e:00:00:01 dev br1000 self permanent
+33:33:ff:00:01:01 dev br1000 self permanent
+33:33:ff:00:00:00 dev br1000 self permanent
+00:00:5e:00:01:01 dev br1000 vlan 1 master br1000 permanent
+00:00:5e:00:01:01 dev br1000 master br1000 permanent
+00:00:00:00:00:11 dev vni1000 extern_learn master br1000 
+00:00:00:00:00:31 dev vni1000 vlan 1 extern_learn master br1000 
+00:00:00:00:00:31 dev vni1000 extern_learn master br1000 
+00:00:00:00:00:32 dev vni1000 vlan 1 extern_learn master br1000 
+00:00:00:00:00:32 dev vni1000 extern_learn master br1000 
+00:00:00:00:00:22 dev vni1000 vlan 1 extern_learn master br1000 
+00:00:00:00:00:22 dev vni1000 extern_learn master br1000 
+00:00:00:00:00:21 dev vni1000 vlan 1 extern_learn master br1000 
+00:00:00:00:00:21 dev vni1000 extern_learn master br1000 
+00:00:00:00:00:11 dev vni1000 vlan 1 extern_learn master br1000 
+00:00:00:00:00:12 dev vni1000 vlan 1 extern_learn master br1000 
+00:00:00:00:00:12 dev vni1000 extern_learn master br1000 
+e2:f2:63:60:da:40 dev vni1000 vlan 1 master br1000 permanent
+e2:f2:63:60:da:40 dev vni1000 master br1000 permanent
+00:00:00:00:00:00 dev vni1000 dst 10.0.0.1 self permanent
+00:00:00:00:00:00 dev vni1000 dst 10.0.0.2 self permanent
+00:00:00:00:00:00 dev vni1000 dst 10.0.0.3 self permanent
+00:00:00:00:00:22 dev vni1000 dst 10.0.0.2 self extern_learn 
+00:00:00:00:00:21 dev vni1000 dst 10.0.0.2 self extern_learn 
+00:00:00:00:00:12 dev vni1000 dst 10.0.0.1 self extern_learn 
+00:00:00:00:00:11 dev vni1000 dst 10.0.0.2 self extern_learn 
+00:00:00:00:00:32 dev vni1000 dst 10.0.0.3 self extern_learn 
+00:00:00:00:00:31 dev vni1000 dst 10.0.0.3 self extern_learn 

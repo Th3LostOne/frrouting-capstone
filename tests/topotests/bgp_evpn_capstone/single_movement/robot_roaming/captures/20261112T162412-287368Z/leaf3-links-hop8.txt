@@ -1,0 +1,10 @@
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000\    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth-spine1@if4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000\    link/ether 2e:46:f8:ac:e8:06 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+3: eth-spine2@if9: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000\    link/ether 7e:45:3d:e4:d5:6a brd ff:ff:ff:ff:ff:ff link-netnsid 1
+4: eth-host31@if16: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br1000 state UP mode DEFAULT group default qlen 1000\    link/ether 16:e0:3b:b9:65:97 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+5: eth-host32@if17: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br1000 state UP mode DEFAULT group default qlen 1000\    link/ether 7a:ad:b9:27:ee:9d brd ff:ff:ff:ff:ff:ff link-netnsid 3
+6: VRF500: <NOARP,MASTER,UP,LOWER_UP> mtu 65575 qdisc noqueue state UP mode DEFAULT group default qlen 1000\    link/ether ce:04:b8:62:5a:b1 brd ff:ff:ff:ff:ff:ff
+7: br500: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master VRF500 state UP mode DEFAULT group default qlen 1000\    link/ether ce:43:38:c6:f5:69 brd ff:ff:ff:ff:ff:ff
+8: vni500: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br500 state UNKNOWN mode DEFAULT group default qlen 1000\    link/ether ce:43:38:c6:f5:69 brd ff:ff:ff:ff:ff:ff
+9: br1000: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master VRF500 state UP mode DEFAULT group default qlen 1000\    link/ether 00:00:5e:00:01:01 brd ff:ff:ff:ff:ff:ff
+10: vni1000: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br1000 state UNKNOWN mode DEFAULT group default qlen 1000\    link/ether ce:f5:24:ff:fe:c5 brd ff:ff:ff:ff:ff:ff

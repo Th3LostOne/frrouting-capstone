@@ -1,0 +1,91 @@
+
+### show bgp l2vpn evpn route type macip
+BGP table version is 5, local router ID is 10.0.0.101
+Status codes:  s suppressed, d damped, h history, u unsorted, * valid, > best, = multipath,
+               i internal, r RIB-failure, S Stale, R Removed
+Origin codes:  i - IGP, e - EGP, ? - incomplete
+EVPN type-1 prefix: [1]:[EthTag]:[ESI]:[IPlen]:[VTEP-IP]:[Frag-id]
+EVPN type-2 prefix: [2]:[EthTag]:[MAClen]:[MAC]:[IPlen]:[IP]
+EVPN type-3 prefix: [3]:[EthTag]:[IPlen]:[OrigIP]
+EVPN type-4 prefix: [4]:[ESI]:[IPlen]:[OrigIP]
+EVPN type-5 prefix: [5]:[EthTag]:[IPlen]:[IP]
+
+   Network          Next Hop            Metric LocPrf Weight Path
+                    Extended Community
+Route Distinguisher: 10.0.0.1:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:11] RD 10.0.0.1:1000
+                    10.0.0.1(leaf1)                        0 65011 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:11]:[32]:[45.0.0.11] RD 10.0.0.1:1000
+                    10.0.0.1(leaf1)                        0 65011 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:d6:32:ec:06:b8:4d
+ *>  [2]:[0]:[48]:[00:00:00:00:00:12] RD 10.0.0.1:1000
+                    10.0.0.1(leaf1)                        0 65011 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:12]:[32]:[45.0.0.12] RD 10.0.0.1:1000
+                    10.0.0.1(leaf1)                        0 65011 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:d6:32:ec:06:b8:4d
+Route Distinguisher: 10.0.0.2:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:21] RD 10.0.0.2:1000
+                    10.0.0.2(leaf2)                        0 65012 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:21]:[32]:[45.0.0.21] RD 10.0.0.2:1000
+                    10.0.0.2(leaf2)                        0 65012 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:86:cd:cc:94:08:3b
+ *>  [2]:[0]:[48]:[00:00:00:00:00:22] RD 10.0.0.2:1000
+                    10.0.0.2(leaf2)                        0 65012 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:22]:[32]:[45.0.0.22] RD 10.0.0.2:1000
+                    10.0.0.2(leaf2)                        0 65012 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:86:cd:cc:94:08:3b
+Route Distinguisher: 10.0.0.3:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:31] RD 10.0.0.3:1000
+                    10.0.0.3(leaf3)                        0 65013 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:31]:[32]:[45.0.0.31] RD 10.0.0.3:1000
+                    10.0.0.3(leaf3)                        0 65013 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:ce:43:38:c6:f5:69
+ *>  [2]:[0]:[48]:[00:00:00:00:00:32] RD 10.0.0.3:1000
+                    10.0.0.3(leaf3)                        0 65013 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:32]:[32]:[45.0.0.32] RD 10.0.0.3:1000
+                    10.0.0.3(leaf3)                        0 65013 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:ce:43:38:c6:f5:69
+Route Distinguisher: 10.0.0.4:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:41] RD 10.0.0.4:1000
+                    10.0.0.4(leaf4)                        0 65014 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:41]:[32]:[45.0.0.41] RD 10.0.0.4:1000
+                    10.0.0.4(leaf4)                        0 65014 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:6e:76:f6:6f:9d:79
+ *>  [2]:[0]:[48]:[00:00:00:00:00:42] RD 10.0.0.4:1000
+                    10.0.0.4(leaf4)                        0 65014 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:42]:[32]:[45.0.0.42] RD 10.0.0.4:1000
+                    10.0.0.4(leaf4)                        0 65014 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:6e:76:f6:6f:9d:79
+Route Distinguisher: 10.0.0.5:2000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:51] RD 10.0.0.5:2000
+                    10.0.0.5(leaf5)                        0 65015 i
+                    RT:2000:2000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:51]:[32]:[20.0.0.51] RD 10.0.0.5:2000
+                    10.0.0.5(leaf5)                        0 65015 i
+                    RT:500:500 RT:2000:2000 ET:8 Rmac:6e:3a:eb:96:2e:3f
+
+Displayed 18 prefixes (18 paths) (of requested type)
+
+### show bgp l2vpn evpn summary
+BGP router identifier 10.0.0.101, local AS number 65000 VRF default vrf-id 0
+BGP table version 0
+RIB entries 10, using 1600 bytes of memory
+Peers 5, using 96 KiB of memory
+Peer groups 1, using 72 bytes of memory
+
+Neighbor         V         AS   MsgRcvd   MsgSent   TblVer  InQ OutQ  Up/Down State/PfxRcd   PfxSnt Desc
+leaf1(eth-leaf1) 4      65011        42        42        5    0    0 00:00:21            6       28 FRRouting/10.8.0-dev
+leaf2(eth-leaf2) 4      65012        41        41        5    0    0 00:00:21            6       28 FRRouting/10.8.0-dev
+leaf3(eth-leaf3) 4      65013        41        41        5    0    0 00:00:20            6       28 FRRouting/10.8.0-dev
+leaf4(eth-leaf4) 4      65014        41        41        5    0    0 00:00:20            6       28 FRRouting/10.8.0-dev
+leaf5(eth-leaf5) 4      65015        41        41        5    0    0 00:00:19            4       28 FRRouting/10.8.0-dev
+
+Total number of neighbors 5

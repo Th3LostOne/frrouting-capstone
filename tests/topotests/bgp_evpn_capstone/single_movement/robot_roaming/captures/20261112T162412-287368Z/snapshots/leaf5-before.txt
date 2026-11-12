@@ -1,0 +1,204 @@
+
+### show bgp vrf VRF500 ipv4 unicast 45.0.0.11/32
+BGP routing table entry for 45.0.0.11/32, version 4
+Paths: (2 available, best #1, vrf VRF500)
+  Not advertised to any peer
+  Imported from 10.0.0.1:1000:[2]:[0]:[48]:[00:00:00:00:00:11]:[32]:[45.0.0.11], VNI 1000/500  65000 65011
+    10.0.0.1(spine1) from spine1(eth-spine1) (10.0.0.101) announce-nh-self
+      Origin IGP, valid, external, multipath, bestpath-from-AS 65000, best (Router ID)
+      Last update: Thu Nov 12 16:24:02 2026
+  Imported from 10.0.0.1:1000:[2]:[0]:[48]:[00:00:00:00:00:11]:[32]:[45.0.0.11], VNI 1000/500  65000 65011
+    10.0.0.1(spine2) from spine2(eth-spine2) (10.0.0.102) announce-nh-self
+      Origin IGP, valid, external, multipath
+      Last update: Thu Nov 12 16:24:02 2026
+
+### show ip route vrf VRF500
+Codes: K - kernel route, C - connected, L - local, S - static,
+       R - RIP, O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,
+       T - Table, v - VNC, V - VNC-Direct, A - Babel, D - SHARP,
+       F - PBR, f - OpenFabric, t - Table-Direct,
+       > - selected route, * - FIB route, q - queued, r - rejected, b - backup
+       t - trapped, o - offload failure
+
+IPv4 unicast VRF VRF500:
+C>* 20.0.0.0/24 is directly connected, br2000, weight 1, 00:00:20
+L>* 20.0.0.1/32 is directly connected, br2000, weight 1, 00:00:20
+B>* 45.0.0.0/24 [20/0] via 10.0.0.1, br500 onlink, weight 1, 00:00:18
+                       via 10.0.0.1, br500 onlink (dup), weight 1, 00:00:18
+  *                    via 10.0.0.2, br500 onlink, weight 1, 00:00:18
+                       via 10.0.0.2, br500 onlink (dup), weight 1, 00:00:18
+  *                    via 10.0.0.3, br500 onlink, weight 1, 00:00:18
+                       via 10.0.0.3, br500 onlink (dup), weight 1, 00:00:18
+  *                    via 10.0.0.4, br500 onlink, weight 1, 00:00:18
+                       via 10.0.0.4, br500 onlink (dup), weight 1, 00:00:18
+B>* 45.0.0.11/32 [20/0] via 10.0.0.1, br500 onlink, weight 1, 00:00:18
+                        via 10.0.0.1, br500 onlink (dup), weight 1, 00:00:18
+B>* 45.0.0.12/32 [20/0] via 10.0.0.1, br500 onlink, weight 1, 00:00:17
+                        via 10.0.0.1, br500 onlink (dup), weight 1, 00:00:17
+B>* 45.0.0.21/32 [20/0] via 10.0.0.2, br500 onlink, weight 1, 00:00:16
+                        via 10.0.0.2, br500 onlink (dup), weight 1, 00:00:16
+B>* 45.0.0.22/32 [20/0] via 10.0.0.2, br500 onlink, weight 1, 00:00:15
+                        via 10.0.0.2, br500 onlink (dup), weight 1, 00:00:15
+B>* 45.0.0.31/32 [20/0] via 10.0.0.3, br500 onlink, weight 1, 00:00:14
+                        via 10.0.0.3, br500 onlink (dup), weight 1, 00:00:14
+B>* 45.0.0.32/32 [20/0] via 10.0.0.3, br500 onlink, weight 1, 00:00:13
+                        via 10.0.0.3, br500 onlink (dup), weight 1, 00:00:13
+B>* 45.0.0.41/32 [20/0] via 10.0.0.4, br500 onlink, weight 1, 00:00:12
+                        via 10.0.0.4, br500 onlink (dup), weight 1, 00:00:12
+B>* 45.0.0.42/32 [20/0] via 10.0.0.4, br500 onlink, weight 1, 00:00:11
+                        via 10.0.0.4, br500 onlink (dup), weight 1, 00:00:11
+
+### show bgp l2vpn evpn route type macip
+BGP table version is 5, local router ID is 10.0.0.5
+Status codes:  s suppressed, d damped, h history, u unsorted, * valid, > best, = multipath,
+               i internal, r RIB-failure, S Stale, R Removed
+Origin codes:  i - IGP, e - EGP, ? - incomplete
+EVPN type-1 prefix: [1]:[EthTag]:[ESI]:[IPlen]:[VTEP-IP]:[Frag-id]
+EVPN type-2 prefix: [2]:[EthTag]:[MAClen]:[MAC]:[IPlen]:[IP]
+EVPN type-3 prefix: [3]:[EthTag]:[IPlen]:[OrigIP]
+EVPN type-4 prefix: [4]:[ESI]:[IPlen]:[OrigIP]
+EVPN type-5 prefix: [5]:[EthTag]:[IPlen]:[IP]
+
+   Network          Next Hop            Metric LocPrf Weight Path
+                    Extended Community
+Route Distinguisher: 10.0.0.1:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:11] RD 10.0.0.1:1000
+                    10.0.0.1(spine1)
+                                                             0 65000 65011 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:11] RD 10.0.0.1:1000
+                    10.0.0.1(spine2)
+                                                             0 65000 65011 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:11]:[32]:[45.0.0.11] RD 10.0.0.1:1000
+                    10.0.0.1(spine1)
+                                                             0 65000 65011 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:d6:32:ec:06:b8:4d
+ *=  [2]:[0]:[48]:[00:00:00:00:00:11]:[32]:[45.0.0.11] RD 10.0.0.1:1000
+                    10.0.0.1(spine2)
+                                                             0 65000 65011 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:d6:32:ec:06:b8:4d
+ *>  [2]:[0]:[48]:[00:00:00:00:00:12] RD 10.0.0.1:1000
+                    10.0.0.1(spine1)
+                                                             0 65000 65011 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:12] RD 10.0.0.1:1000
+                    10.0.0.1(spine2)
+                                                             0 65000 65011 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:12]:[32]:[45.0.0.12] RD 10.0.0.1:1000
+                    10.0.0.1(spine1)
+                                                             0 65000 65011 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:d6:32:ec:06:b8:4d
+ *=  [2]:[0]:[48]:[00:00:00:00:00:12]:[32]:[45.0.0.12] RD 10.0.0.1:1000
+                    10.0.0.1(spine2)
+                                                             0 65000 65011 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:d6:32:ec:06:b8:4d
+Route Distinguisher: 10.0.0.2:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:21] RD 10.0.0.2:1000
+                    10.0.0.2(spine1)
+                                                             0 65000 65012 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:21] RD 10.0.0.2:1000
+                    10.0.0.2(spine2)
+                                                             0 65000 65012 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:21]:[32]:[45.0.0.21] RD 10.0.0.2:1000
+                    10.0.0.2(spine1)
+                                                             0 65000 65012 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:86:cd:cc:94:08:3b
+ *=  [2]:[0]:[48]:[00:00:00:00:00:21]:[32]:[45.0.0.21] RD 10.0.0.2:1000
+                    10.0.0.2(spine2)
+                                                             0 65000 65012 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:86:cd:cc:94:08:3b
+ *>  [2]:[0]:[48]:[00:00:00:00:00:22] RD 10.0.0.2:1000
+                    10.0.0.2(spine1)
+                                                             0 65000 65012 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:22] RD 10.0.0.2:1000
+                    10.0.0.2(spine2)
+                                                             0 65000 65012 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:22]:[32]:[45.0.0.22] RD 10.0.0.2:1000
+                    10.0.0.2(spine1)
+                                                             0 65000 65012 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:86:cd:cc:94:08:3b
+ *=  [2]:[0]:[48]:[00:00:00:00:00:22]:[32]:[45.0.0.22] RD 10.0.0.2:1000
+                    10.0.0.2(spine2)
+                                                             0 65000 65012 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:86:cd:cc:94:08:3b
+Route Distinguisher: 10.0.0.3:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:31] RD 10.0.0.3:1000
+                    10.0.0.3(spine1)
+                                                             0 65000 65013 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:31] RD 10.0.0.3:1000
+                    10.0.0.3(spine2)
+                                                             0 65000 65013 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:31]:[32]:[45.0.0.31] RD 10.0.0.3:1000
+                    10.0.0.3(spine1)
+                                                             0 65000 65013 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:ce:43:38:c6:f5:69
+ *=  [2]:[0]:[48]:[00:00:00:00:00:31]:[32]:[45.0.0.31] RD 10.0.0.3:1000
+                    10.0.0.3(spine2)
+                                                             0 65000 65013 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:ce:43:38:c6:f5:69
+ *>  [2]:[0]:[48]:[00:00:00:00:00:32] RD 10.0.0.3:1000
+                    10.0.0.3(spine1)
+                                                             0 65000 65013 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:32] RD 10.0.0.3:1000
+                    10.0.0.3(spine2)
+                                                             0 65000 65013 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:32]:[32]:[45.0.0.32] RD 10.0.0.3:1000
+                    10.0.0.3(spine1)
+                                                             0 65000 65013 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:ce:43:38:c6:f5:69
+ *=  [2]:[0]:[48]:[00:00:00:00:00:32]:[32]:[45.0.0.32] RD 10.0.0.3:1000
+                    10.0.0.3(spine2)
+                                                             0 65000 65013 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:ce:43:38:c6:f5:69
+Route Distinguisher: 10.0.0.4:1000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:41] RD 10.0.0.4:1000
+                    10.0.0.4(spine1)
+                                                             0 65000 65014 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:41] RD 10.0.0.4:1000
+                    10.0.0.4(spine2)
+                                                             0 65000 65014 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:41]:[32]:[45.0.0.41] RD 10.0.0.4:1000
+                    10.0.0.4(spine1)
+                                                             0 65000 65014 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:6e:76:f6:6f:9d:79
+ *=  [2]:[0]:[48]:[00:00:00:00:00:41]:[32]:[45.0.0.41] RD 10.0.0.4:1000
+                    10.0.0.4(spine2)
+                                                             0 65000 65014 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:6e:76:f6:6f:9d:79
+ *>  [2]:[0]:[48]:[00:00:00:00:00:42] RD 10.0.0.4:1000
+                    10.0.0.4(spine1)
+                                                             0 65000 65014 i
+                    RT:1000:1000 ET:8
+ *=  [2]:[0]:[48]:[00:00:00:00:00:42] RD 10.0.0.4:1000
+                    10.0.0.4(spine2)
+                                                             0 65000 65014 i
+                    RT:1000:1000 ET:8
+ *>  [2]:[0]:[48]:[00:00:00:00:00:42]:[32]:[45.0.0.42] RD 10.0.0.4:1000
+                    10.0.0.4(spine1)
+                                                             0 65000 65014 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:6e:76:f6:6f:9d:79
+ *=  [2]:[0]:[48]:[00:00:00:00:00:42]:[32]:[45.0.0.42] RD 10.0.0.4:1000
+                    10.0.0.4(spine2)
+                                                             0 65000 65014 i
+                    RT:500:500 RT:1000:1000 ET:8 Rmac:6e:76:f6:6f:9d:79
+Route Distinguisher: 10.0.0.5:2000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:51] RD 10.0.0.5:2000
+                    10.0.0.5(leaf5)                    32768 i
+                    ET:8 RT:2000:2000
+ *>  [2]:[0]:[48]:[00:00:00:00:00:51]:[32]:[20.0.0.51] RD 10.0.0.5:2000
+                    10.0.0.5(leaf5)                    32768 i
+                    ET:8 RT:2000:2000 RT:500:500 Rmac:6e:3a:eb:96:2e:3f
+
+Displayed 18 prefixes (34 paths) (of requested type)

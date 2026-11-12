@@ -1,0 +1,349 @@
+[
+  {
+    "event": "capture_started",
+    "unix_time": 1794500659.7566051,
+    "linktype": {
+      "spine1": "LINUX_SLL2",
+      "spine2": "LINUX_SLL2",
+      "leaf1": "LINUX_SLL2",
+      "leaf2": "LINUX_SLL2",
+      "leaf3": "LINUX_SLL2",
+      "leaf4": "LINUX_SLL2",
+      "leaf5": "LINUX_SLL2"
+    }
+  },
+  {
+    "event": "baseline_learned",
+    "unix_time": 1794500660.6354513,
+    "leaf": "leaf1"
+  },
+  {
+    "event": "probes_started",
+    "unix_time": 1794500660.9888623,
+    "interval_s": 0.05
+  },
+  {
+    "event": "move_start",
+    "unix_time": 1794500662.9907706,
+    "hop": 0,
+    "src": "leaf1",
+    "dst": "leaf2"
+  },
+  {
+    "event": "move_call_start",
+    "unix_time": 1794500662.9907756
+  },
+  {
+    "event": "detached",
+    "unix_time": 1794500663.0126386,
+    "hop": 0,
+    "leaf": "leaf1"
+  },
+  {
+    "event": "attached",
+    "unix_time": 1794500663.0205557,
+    "hop": 0,
+    "leaf": "leaf2"
+  },
+  {
+    "event": "learn_start",
+    "unix_time": 1794500663.0217507,
+    "hop": 0,
+    "leaf": "leaf2"
+  },
+  {
+    "event": "learned",
+    "unix_time": 1794500663.6477833,
+    "hop": 0,
+    "leaf": "leaf2"
+  },
+  {
+    "event": "move_start",
+    "unix_time": 1794500665.7017238,
+    "hop": 1,
+    "src": "leaf2",
+    "dst": "leaf3"
+  },
+  {
+    "event": "detached",
+    "unix_time": 1794500665.726111,
+    "hop": 1,
+    "leaf": "leaf2"
+  },
+  {
+    "event": "attached",
+    "unix_time": 1794500665.7407515,
+    "hop": 1,
+    "leaf": "leaf3"
+  },
+  {
+    "event": "learn_start",
+    "unix_time": 1794500665.7432282,
+    "hop": 1,
+    "leaf": "leaf3"
+  },
+  {
+    "event": "learned",
+    "unix_time": 1794500665.8484106,
+    "hop": 1,
+    "leaf": "leaf3"
+  },
+  {
+    "event": "move_start",
+    "unix_time": 1794500667.8801153,
+    "hop": 2,
+    "src": "leaf3",
+    "dst": "leaf4"
+  },
+  {
+    "event": "detached",
+    "unix_time": 1794500667.915152,
+    "hop": 2,
+    "leaf": "leaf3"
+  },
+  {
+    "event": "attached",
+    "unix_time": 1794500667.9232867,
+    "hop": 2,
+    "leaf": "leaf4"
+  },
+  {
+    "event": "learn_start",
+    "unix_time": 1794500667.9244392,
+    "hop": 2,
+    "leaf": "leaf4"
+  },
+  {
+    "event": "learned",
+    "unix_time": 1794500668.3132584,
+    "hop": 2,
+    "leaf": "leaf4"
+  },
+  {
+    "event": "move_start",
+    "unix_time": 1794500670.3590517,
+    "hop": 3,
+    "src": "leaf4",
+    "dst": "leaf1"
+  },
+  {
+    "event": "detached",
+    "unix_time": 1794500670.3876865,
+    "hop": 3,
+    "leaf": "leaf4"
+  },
+  {
+    "event": "attached",
+    "unix_time": 1794500670.4016585,
+    "hop": 3,
+    "leaf": "leaf1"
+  },
+  {
+    "event": "learn_start",
+    "unix_time": 1794500670.4029856,
+    "hop": 3,
+    "leaf": "leaf1"
+  },
+  {
+    "event": "learned",
+    "unix_time": 1794500670.81912,
+    "hop": 3,
+    "leaf": "leaf1"
+  },
+  {
+    "event": "move_start",
+    "unix_time": 1794500672.8651893,
+    "hop": 4,
+    "src": "leaf1",
+    "dst": "leaf3"
+  },
+  {
+    "event": "detached",
+    "unix_time": 1794500672.9047558,
+    "hop": 4,
+    "leaf": "leaf1"
+  },
+  {
+    "event": "attached",
+    "unix_time": 1794500672.9109998,
+    "hop": 4,
+    "leaf": "leaf3"
+  },
+  {
+    "event": "learn_start",
+    "unix_time": 1794500672.9113028,
+    "hop": 4,
+    "leaf": "leaf3"
+  },
+  {
+    "event": "learned",
+    "unix_time": 1794500673.2843575,
+    "hop": 4,
+    "leaf": "leaf3"
+  },
+  {
+    "event": "move_start",
+    "unix_time": 1794500675.3240528,
+    "hop": 5,
+    "src": "leaf3",
+    "dst": "leaf2"
+  },
+  {
+    "event": "detached",
+    "unix_time": 1794500675.3465955,
+    "hop": 5,
+    "leaf": "leaf3"
+  },
+  {
+    "event": "attached",
+    "unix_time": 1794500675.354426,
+    "hop": 5,
+    "leaf": "leaf2"
+  },
+  {
+    "event": "learn_start",
+    "unix_time": 1794500675.3560665,
+    "hop": 5,
+    "leaf": "leaf2"
+  },
+  {
+    "event": "learned",
+    "unix_time": 1794500675.6856413,
+    "hop": 5,
+    "leaf": "leaf2"
+  },
+  {
+    "event": "move_start",
+    "unix_time": 1794500677.4991639,
+    "hop": 6,
+    "src": "leaf2",
+    "dst": "leaf4"
+  },
+  {
+    "event": "detached",
+    "unix_time": 1794500677.526539,
+    "hop": 6,
+    "leaf": "leaf2"
+  },
+  {
+    "event": "attached",
+    "unix_time": 1794500677.5316951,
+    "hop": 6,
+    "leaf": "leaf4"
+  },
+  {
+    "event": "learn_start",
+    "unix_time": 1794500677.531959,
+    "hop": 6,
+    "leaf": "leaf4"
+  },
+  {
+    "event": "learned",
+    "unix_time": 1794500677.903112,
+    "hop": 6,
+    "leaf": "leaf4"
+  },
+  {
+    "event": "move_start",
+    "unix_time": 1794500679.9459944,
+    "hop": 7,
+    "src": "leaf4",
+    "dst": "leaf3"
+  },
+  {
+    "event": "detached",
+    "unix_time": 1794500679.9654374,
+    "hop": 7,
+    "leaf": "leaf4"
+  },
+  {
+    "event": "attached",
+    "unix_time": 1794500679.9722035,
+    "hop": 7,
+    "leaf": "leaf3"
+  },
+  {
+    "event": "learn_start",
+    "unix_time": 1794500679.9727268,
+    "hop": 7,
+    "leaf": "leaf3"
+  },
+  {
+    "event": "learned",
+    "unix_time": 1794500680.2971447,
+    "hop": 7,
+    "leaf": "leaf3"
+  },
+  {
+    "event": "move_start",
+    "unix_time": 1794500682.3381145,
+    "hop": 8,
+    "src": "leaf3",
+    "dst": "leaf1"
+  },
+  {
+    "event": "detached",
+    "unix_time": 1794500682.354318,
+    "hop": 8,
+    "leaf": "leaf3"
+  },
+  {
+    "event": "attached",
+    "unix_time": 1794500682.3607059,
+    "hop": 8,
+    "leaf": "leaf1"
+  },
+  {
+    "event": "learn_start",
+    "unix_time": 1794500682.3614116,
+    "hop": 8,
+    "leaf": "leaf1"
+  },
+  {
+    "event": "learned",
+    "unix_time": 1794500682.7217517,
+    "hop": 8,
+    "leaf": "leaf1"
+  },
+  {
+    "event": "move_start",
+    "unix_time": 1794500684.7586627,
+    "hop": 9,
+    "src": "leaf1",
+    "dst": "leaf2"
+  },
+  {
+    "event": "detached",
+    "unix_time": 1794500684.774399,
+    "hop": 9,
+    "leaf": "leaf1"
+  },
+  {
+    "event": "attached",
+    "unix_time": 1794500684.7788415,
+    "hop": 9,
+    "leaf": "leaf2"
+  },
+  {
+    "event": "learn_start",
+    "unix_time": 1794500684.779113,
+    "hop": 9,
+    "leaf": "leaf2"
+  },
+  {
+    "event": "learned",
+    "unix_time": 1794500685.1531723,
+    "hop": 9,
+    "leaf": "leaf2"
+  },
+  {
+    "event": "walk_done",
+    "unix_time": 1794500687.007887,
+    "leaf": "leaf2"
+  },
+  {
+    "event": "leaf5_synced_at_end",
+    "unix_time": 1794500687.0224903,
+    "leaf": "leaf2"
+  }
+]
