@@ -180,7 +180,7 @@ def test_multiple_robot_movement():
             ]}
             for host, robot in ROBOTS.items()
         ],
-    } for index, offset in enumerate(CYCLE_OFFSETS * 2)]
+    } for index, offset in enumerate(CYCLE_OFFSETS * 4)]
     run = {
         "robots": ROBOTS, "vteps": vteps, "observer": OBSERVER, "break_s": BREAK_S,
         "dwell_after_learning_s": DWELL_S, "spine_peers": peer_addresses(topology),
@@ -255,7 +255,7 @@ def test_multiple_robot_movement():
 
     summary = analyze_movement.analyze(out)
     print(f"Summary: {out / 'analysis' / 'summary.json'}")
-    assert summary["moves_completed"] == 48, "See movement.json for failed attachments"
+    assert summary["moves_completed"] == 96, "See movement.json for failed attachments"
     assert set(run["capture_returncodes"].values()) == {0}, "Check capture logs"
     assert not summary["capture_errors"], "Check analysis/summary.json for decode errors"
     # Protocol mismatches are findings and are reported separately from harness failures.
