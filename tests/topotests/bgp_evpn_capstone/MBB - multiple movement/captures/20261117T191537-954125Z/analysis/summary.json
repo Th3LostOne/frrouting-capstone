@@ -1,0 +1,4965 @@
+{
+  "moves_planned": 96,
+  "moves_completed": 96,
+  "batch_mappings_correct": 96,
+  "mobility_success_rate": 1.0,
+  "final_mappings_correct": 6,
+  "final_mappings": {
+    "host11": {
+      "actual_leaf": "leaf1",
+      "expected_vtep": "10.0.0.1",
+      "observed_vtep": "10.0.0.1",
+      "correct": true
+    },
+    "host12": {
+      "actual_leaf": "leaf1",
+      "expected_vtep": "10.0.0.1",
+      "observed_vtep": "10.0.0.1",
+      "correct": true
+    },
+    "host21": {
+      "actual_leaf": "leaf2",
+      "expected_vtep": "10.0.0.2",
+      "observed_vtep": "10.0.0.2",
+      "correct": true
+    },
+    "host22": {
+      "actual_leaf": "leaf2",
+      "expected_vtep": "10.0.0.2",
+      "observed_vtep": "10.0.0.2",
+      "correct": true
+    },
+    "host31": {
+      "actual_leaf": "leaf3",
+      "expected_vtep": "10.0.0.3",
+      "observed_vtep": "10.0.0.3",
+      "correct": true
+    },
+    "host32": {
+      "actual_leaf": "leaf3",
+      "expected_vtep": "10.0.0.3",
+      "observed_vtep": "10.0.0.3",
+      "correct": true
+    }
+  },
+  "batches": [
+    {
+      "batch": 1,
+      "launch_spread_ms": 21.262,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 2,
+      "launch_spread_ms": 9.349,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 3,
+      "launch_spread_ms": 5.843,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 4,
+      "launch_spread_ms": 3.52,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 5,
+      "launch_spread_ms": 2.547,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 6,
+      "launch_spread_ms": 0.835,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 7,
+      "launch_spread_ms": 8.324,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 8,
+      "launch_spread_ms": 1.52,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 9,
+      "launch_spread_ms": 11.979,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 10,
+      "launch_spread_ms": 13.394,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 11,
+      "launch_spread_ms": 6.1,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 12,
+      "launch_spread_ms": 0.758,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 13,
+      "launch_spread_ms": 13.607,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 14,
+      "launch_spread_ms": 2.132,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 15,
+      "launch_spread_ms": 9.485,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 16,
+      "launch_spread_ms": 7.138,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        }
+      }
+    }
+  ],
+  "origin_nlri_estimate": {
+    "advertise MAC-only": 96,
+    "withdraw MAC-only": 96,
+    "withdraw MAC/IP": 95,
+    "advertise MAC/IP": 95
+  },
+  "wire_nlri_counts": {
+    "spine1": {
+      "in advertise MAC-only": 480,
+      "out advertise MAC-only": 480,
+      "in withdraw MAC-only": 480,
+      "in withdraw MAC/IP": 475,
+      "out withdraw MAC-only": 480,
+      "out withdraw MAC/IP": 475,
+      "in advertise MAC/IP": 475,
+      "out advertise MAC/IP": 475
+    },
+    "spine2": {
+      "in advertise MAC-only": 480,
+      "out advertise MAC-only": 480,
+      "in withdraw MAC-only": 480,
+      "in withdraw MAC/IP": 475,
+      "out withdraw MAC-only": 480,
+      "out withdraw MAC/IP": 475,
+      "in advertise MAC/IP": 475,
+      "out advertise MAC/IP": 475
+    }
+  },
+  "evpn_route_counts": {
+    "before": {
+      "leaf1": 25,
+      "leaf2": 25,
+      "leaf3": 25,
+      "leaf4": 25,
+      "leaf5": 25,
+      "spine1": 25,
+      "spine2": 25
+    },
+    "batch-1": {
+      "leaf1": 19,
+      "leaf2": 19,
+      "leaf3": 19,
+      "leaf4": 19,
+      "leaf5": 19,
+      "spine1": 19,
+      "spine2": 19
+    },
+    "batch-2": {
+      "leaf1": 25,
+      "leaf2": 25,
+      "leaf3": 25,
+      "leaf4": 25,
+      "leaf5": 25,
+      "spine1": 25,
+      "spine2": 25
+    },
+    "batch-3": {
+      "leaf1": 25,
+      "leaf2": 25,
+      "leaf3": 25,
+      "leaf4": 25,
+      "leaf5": 25,
+      "spine1": 25,
+      "spine2": 25
+    },
+    "batch-4": {
+      "leaf1": 25,
+      "leaf2": 25,
+      "leaf3": 25,
+      "leaf4": 25,
+      "leaf5": 25,
+      "spine1": 25,
+      "spine2": 25
+    },
+    "batch-5": {
+      "leaf1": 25,
+      "leaf2": 25,
+      "leaf3": 25,
+      "leaf4": 25,
+      "leaf5": 25,
+      "spine1": 25,
+      "spine2": 25
+    },
+    "batch-6": {
+      "leaf1": 25,
+      "leaf2": 25,
+      "leaf3": 25,
+      "leaf4": 25,
+      "leaf5": 25,
+      "spine1": 25,
+      "spine2": 25
+    },
+    "batch-7": {
+      "leaf1": 25,
+      "leaf2": 25,
+      "leaf3": 25,
+      "leaf4": 25,
+      "leaf5": 25,
+      "spine1": 25,
+      "spine2": 25
+    },
+    "batch-8": {
+      "leaf1": 25,
+      "leaf2": 25,
+      "leaf3": 25,
+      "leaf4": 25,
+      "leaf5": 25,
+      "spine1": 25,
+      "spine2": 25
+    },
+    "batch-9": {
+      "leaf1": 25,
+      "leaf2": 25,
+      "leaf3": 25,
+      "leaf4": 25,
+      "leaf5": 25,
+      "spine1": 25,
+      "spine2": 25
+    },
+    "batch-10": {
+      "leaf1": 25,
+      "leaf2": 25,
+      "leaf3": 25,
+      "leaf4": 25,
+      "leaf5": 25,
+      "spine1": 25,
+      "spine2": 25
+    },
+    "batch-11": {
+      "leaf1": 25,
+      "leaf2": 25,
+      "leaf3": 25,
+      "leaf4": 25,
+      "leaf5": 25,
+      "spine1": 25,
+      "spine2": 25
+    },
+    "batch-12": {
+      "leaf1": 25,
+      "leaf2": 25,
+      "leaf3": 25,
+      "leaf4": 25,
+      "leaf5": 25,
+      "spine1": 25,
+      "spine2": 25
+    },
+    "batch-13": {
+      "leaf1": 25,
+      "leaf2": 25,
+      "leaf3": 25,
+      "leaf4": 25,
+      "leaf5": 25,
+      "spine1": 25,
+      "spine2": 25
+    },
+    "batch-14": {
+      "leaf1": 25,
+      "leaf2": 25,
+      "leaf3": 25,
+      "leaf4": 25,
+      "leaf5": 25,
+      "spine1": 25,
+      "spine2": 25
+    },
+    "batch-15": {
+      "leaf1": 25,
+      "leaf2": 25,
+      "leaf3": 25,
+      "leaf4": 25,
+      "leaf5": 25,
+      "spine1": 25,
+      "spine2": 25
+    },
+    "batch-16": {
+      "leaf1": 25,
+      "leaf2": 25,
+      "leaf3": 25,
+      "leaf4": 25,
+      "leaf5": 25,
+      "spine1": 25,
+      "spine2": 25
+    },
+    "after": {
+      "leaf1": 25,
+      "leaf2": 25,
+      "leaf3": 25,
+      "leaf4": 25,
+      "leaf5": 25,
+      "spine1": 25,
+      "spine2": 25
+    }
+  },
+  "dad": {
+    "events": [
+      {
+        "leaf": "leaf1",
+        "robot": "host32",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:03 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:32 detected as duplicate during local update, last VTEP 10.0.0.3"
+      },
+      {
+        "leaf": "leaf1",
+        "robot": "host31",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:03 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:31 detected as duplicate during local update, last VTEP 10.0.0.3"
+      },
+      {
+        "leaf": "leaf1",
+        "robot": "host21",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:20 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:21 detected as duplicate during local update, last VTEP 10.0.0.3"
+      },
+      {
+        "leaf": "leaf1",
+        "robot": "host22",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:20 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:22 detected as duplicate during local update, last VTEP 10.0.0.3"
+      },
+      {
+        "leaf": "leaf1",
+        "robot": "host11",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:26 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:11 detected as duplicate during local update, last VTEP 10.0.0.2"
+      },
+      {
+        "leaf": "leaf1",
+        "robot": "host12",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:26 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:12 detected as duplicate during local update, last VTEP 10.0.0.2"
+      },
+      {
+        "leaf": "leaf2",
+        "robot": "host11",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:03 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:11 detected as duplicate during local update, last VTEP 10.0.0.1"
+      },
+      {
+        "leaf": "leaf2",
+        "robot": "host12",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:03 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:12 detected as duplicate during local update, last VTEP 10.0.0.1"
+      },
+      {
+        "leaf": "leaf2",
+        "robot": "host32",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:20 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:32 detected as duplicate during local update, last VTEP 10.0.0.1"
+      },
+      {
+        "leaf": "leaf2",
+        "robot": "host31",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:20 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:31 detected as duplicate during local update, last VTEP 10.0.0.1"
+      },
+      {
+        "leaf": "leaf2",
+        "robot": "host21",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:26 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:21 detected as duplicate during local update, last VTEP 10.0.0.3"
+      },
+      {
+        "leaf": "leaf2",
+        "robot": "host22",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:26 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:22 detected as duplicate during local update, last VTEP 10.0.0.3"
+      },
+      {
+        "leaf": "leaf3",
+        "robot": "host21",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:03 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:21 detected as duplicate during local update, last VTEP 10.0.0.2"
+      },
+      {
+        "leaf": "leaf3",
+        "robot": "host22",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:03 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:22 detected as duplicate during local update, last VTEP 10.0.0.2"
+      },
+      {
+        "leaf": "leaf3",
+        "robot": "host12",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:20 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:12 detected as duplicate during local update, last VTEP 10.0.0.2"
+      },
+      {
+        "leaf": "leaf3",
+        "robot": "host11",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:20 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:11 detected as duplicate during local update, last VTEP 10.0.0.2"
+      },
+      {
+        "leaf": "leaf3",
+        "robot": "host31",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:26 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:31 detected as duplicate during local update, last VTEP 10.0.0.1"
+      },
+      {
+        "leaf": "leaf3",
+        "robot": "host32",
+        "freeze_configured": false,
+        "log": "2026/11/17 19:16:26 ZEBRA: [JAMJG-9M2ZR][EC 4043309183] VNI 1000: MAC 00:00:00:00:00:32 detected as duplicate during local update, last VTEP 10.0.0.1"
+      }
+    ],
+    "duplicate_samples": [
+      {
+        "checkpoint": "batch-5",
+        "leaf": "leaf1",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-5",
+        "leaf": "leaf1",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-5",
+        "leaf": "leaf2",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-5",
+        "leaf": "leaf2",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-5",
+        "leaf": "leaf3",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-5",
+        "leaf": "leaf3",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-6",
+        "leaf": "leaf1",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-6",
+        "leaf": "leaf1",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-6",
+        "leaf": "leaf2",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-6",
+        "leaf": "leaf2",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-6",
+        "leaf": "leaf3",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-6",
+        "leaf": "leaf3",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-7",
+        "leaf": "leaf1",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-7",
+        "leaf": "leaf1",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-7",
+        "leaf": "leaf2",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-7",
+        "leaf": "leaf2",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-7",
+        "leaf": "leaf3",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-7",
+        "leaf": "leaf3",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-8",
+        "leaf": "leaf1",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-8",
+        "leaf": "leaf1",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-8",
+        "leaf": "leaf2",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-8",
+        "leaf": "leaf2",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-8",
+        "leaf": "leaf3",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-8",
+        "leaf": "leaf3",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-9",
+        "leaf": "leaf1",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-9",
+        "leaf": "leaf1",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-9",
+        "leaf": "leaf2",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-9",
+        "leaf": "leaf2",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-9",
+        "leaf": "leaf3",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-9",
+        "leaf": "leaf3",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-10",
+        "leaf": "leaf1",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-10",
+        "leaf": "leaf1",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-10",
+        "leaf": "leaf1",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-10",
+        "leaf": "leaf1",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-10",
+        "leaf": "leaf2",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-10",
+        "leaf": "leaf2",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-10",
+        "leaf": "leaf2",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-10",
+        "leaf": "leaf2",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-10",
+        "leaf": "leaf3",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-10",
+        "leaf": "leaf3",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-10",
+        "leaf": "leaf3",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-10",
+        "leaf": "leaf3",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-11",
+        "leaf": "leaf1",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-11",
+        "leaf": "leaf1",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-11",
+        "leaf": "leaf1",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-11",
+        "leaf": "leaf1",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-11",
+        "leaf": "leaf2",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-11",
+        "leaf": "leaf2",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-11",
+        "leaf": "leaf2",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-11",
+        "leaf": "leaf2",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-11",
+        "leaf": "leaf3",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-11",
+        "leaf": "leaf3",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-11",
+        "leaf": "leaf3",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-11",
+        "leaf": "leaf3",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf1",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf1",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf1",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf1",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf1",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf1",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf2",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf2",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf2",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf2",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf2",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf2",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf3",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf3",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf3",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf3",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf3",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-12",
+        "leaf": "leaf3",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf1",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf1",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf1",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf1",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf1",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf1",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf2",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf2",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf2",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf2",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf2",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf2",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf3",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf3",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf3",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf3",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf3",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-13",
+        "leaf": "leaf3",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf1",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf1",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf1",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf1",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf1",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf1",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf2",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf2",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf2",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf2",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf2",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf2",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf3",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf3",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf3",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf3",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf3",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-14",
+        "leaf": "leaf3",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf1",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf1",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf1",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf1",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf1",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf1",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf2",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf2",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf2",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf2",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf2",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf2",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf3",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf3",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf3",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf3",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf3",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-15",
+        "leaf": "leaf3",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf1",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf1",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf1",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf1",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf1",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf1",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf2",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf2",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf2",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf2",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf2",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf2",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf3",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf3",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf3",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf3",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf3",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "batch-16",
+        "leaf": "leaf3",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf1",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf1",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf1",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf1",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf1",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf1",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf2",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf2",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf2",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf2",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf2",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf2",
+        "robot": "host32",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf3",
+        "robot": "host11",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf3",
+        "robot": "host12",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf3",
+        "robot": "host21",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf3",
+        "robot": "host22",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf3",
+        "robot": "host31",
+        "freeze_configured": false
+      },
+      {
+        "checkpoint": "after",
+        "leaf": "leaf3",
+        "robot": "host32",
+        "freeze_configured": false
+      }
+    ],
+    "missing_zebra_logs": []
+  },
+  "bgp_sessions": {
+    "spine1/eth-leaf1": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine1/eth-leaf2": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine1/eth-leaf3": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine1/eth-leaf4": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine1/eth-leaf5": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine2/eth-leaf1": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine2/eth-leaf2": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine2/eth-leaf3": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine2/eth-leaf4": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine2/eth-leaf5": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    }
+  },
+  "capture_errors": {},
+  "learning_errors": [],
+  "robots": {
+    "host11": {
+      "moves_completed": 16,
+      "correct_mappings": 16,
+      "origin_nlri_estimate": {
+        "advertise MAC-only": 16,
+        "withdraw MAC-only": 16,
+        "withdraw MAC/IP": 16,
+        "advertise MAC/IP": 16
+      },
+      "sequence_observations": [
+        {
+          "batch": 1,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 2,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 2
+        },
+        {
+          "batch": 2,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.11",
+          "value": 2
+        },
+        {
+          "batch": 2,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.11",
+          "value": 1
+        },
+        {
+          "batch": 3,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 3
+        },
+        {
+          "batch": 3,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.11",
+          "value": 3
+        },
+        {
+          "batch": 4,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 4
+        },
+        {
+          "batch": 4,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.11",
+          "value": 4
+        },
+        {
+          "batch": 5,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 5
+        },
+        {
+          "batch": 5,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.11",
+          "value": 5
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 6
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.11",
+          "value": 6
+        },
+        {
+          "batch": 7,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 7
+        },
+        {
+          "batch": 7,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.11",
+          "value": 7
+        },
+        {
+          "batch": 8,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 8
+        },
+        {
+          "batch": 8,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.11",
+          "value": 8
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 9
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.11",
+          "value": 9
+        },
+        {
+          "batch": 10,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 10
+        },
+        {
+          "batch": 10,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.11",
+          "value": 10
+        },
+        {
+          "batch": 11,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 11
+        },
+        {
+          "batch": 11,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.11",
+          "value": 11
+        },
+        {
+          "batch": 12,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 12
+        },
+        {
+          "batch": 12,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.11",
+          "value": 12
+        },
+        {
+          "batch": 13,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 13
+        },
+        {
+          "batch": 13,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.11",
+          "value": 13
+        },
+        {
+          "batch": 14,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 14
+        },
+        {
+          "batch": 14,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.11",
+          "value": 14
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 15
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.11",
+          "value": 15
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 16
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.11",
+          "value": 16
+        }
+      ]
+    },
+    "host12": {
+      "moves_completed": 16,
+      "correct_mappings": 16,
+      "origin_nlri_estimate": {
+        "advertise MAC-only": 16,
+        "withdraw MAC-only": 16,
+        "withdraw MAC/IP": 16,
+        "advertise MAC/IP": 16
+      },
+      "sequence_observations": [
+        {
+          "batch": 1,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 2,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 2
+        },
+        {
+          "batch": 2,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.12",
+          "value": 2
+        },
+        {
+          "batch": 2,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.12",
+          "value": 1
+        },
+        {
+          "batch": 3,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 3
+        },
+        {
+          "batch": 3,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.12",
+          "value": 3
+        },
+        {
+          "batch": 4,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 4
+        },
+        {
+          "batch": 4,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.12",
+          "value": 4
+        },
+        {
+          "batch": 5,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 5
+        },
+        {
+          "batch": 5,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.12",
+          "value": 5
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 6
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.12",
+          "value": 6
+        },
+        {
+          "batch": 7,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 7
+        },
+        {
+          "batch": 7,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.12",
+          "value": 7
+        },
+        {
+          "batch": 8,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 8
+        },
+        {
+          "batch": 8,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.12",
+          "value": 8
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 9
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.12",
+          "value": 9
+        },
+        {
+          "batch": 10,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 10
+        },
+        {
+          "batch": 10,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.12",
+          "value": 10
+        },
+        {
+          "batch": 11,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 11
+        },
+        {
+          "batch": 11,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.12",
+          "value": 11
+        },
+        {
+          "batch": 12,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 12
+        },
+        {
+          "batch": 12,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.12",
+          "value": 12
+        },
+        {
+          "batch": 13,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 13
+        },
+        {
+          "batch": 13,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.12",
+          "value": 13
+        },
+        {
+          "batch": 14,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 14
+        },
+        {
+          "batch": 14,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.12",
+          "value": 14
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 15
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.12",
+          "value": 15
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 16
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.12",
+          "value": 16
+        }
+      ]
+    },
+    "host21": {
+      "moves_completed": 16,
+      "correct_mappings": 16,
+      "origin_nlri_estimate": {
+        "advertise MAC-only": 16,
+        "withdraw MAC-only": 16,
+        "withdraw MAC/IP": 16,
+        "advertise MAC/IP": 16
+      },
+      "sequence_observations": [
+        {
+          "batch": 1,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 2,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 2
+        },
+        {
+          "batch": 2,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.21",
+          "value": 1
+        },
+        {
+          "batch": 2,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.21",
+          "value": 2
+        },
+        {
+          "batch": 3,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 3
+        },
+        {
+          "batch": 3,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.21",
+          "value": 3
+        },
+        {
+          "batch": 4,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 4
+        },
+        {
+          "batch": 4,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.21",
+          "value": 4
+        },
+        {
+          "batch": 5,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 5
+        },
+        {
+          "batch": 5,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.21",
+          "value": 5
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 6
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.21",
+          "value": 6
+        },
+        {
+          "batch": 7,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 7
+        },
+        {
+          "batch": 7,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.21",
+          "value": 7
+        },
+        {
+          "batch": 8,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 8
+        },
+        {
+          "batch": 8,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.21",
+          "value": 8
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 9
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.21",
+          "value": 9
+        },
+        {
+          "batch": 10,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 10
+        },
+        {
+          "batch": 10,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.21",
+          "value": 10
+        },
+        {
+          "batch": 11,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 11
+        },
+        {
+          "batch": 11,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.21",
+          "value": 11
+        },
+        {
+          "batch": 12,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 12
+        },
+        {
+          "batch": 12,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.21",
+          "value": 12
+        },
+        {
+          "batch": 13,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 13
+        },
+        {
+          "batch": 13,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.21",
+          "value": 13
+        },
+        {
+          "batch": 14,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 14
+        },
+        {
+          "batch": 14,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.21",
+          "value": 14
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 15
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.21",
+          "value": 15
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 16
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.21",
+          "value": 16
+        }
+      ]
+    },
+    "host22": {
+      "moves_completed": 16,
+      "correct_mappings": 16,
+      "origin_nlri_estimate": {
+        "advertise MAC-only": 16,
+        "withdraw MAC-only": 16,
+        "withdraw MAC/IP": 16,
+        "advertise MAC/IP": 16
+      },
+      "sequence_observations": [
+        {
+          "batch": 1,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 2,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 2
+        },
+        {
+          "batch": 2,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.22",
+          "value": 2
+        },
+        {
+          "batch": 2,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.22",
+          "value": 1
+        },
+        {
+          "batch": 3,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 3
+        },
+        {
+          "batch": 3,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.22",
+          "value": 3
+        },
+        {
+          "batch": 4,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 4
+        },
+        {
+          "batch": 4,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.22",
+          "value": 4
+        },
+        {
+          "batch": 5,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 5
+        },
+        {
+          "batch": 5,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.22",
+          "value": 5
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 6
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.22",
+          "value": 6
+        },
+        {
+          "batch": 7,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 7
+        },
+        {
+          "batch": 7,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.22",
+          "value": 7
+        },
+        {
+          "batch": 8,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 8
+        },
+        {
+          "batch": 8,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.22",
+          "value": 8
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 9
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.22",
+          "value": 9
+        },
+        {
+          "batch": 10,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 10
+        },
+        {
+          "batch": 10,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.22",
+          "value": 10
+        },
+        {
+          "batch": 11,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 11
+        },
+        {
+          "batch": 11,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.22",
+          "value": 11
+        },
+        {
+          "batch": 12,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 12
+        },
+        {
+          "batch": 12,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.22",
+          "value": 12
+        },
+        {
+          "batch": 13,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 13
+        },
+        {
+          "batch": 13,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.22",
+          "value": 13
+        },
+        {
+          "batch": 14,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 14
+        },
+        {
+          "batch": 14,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.22",
+          "value": 14
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 15
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.22",
+          "value": 15
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 16
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.22",
+          "value": 16
+        }
+      ]
+    },
+    "host31": {
+      "moves_completed": 16,
+      "correct_mappings": 16,
+      "origin_nlri_estimate": {
+        "advertise MAC-only": 16,
+        "withdraw MAC-only": 16,
+        "withdraw MAC/IP": 16,
+        "advertise MAC/IP": 16
+      },
+      "sequence_observations": [
+        {
+          "batch": 1,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 2,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.31",
+          "value": 1
+        },
+        {
+          "batch": 2,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 2
+        },
+        {
+          "batch": 2,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.31",
+          "value": 2
+        },
+        {
+          "batch": 3,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 3
+        },
+        {
+          "batch": 3,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.31",
+          "value": 3
+        },
+        {
+          "batch": 4,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 4
+        },
+        {
+          "batch": 4,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.31",
+          "value": 4
+        },
+        {
+          "batch": 5,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 5
+        },
+        {
+          "batch": 5,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.31",
+          "value": 5
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 6
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.31",
+          "value": 6
+        },
+        {
+          "batch": 7,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 7
+        },
+        {
+          "batch": 7,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.31",
+          "value": 7
+        },
+        {
+          "batch": 8,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 8
+        },
+        {
+          "batch": 8,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.31",
+          "value": 8
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 9
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.31",
+          "value": 9
+        },
+        {
+          "batch": 10,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 10
+        },
+        {
+          "batch": 10,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.31",
+          "value": 10
+        },
+        {
+          "batch": 11,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 11
+        },
+        {
+          "batch": 11,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.31",
+          "value": 11
+        },
+        {
+          "batch": 12,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 12
+        },
+        {
+          "batch": 12,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.31",
+          "value": 12
+        },
+        {
+          "batch": 13,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 13
+        },
+        {
+          "batch": 13,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.31",
+          "value": 13
+        },
+        {
+          "batch": 14,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 14
+        },
+        {
+          "batch": 14,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.31",
+          "value": 14
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 15
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.31",
+          "value": 15
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 16
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.31",
+          "value": 16
+        }
+      ]
+    },
+    "host32": {
+      "moves_completed": 16,
+      "correct_mappings": 16,
+      "origin_nlri_estimate": {
+        "advertise MAC-only": 16,
+        "withdraw MAC-only": 16,
+        "withdraw MAC/IP": 15,
+        "advertise MAC/IP": 15
+      },
+      "sequence_observations": [
+        {
+          "batch": 1,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 2,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 2
+        },
+        {
+          "batch": 2,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.32",
+          "value": 2
+        },
+        {
+          "batch": 3,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 3
+        },
+        {
+          "batch": 3,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.32",
+          "value": 3
+        },
+        {
+          "batch": 4,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 4
+        },
+        {
+          "batch": 4,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.32",
+          "value": 4
+        },
+        {
+          "batch": 5,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 5
+        },
+        {
+          "batch": 5,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.32",
+          "value": 5
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 6
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.32",
+          "value": 6
+        },
+        {
+          "batch": 7,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 7
+        },
+        {
+          "batch": 7,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.32",
+          "value": 7
+        },
+        {
+          "batch": 8,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 8
+        },
+        {
+          "batch": 8,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.32",
+          "value": 8
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 9
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.32",
+          "value": 9
+        },
+        {
+          "batch": 10,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 10
+        },
+        {
+          "batch": 10,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.32",
+          "value": 10
+        },
+        {
+          "batch": 11,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 11
+        },
+        {
+          "batch": 11,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.32",
+          "value": 11
+        },
+        {
+          "batch": 12,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 12
+        },
+        {
+          "batch": 12,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.32",
+          "value": 12
+        },
+        {
+          "batch": 13,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 13
+        },
+        {
+          "batch": 13,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.32",
+          "value": 13
+        },
+        {
+          "batch": 14,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 14
+        },
+        {
+          "batch": 14,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.32",
+          "value": 14
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 15
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.32",
+          "value": 15
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 16
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.32",
+          "value": 16
+        }
+      ]
+    }
+  },
+  "mbb": {
+    "valid_overlaps": 96,
+    "new_leaf_arp_before_break": 96,
+    "new_advert_before_break": 96,
+    "arp_capture_errors": {},
+    "observer_samples": 421,
+    "observer_errors": 0,
+    "moves": [
+      {
+        "batch": 1,
+        "robot": "host11",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 651.509,
+        "hold_after_arp_ms": 605.613,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "77",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": true,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 1,
+        "robot": "host12",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 645.787,
+        "hold_after_arp_ms": 614.568,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "87",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": true,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 1,
+        "robot": "host21",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 603.646,
+        "hold_after_arp_ms": 577.173,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "25",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": true,
+        "new_vtep_samples_during_overlap": 3,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 1,
+        "robot": "host22",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 638.418,
+        "hold_after_arp_ms": 609.624,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "73",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": true,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 1,
+        "robot": "host31",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 672.212,
+        "hold_after_arp_ms": 629.384,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "68",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": true,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 1,
+        "robot": "host32",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 603.274,
+        "hold_after_arp_ms": 574.496,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "58",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": true,
+        "new_vtep_samples_during_overlap": 3,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 2,
+        "robot": "host11",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 607.857,
+        "hold_after_arp_ms": 575.198,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "110",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": true,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 2,
+        "robot": "host12",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 621.641,
+        "hold_after_arp_ms": 595.222,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "102",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": true,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 2,
+        "robot": "host21",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 584.135,
+        "hold_after_arp_ms": 558.262,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "143",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": true,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 2,
+        "robot": "host22",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 587.029,
+        "hold_after_arp_ms": 551.694,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "107",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": true,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 2,
+        "robot": "host31",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 607.399,
+        "hold_after_arp_ms": 585.752,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "116",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": true,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 2,
+        "robot": "host32",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 607.973,
+        "hold_after_arp_ms": 569.839,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "153",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": true,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 3,
+        "robot": "host11",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 692.121,
+        "hold_after_arp_ms": 649.712,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "175",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 3,
+        "robot": "host12",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 705.895,
+        "hold_after_arp_ms": 663.691,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "161",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 3,
+        "robot": "host21",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 655.515,
+        "hold_after_arp_ms": 632.003,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "183",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 3,
+        "robot": "host22",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 667.671,
+        "hold_after_arp_ms": 624.729,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "161",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 3,
+        "robot": "host31",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 680.523,
+        "hold_after_arp_ms": 650.709,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "177",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 3,
+        "robot": "host32",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 670.467,
+        "hold_after_arp_ms": 621.062,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "191",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 4,
+        "robot": "host11",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 631.677,
+        "hold_after_arp_ms": 594.29,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "259",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 4,
+        "robot": "host12",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 589.404,
+        "hold_after_arp_ms": 565.687,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "221",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 4,
+        "robot": "host21",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 640.296,
+        "hold_after_arp_ms": 605.346,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "251",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 4,
+        "robot": "host22",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 620.64,
+        "hold_after_arp_ms": 587.073,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "229",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 4,
+        "robot": "host31",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 647.158,
+        "hold_after_arp_ms": 614.437,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "213",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 4,
+        "robot": "host32",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 616.101,
+        "hold_after_arp_ms": 583.384,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "243",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 5,
+        "robot": "host11",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 622.53,
+        "hold_after_arp_ms": 583.073,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "289",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 5,
+        "robot": "host12",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 613.708,
+        "hold_after_arp_ms": 577.454,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "319",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 5,
+        "robot": "host21",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 629.69,
+        "hold_after_arp_ms": 576.499,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "287",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 5,
+        "robot": "host22",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 628.213,
+        "hold_after_arp_ms": 598.647,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "257",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 5,
+        "robot": "host31",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 627.812,
+        "hold_after_arp_ms": 581.164,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "319",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 5,
+        "robot": "host32",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 632.896,
+        "hold_after_arp_ms": 589.957,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "297",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 6,
+        "robot": "host11",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 664.236,
+        "hold_after_arp_ms": 628.307,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "333",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 6,
+        "robot": "host12",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 643.391,
+        "hold_after_arp_ms": 617.247,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "341",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 6,
+        "robot": "host21",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 640.052,
+        "hold_after_arp_ms": 616.225,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "341",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 6,
+        "robot": "host22",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 636.538,
+        "hold_after_arp_ms": 604.216,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "355",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 6,
+        "robot": "host31",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 641.016,
+        "hold_after_arp_ms": 601.276,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "373",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 6,
+        "robot": "host32",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 660.589,
+        "hold_after_arp_ms": 615.283,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "387",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 7,
+        "robot": "host11",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 653.084,
+        "hold_after_arp_ms": 620.056,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "447",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 7,
+        "robot": "host12",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 671.284,
+        "hold_after_arp_ms": 633.35,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "417",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 7,
+        "robot": "host21",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 653.217,
+        "hold_after_arp_ms": 619.416,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "407",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 7,
+        "robot": "host22",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 638.123,
+        "hold_after_arp_ms": 617.265,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "377",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 7,
+        "robot": "host31",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 652.069,
+        "hold_after_arp_ms": 615.356,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "409",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 7,
+        "robot": "host32",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 633.799,
+        "hold_after_arp_ms": 599.41,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "439",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 8,
+        "robot": "host11",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 568.06,
+        "hold_after_arp_ms": 542.027,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "499",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 8,
+        "robot": "host12",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 582.254,
+        "hold_after_arp_ms": 552.246,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "461",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 8,
+        "robot": "host21",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 581.063,
+        "hold_after_arp_ms": 556.377,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "469",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 8,
+        "robot": "host22",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 612.037,
+        "hold_after_arp_ms": 574.553,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "491",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 8,
+        "robot": "host31",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 601.242,
+        "hold_after_arp_ms": 561.302,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "483",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 8,
+        "robot": "host32",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 622.619,
+        "hold_after_arp_ms": 574.32,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "453",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 9,
+        "robot": "host11",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 560.968,
+        "hold_after_arp_ms": 542.056,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "537",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 9,
+        "robot": "host12",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 596.805,
+        "hold_after_arp_ms": 554.142,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "567",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 9,
+        "robot": "host21",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 582.032,
+        "hold_after_arp_ms": 540.406,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "505",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 9,
+        "robot": "host22",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 581.687,
+        "hold_after_arp_ms": 543.088,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "535",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 9,
+        "robot": "host31",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 589.285,
+        "hold_after_arp_ms": 554.418,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "551",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 9,
+        "robot": "host32",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 562.397,
+        "hold_after_arp_ms": 533.369,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "521",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 10,
+        "robot": "host11",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 626.336,
+        "hold_after_arp_ms": 590.168,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "581",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 10,
+        "robot": "host12",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 631.613,
+        "hold_after_arp_ms": 589.132,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "603",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 10,
+        "robot": "host21",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 628.289,
+        "hold_after_arp_ms": 592.219,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "619",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 10,
+        "robot": "host22",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 645.372,
+        "hold_after_arp_ms": 617.606,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "589",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 10,
+        "robot": "host31",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 627.968,
+        "hold_after_arp_ms": 605.409,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "595",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 10,
+        "robot": "host32",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 623.481,
+        "hold_after_arp_ms": 596.252,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "581",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 11,
+        "robot": "host11",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 593.345,
+        "hold_after_arp_ms": 568.397,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "679",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 11,
+        "robot": "host12",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 599.057,
+        "hold_after_arp_ms": 568.385,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "657",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 11,
+        "robot": "host21",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 581.988,
+        "hold_after_arp_ms": 545.173,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "663",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 11,
+        "robot": "host22",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 561.797,
+        "hold_after_arp_ms": 537.427,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "625",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 11,
+        "robot": "host31",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 615.429,
+        "hold_after_arp_ms": 582.317,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "671",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 11,
+        "robot": "host32",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 574.133,
+        "hold_after_arp_ms": 552.252,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "641",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 12,
+        "robot": "host11",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 580.073,
+        "hold_after_arp_ms": 559.605,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "709",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 12,
+        "robot": "host12",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 606.218,
+        "hold_after_arp_ms": 575.572,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "731",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 12,
+        "robot": "host21",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 561.042,
+        "hold_after_arp_ms": 537.467,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "701",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 12,
+        "robot": "host22",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 617.172,
+        "hold_after_arp_ms": 581.367,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "747",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 12,
+        "robot": "host31",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 581.21,
+        "hold_after_arp_ms": 547.811,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "693",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 12,
+        "robot": "host32",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 627.404,
+        "hold_after_arp_ms": 592.002,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "715",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 13,
+        "robot": "host11",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 612.287,
+        "hold_after_arp_ms": 573.571,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "791",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 13,
+        "robot": "host12",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 588.218,
+        "hold_after_arp_ms": 555.01,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "777",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 13,
+        "robot": "host21",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 577.073,
+        "hold_after_arp_ms": 556.157,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "737",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 13,
+        "robot": "host22",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 596.606,
+        "hold_after_arp_ms": 557.384,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "783",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 13,
+        "robot": "host31",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 602.463,
+        "hold_after_arp_ms": 563.499,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "799",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 4,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 13,
+        "robot": "host32",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 584.696,
+        "hold_after_arp_ms": 562.525,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "769",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 14,
+        "robot": "host11",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 602.49,
+        "hold_after_arp_ms": 572.874,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "797",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 14,
+        "robot": "host12",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 596.733,
+        "hold_after_arp_ms": 576.222,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "843",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 14,
+        "robot": "host21",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 625.222,
+        "hold_after_arp_ms": 590.307,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "829",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 14,
+        "robot": "host22",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 630.338,
+        "hold_after_arp_ms": 604.569,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "843",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 14,
+        "robot": "host31",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 587.611,
+        "hold_after_arp_ms": 563.344,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "845",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 14,
+        "robot": "host32",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 586.207,
+        "hold_after_arp_ms": 568.184,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "859",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 15,
+        "robot": "host11",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 625.878,
+        "hold_after_arp_ms": 597.522,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "905",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 15,
+        "robot": "host12",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 627.798,
+        "hold_after_arp_ms": 608.122,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "919",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 15,
+        "robot": "host21",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 631.767,
+        "hold_after_arp_ms": 611.496,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "857",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 15,
+        "robot": "host22",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 635.316,
+        "hold_after_arp_ms": 610.542,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "871",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 15,
+        "robot": "host31",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 620.906,
+        "hold_after_arp_ms": 597.27,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "927",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 15,
+        "robot": "host32",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 608.303,
+        "hold_after_arp_ms": 589.32,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "897",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 16,
+        "robot": "host11",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 650.136,
+        "hold_after_arp_ms": 618.198,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "941",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 16,
+        "robot": "host12",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 646.508,
+        "hold_after_arp_ms": 624.202,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "955",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 16,
+        "robot": "host21",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 628.113,
+        "hold_after_arp_ms": 603.352,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "987",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 16,
+        "robot": "host22",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 620.165,
+        "hold_after_arp_ms": 596.543,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "965",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 16,
+        "robot": "host31",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 617.612,
+        "hold_after_arp_ms": 588.075,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "933",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 5,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      },
+      {
+        "batch": 16,
+        "robot": "host32",
+        "status": "completed",
+        "mbb_order_verified": true,
+        "physical_overlap_ms": 643.023,
+        "hold_after_arp_ms": 614.656,
+        "new_leaf_arp_before_break": true,
+        "arp_frames": "955",
+        "new_leaf_advert_before_break": true,
+        "old_leaf_withdraw_before_break": false,
+        "new_vtep_samples_during_overlap": 6,
+        "unusable_mapping_samples_during_overlap": 0,
+        "observer_error_samples": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,588 @@
+{"unix_time": 1794942949.187381, "line": "2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942949.187637, "line": "2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942949.1878934, "line": "2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942949.1880586, "line": "2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942949.4311128, "line": "ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942949.432911, "line": "ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942949.4334998, "line": "ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942949.4340572, "line": "ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942950.5186863, "line": "3a:53:f1:e1:3b:8e dev eth-host21 master br1000 permanent"}
+{"unix_time": 1794942950.5214205, "line": "3a:53:f1:e1:3b:8e dev eth-host21 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942950.5365286, "line": "4e:eb:19:89:c3:5d dev eth-host22 master br1000 permanent"}
+{"unix_time": 1794942950.5366056, "line": "4e:eb:19:89:c3:5d dev eth-host22 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942950.842828, "line": "00:00:00:00:00:21 dev eth-host21 master br1000 "}
+{"unix_time": 1794942950.8745697, "line": "00:00:00:00:00:32 dev vni1000 master br1000 "}
+{"unix_time": 1794942950.8751266, "line": "00:00:00:00:00:31 dev vni1000 master br1000 "}
+{"unix_time": 1794942950.883399, "line": "00:00:00:00:00:22 dev eth-host22 master br1000 "}
+{"unix_time": 1794942950.95603, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942950.9562619, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1794942950.9563909, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942950.9565268, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1794942950.9567156, "line": "00:00:00:00:00:32 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942950.9568574, "line": "00:00:00:00:00:32 dev vni1000 vlan 1 extern_learn master br1000 "}
+{"unix_time": 1794942950.9570289, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942950.957165, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1794942950.9573112, "line": "00:00:00:00:00:31 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942950.9574678, "line": "00:00:00:00:00:31 dev vni1000 vlan 1 extern_learn master br1000 "}
+{"unix_time": 1794942950.9576168, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942950.957765, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1794942951.1094878, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942951.1103866, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942951.110832, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942951.1110067, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942951.1112237, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942951.1114786, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942951.1118526, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942951.11227, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942951.4612935, "line": "Deleted de:c7:69:39:11:16 dev eth-host32 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942951.4700885, "line": "Deleted de:c7:69:39:11:16 dev eth-host32 master br1000 permanent"}
+{"unix_time": 1794942951.5229645, "line": "Deleted e2:a6:fc:63:7e:25 dev eth-host31 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942951.5231833, "line": "Deleted e2:a6:fc:63:7e:25 dev eth-host31 master br1000 permanent"}
+{"unix_time": 1794942953.8400154, "line": "9e:95:39:a8:01:4b dev eth-host11 master br1000 permanent"}
+{"unix_time": 1794942953.8404076, "line": "9e:95:39:a8:01:4b dev eth-host11 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942953.8421254, "line": "8e:98:13:8a:a3:73 dev eth-host12 master br1000 permanent"}
+{"unix_time": 1794942953.84223, "line": "8e:98:13:8a:a3:73 dev eth-host12 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942954.1189013, "line": "00:00:00:00:00:22 dev vni1000 master br1000 "}
+{"unix_time": 1794942954.1588821, "line": "00:00:00:00:00:11 dev eth-host11 master br1000 "}
+{"unix_time": 1794942954.1609192, "line": "00:00:00:00:00:12 dev eth-host12 master br1000 "}
+{"unix_time": 1794942954.166636, "line": "00:00:00:00:00:21 dev vni1000 master br1000 "}
+{"unix_time": 1794942954.2345395, "line": "00:00:00:00:00:22 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942954.2348366, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942954.2350283, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1794942954.2352123, "line": "00:00:00:00:00:21 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942954.2354085, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942954.2356699, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1794942954.2358408, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942954.2359703, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1794942954.2361085, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942954.2362416, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1794942954.2848566, "line": "2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942954.2850337, "line": "2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942954.285219, "line": "2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942954.2853045, "line": "2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942954.2854042, "line": "ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942954.2854927, "line": "ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942954.2855887, "line": "ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942954.2856662, "line": "ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942954.7009103, "line": "Deleted 4e:eb:19:89:c3:5d dev eth-host22 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942954.7011266, "line": "Deleted 4e:eb:19:89:c3:5d dev eth-host22 master br1000 permanent"}
+{"unix_time": 1794942954.743436, "line": "Deleted 3a:53:f1:e1:3b:8e dev eth-host21 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942954.7462006, "line": "Deleted 3a:53:f1:e1:3b:8e dev eth-host21 master br1000 permanent"}
+{"unix_time": 1794942957.047463, "line": "4e:eb:19:89:c3:5d dev eth-host22 master br1000 permanent"}
+{"unix_time": 1794942957.064336, "line": "4e:eb:19:89:c3:5d dev eth-host22 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942957.0646954, "line": "3a:53:f1:e1:3b:8e dev eth-host21 master br1000 permanent"}
+{"unix_time": 1794942957.0648487, "line": "3a:53:f1:e1:3b:8e dev eth-host21 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942957.0740519, "line": "00:00:00:00:00:22 dev eth-host22 master br1000 "}
+{"unix_time": 1794942957.0840874, "line": "00:00:00:00:00:12 dev vni1000 master br1000 "}
+{"unix_time": 1794942957.086888, "line": "00:00:00:00:00:11 dev vni1000 master br1000 "}
+{"unix_time": 1794942957.0933113, "line": "00:00:00:00:00:21 dev eth-host21 master br1000 "}
+{"unix_time": 1794942957.1870887, "line": "00:00:00:00:00:12 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942957.1872833, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1794942957.1874802, "line": "00:00:00:00:00:11 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942957.1876395, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1794942957.187801, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942957.188027, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1794942957.1882293, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942957.1884327, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1794942957.3429747, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942957.3431013, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942957.3435009, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942957.3437374, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942957.3482018, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942957.3483589, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942957.3487642, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942957.3522193, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942957.5726707, "line": "ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942957.5748863, "line": "ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942957.5750868, "line": "ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942957.5752432, "line": "ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942957.5753753, "line": "2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942957.5754914, "line": "2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942957.575626, "line": "2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942957.575745, "line": "2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942958.0714524, "line": "Deleted 9e:95:39:a8:01:4b dev eth-host11 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942958.0726993, "line": "Deleted 9e:95:39:a8:01:4b dev eth-host11 master br1000 permanent"}
+{"unix_time": 1794942958.0809891, "line": "Deleted 8e:98:13:8a:a3:73 dev eth-host12 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942958.0810587, "line": "Deleted 8e:98:13:8a:a3:73 dev eth-host12 master br1000 permanent"}
+{"unix_time": 1794942960.3452344, "line": "de:c7:69:39:11:16 dev eth-host32 master br1000 permanent"}
+{"unix_time": 1794942960.354513, "line": "de:c7:69:39:11:16 dev eth-host32 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942960.3552053, "line": "e2:a6:fc:63:7e:25 dev eth-host31 master br1000 permanent"}
+{"unix_time": 1794942960.359008, "line": "e2:a6:fc:63:7e:25 dev eth-host31 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942960.3788667, "line": "00:00:00:00:00:31 dev eth-host31 master br1000 "}
+{"unix_time": 1794942960.3814619, "line": "00:00:00:00:00:22 dev vni1000 master br1000 "}
+{"unix_time": 1794942960.382332, "line": "00:00:00:00:00:21 dev vni1000 master br1000 "}
+{"unix_time": 1794942960.3842216, "line": "00:00:00:00:00:32 dev eth-host32 master br1000 "}
+{"unix_time": 1794942960.4880228, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942960.4884038, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1794942960.4912996, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942960.491677, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1794942960.4918222, "line": "00:00:00:00:00:22 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942960.4921086, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942960.4922698, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1794942960.4925542, "line": "00:00:00:00:00:21 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942960.492757, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942960.4931223, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1794942960.6488976, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942960.6550536, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942960.6558733, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942960.656276, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942960.6576347, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942960.6579528, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942960.6600113, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942960.66032, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942960.8425987, "line": "2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942960.8435192, "line": "2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942960.8438108, "line": "2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942960.843959, "line": "2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942960.8441923, "line": "ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942960.844364, "line": "ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942960.844514, "line": "ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942960.8449376, "line": "ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942961.2886236, "line": "Deleted 4e:eb:19:89:c3:5d dev eth-host22 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942961.2920353, "line": "Deleted 4e:eb:19:89:c3:5d dev eth-host22 master br1000 permanent"}
+{"unix_time": 1794942961.317228, "line": "Deleted 3a:53:f1:e1:3b:8e dev eth-host21 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942961.3173249, "line": "Deleted 3a:53:f1:e1:3b:8e dev eth-host21 master br1000 permanent"}
+{"unix_time": 1794942963.8752928, "line": "4e:eb:19:89:c3:5d dev eth-host22 master br1000 permanent"}
+{"unix_time": 1794942963.8764224, "line": "4e:eb:19:89:c3:5d dev eth-host22 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942963.905446, "line": "3a:53:f1:e1:3b:8e dev eth-host21 master br1000 permanent"}
+{"unix_time": 1794942963.905623, "line": "3a:53:f1:e1:3b:8e dev eth-host21 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942963.9079108, "line": "00:00:00:00:00:32 dev vni1000 master br1000 "}
+{"unix_time": 1794942963.9125142, "line": "00:00:00:00:00:21 dev eth-host21 master br1000 "}
+{"unix_time": 1794942963.9198136, "line": "00:00:00:00:00:22 dev eth-host22 master br1000 "}
+{"unix_time": 1794942963.9245424, "line": "00:00:00:00:00:31 dev vni1000 master br1000 "}
+{"unix_time": 1794942964.0190165, "line": "00:00:00:00:00:32 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942964.0197458, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1794942964.0199, "line": "00:00:00:00:00:31 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942964.0200508, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1794942964.0202336, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942964.020383, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1794942964.0205047, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942964.0206718, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1794942964.17381, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942964.1762047, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942964.176372, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942964.1765513, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942964.1777833, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942964.1786623, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942964.1812468, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942964.18553, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942964.3752484, "line": "ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942964.375533, "line": "ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942964.3757544, "line": "ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942964.3758996, "line": "ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942964.3761103, "line": "2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942964.376217, "line": "2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942964.376335, "line": "2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942964.376595, "line": "2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942964.8192523, "line": "Deleted de:c7:69:39:11:16 dev eth-host32 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942964.8194232, "line": "Deleted de:c7:69:39:11:16 dev eth-host32 master br1000 permanent"}
+{"unix_time": 1794942964.8423252, "line": "Deleted e2:a6:fc:63:7e:25 dev eth-host31 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942964.8425117, "line": "Deleted e2:a6:fc:63:7e:25 dev eth-host31 master br1000 permanent"}
+{"unix_time": 1794942967.336893, "line": "8e:98:13:8a:a3:73 dev eth-host12 master br1000 permanent"}
+{"unix_time": 1794942967.3582895, "line": "8e:98:13:8a:a3:73 dev eth-host12 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942967.3586628, "line": "9e:95:39:a8:01:4b dev eth-host11 master br1000 permanent"}
+{"unix_time": 1794942967.363245, "line": "9e:95:39:a8:01:4b dev eth-host11 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942967.375994, "line": "00:00:00:00:00:11 dev eth-host11 master br1000 "}
+{"unix_time": 1794942967.3813322, "line": "00:00:00:00:00:22 dev vni1000 master br1000 "}
+{"unix_time": 1794942967.3843343, "line": "00:00:00:00:00:12 dev eth-host12 master br1000 "}
+{"unix_time": 1794942967.3903644, "line": "00:00:00:00:00:21 dev vni1000 master br1000 "}
+{"unix_time": 1794942967.4934351, "line": "00:00:00:00:00:22 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942967.4937863, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942967.4940026, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1794942967.494226, "line": "00:00:00:00:00:21 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942967.4945812, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942967.4947488, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1794942967.4949296, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942967.4951239, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1794942967.4953098, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942967.4955244, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1794942967.656747, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942967.6629624, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942967.668124, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942967.668463, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942967.6686022, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942967.6709166, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942967.675644, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942967.6764293, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942967.8480055, "line": "2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942967.8488731, "line": "2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942967.8490028, "line": "2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942967.849165, "line": "2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942967.849345, "line": "ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942967.8494976, "line": "ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942967.8496504, "line": "ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942967.8498323, "line": "ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942968.2968223, "line": "Deleted 3a:53:f1:e1:3b:8e dev eth-host21 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942968.2986329, "line": "Deleted 3a:53:f1:e1:3b:8e dev eth-host21 master br1000 permanent"}
+{"unix_time": 1794942968.3122537, "line": "Deleted 4e:eb:19:89:c3:5d dev eth-host22 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942968.3123848, "line": "Deleted 4e:eb:19:89:c3:5d dev eth-host22 master br1000 permanent"}
+{"unix_time": 1794942970.6697438, "line": "4e:eb:19:89:c3:5d dev eth-host22 master br1000 permanent"}
+{"unix_time": 1794942970.6701043, "line": "4e:eb:19:89:c3:5d dev eth-host22 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942970.6722836, "line": "3a:53:f1:e1:3b:8e dev eth-host21 master br1000 permanent"}
+{"unix_time": 1794942970.6764724, "line": "3a:53:f1:e1:3b:8e dev eth-host21 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942970.7221968, "line": "00:00:00:00:00:22 dev eth-host22 master br1000 "}
+{"unix_time": 1794942970.7273982, "line": "00:00:00:00:00:12 dev vni1000 master br1000 "}
+{"unix_time": 1794942970.7275832, "line": "00:00:00:00:00:21 dev eth-host21 master br1000 "}
+{"unix_time": 1794942970.730353, "line": "00:00:00:00:00:11 dev vni1000 master br1000 "}
+{"unix_time": 1794942970.8187222, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942970.8191693, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1794942970.819626, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942970.8199704, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1794942970.8200948, "line": "00:00:00:00:00:12 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942970.8202672, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1794942970.820481, "line": "00:00:00:00:00:11 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942970.8207002, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1794942970.9791017, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942970.9799447, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942970.9807105, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942970.9821804, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942970.9895146, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942970.9910383, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942970.991688, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942970.9923606, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942971.1900487, "line": "ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942971.1902955, "line": "ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942971.190578, "line": "ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942971.190853, "line": "ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942971.191039, "line": "2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942971.1912255, "line": "2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942971.1914313, "line": "2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942971.1915958, "line": "2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942971.6734037, "line": "Deleted 8e:98:13:8a:a3:73 dev eth-host12 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942971.6737666, "line": "Deleted 8e:98:13:8a:a3:73 dev eth-host12 master br1000 permanent"}
+{"unix_time": 1794942971.6792676, "line": "Deleted 9e:95:39:a8:01:4b dev eth-host11 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942971.6824825, "line": "Deleted 9e:95:39:a8:01:4b dev eth-host11 master br1000 permanent"}
+{"unix_time": 1794942973.9945748, "line": "de:c7:69:39:11:16 dev eth-host32 master br1000 permanent"}
+{"unix_time": 1794942973.9949222, "line": "de:c7:69:39:11:16 dev eth-host32 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942973.995193, "line": "e2:a6:fc:63:7e:25 dev eth-host31 master br1000 permanent"}
+{"unix_time": 1794942973.996313, "line": "e2:a6:fc:63:7e:25 dev eth-host31 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942974.009598, "line": "00:00:00:00:00:22 dev vni1000 master br1000 "}
+{"unix_time": 1794942974.0168927, "line": "00:00:00:00:00:31 dev eth-host31 master br1000 "}
+{"unix_time": 1794942974.017221, "line": "00:00:00:00:00:21 dev vni1000 master br1000 "}
+{"unix_time": 1794942974.021251, "line": "00:00:00:00:00:32 dev eth-host32 master br1000 "}
+{"unix_time": 1794942974.1190705, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942974.1192582, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1794942974.1194365, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942974.1200013, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1794942974.120563, "line": "00:00:00:00:00:22 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942974.1208825, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942974.1210978, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1794942974.1213024, "line": "00:00:00:00:00:21 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942974.1215312, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942974.1217103, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1794942974.2753026, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942974.2765043, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942974.2768807, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942974.2774644, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942974.2778542, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942974.2801025, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942974.2803931, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942974.2872868, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942974.4587173, "line": "2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942974.458936, "line": "2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942974.459151, "line": "2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942974.4594507, "line": "2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942974.4597478, "line": "ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942974.460122, "line": "ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942974.4603302, "line": "ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942974.4605212, "line": "ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942974.8894866, "line": "Deleted 3a:53:f1:e1:3b:8e dev eth-host21 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942974.8900278, "line": "Deleted 3a:53:f1:e1:3b:8e dev eth-host21 master br1000 permanent"}
+{"unix_time": 1794942974.9155297, "line": "Deleted 4e:eb:19:89:c3:5d dev eth-host22 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942974.9159386, "line": "Deleted 4e:eb:19:89:c3:5d dev eth-host22 master br1000 permanent"}
+{"unix_time": 1794942977.2231755, "line": "3a:53:f1:e1:3b:8e dev eth-host21 master br1000 permanent"}
+{"unix_time": 1794942977.2279162, "line": "3a:53:f1:e1:3b:8e dev eth-host21 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942977.2330537, "line": "4e:eb:19:89:c3:5d dev eth-host22 master br1000 permanent"}
+{"unix_time": 1794942977.2344177, "line": "4e:eb:19:89:c3:5d dev eth-host22 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942977.2567663, "line": "00:00:00:00:00:32 dev vni1000 master br1000 "}
+{"unix_time": 1794942977.2622385, "line": "00:00:00:00:00:21 dev eth-host21 master br1000 "}
+{"unix_time": 1794942977.2626936, "line": "00:00:00:00:00:31 dev vni1000 master br1000 "}
+{"unix_time": 1794942977.2630713, "line": "00:00:00:00:00:22 dev eth-host22 master br1000 "}
+{"unix_time": 1794942977.366856, "line": "00:00:00:00:00:32 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942977.36715, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1794942977.3674972, "line": "00:00:00:00:00:31 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942977.3678033, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1794942977.368083, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942977.3682582, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1794942977.3684933, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942977.3686752, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1794942977.5203168, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942977.5208573, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942977.5233176, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942977.527106, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942977.5285532, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942977.528837, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942977.5293176, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942977.535204, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942977.7004738, "line": "2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942977.701209, "line": "2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942977.7013512, "line": "2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942977.7014956, "line": "2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942977.7016058, "line": "ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942977.701745, "line": "ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942977.7019217, "line": "ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942977.7020574, "line": "ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942978.073358, "line": "Deleted de:c7:69:39:11:16 dev eth-host32 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942978.0737386, "line": "Deleted de:c7:69:39:11:16 dev eth-host32 master br1000 permanent"}
+{"unix_time": 1794942978.1345208, "line": "Deleted e2:a6:fc:63:7e:25 dev eth-host31 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942978.1348288, "line": "Deleted e2:a6:fc:63:7e:25 dev eth-host31 master br1000 permanent"}
+{"unix_time": 1794942980.4391963, "line": "8e:98:13:8a:a3:73 dev eth-host12 master br1000 permanent"}
+{"unix_time": 1794942980.4432719, "line": "8e:98:13:8a:a3:73 dev eth-host12 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942980.453791, "line": "9e:95:39:a8:01:4b dev eth-host11 master br1000 permanent"}
+{"unix_time": 1794942980.4615347, "line": "9e:95:39:a8:01:4b dev eth-host11 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942980.4804478, "line": "00:00:00:00:00:12 dev eth-host12 master br1000 "}
+{"unix_time": 1794942980.480638, "line": "00:00:00:00:00:21 dev vni1000 master br1000 "}
+{"unix_time": 1794942980.4810236, "line": "00:00:00:00:00:11 dev eth-host11 master br1000 "}
+{"unix_time": 1794942980.4846432, "line": "00:00:00:00:00:22 dev vni1000 master br1000 "}
+{"unix_time": 1794942980.5841432, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942980.5845704, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1794942980.5852017, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942980.585594, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1794942980.5858898, "line": "00:00:00:00:00:21 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942980.5860283, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942980.5863132, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1794942980.5865345, "line": "00:00:00:00:00:22 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942980.58669, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942980.5869412, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1794942980.7367058, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942980.7374697, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942980.7388396, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942980.7439601, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942980.7449574, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942980.7450666, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942980.7454295, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942980.7456005, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942980.9179544, "line": "ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942980.9182847, "line": "ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942980.91846, "line": "ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942980.9185672, "line": "ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942980.918775, "line": "2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942980.918904, "line": "2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942980.9190598, "line": "2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942980.9192538, "line": "2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942981.374339, "line": "Deleted 3a:53:f1:e1:3b:8e dev eth-host21 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942981.3762167, "line": "Deleted 3a:53:f1:e1:3b:8e dev eth-host21 master br1000 permanent"}
+{"unix_time": 1794942981.3912692, "line": "Deleted 4e:eb:19:89:c3:5d dev eth-host22 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942981.3914719, "line": "Deleted 4e:eb:19:89:c3:5d dev eth-host22 master br1000 permanent"}
+{"unix_time": 1794942983.6950228, "line": "3a:53:f1:e1:3b:8e dev eth-host21 master br1000 permanent"}
+{"unix_time": 1794942983.6956043, "line": "3a:53:f1:e1:3b:8e dev eth-host21 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942983.6988919, "line": "4e:eb:19:89:c3:5d dev eth-host22 master br1000 permanent"}
+{"unix_time": 1794942983.700668, "line": "4e:eb:19:89:c3:5d dev eth-host22 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942983.7234225, "line": "00:00:00:00:00:22 dev eth-host22 master br1000 "}
+{"unix_time": 1794942983.7257664, "line": "00:00:00:00:00:21 dev eth-host21 master br1000 "}
+{"unix_time": 1794942983.7293785, "line": "00:00:00:00:00:11 dev vni1000 master br1000 "}
+{"unix_time": 1794942983.73031, "line": "00:00:00:00:00:12 dev vni1000 master br1000 "}
+{"unix_time": 1794942983.8311656, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942983.831605, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1794942983.8317685, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942983.8324096, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1794942983.8325617, "line": "00:00:00:00:00:11 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942983.8327363, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1794942983.8328395, "line": "00:00:00:00:00:12 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942983.8329608, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1794942983.9874444, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942983.989253, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942983.9900095, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942983.9919333, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942983.9939408, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942983.9946632, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942983.9975603, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942983.9976754, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942984.0558057, "line": "2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942984.0560036, "line": "2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942984.0560951, "line": "2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942984.0592177, "line": "2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942984.1572807, "line": "ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942984.1578429, "line": "ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942984.1580067, "line": "ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942984.158166, "line": "ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942984.586311, "line": "Deleted 8e:98:13:8a:a3:73 dev eth-host12 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942984.5865624, "line": "Deleted 8e:98:13:8a:a3:73 dev eth-host12 master br1000 permanent"}
+{"unix_time": 1794942984.5913372, "line": "Deleted 9e:95:39:a8:01:4b dev eth-host11 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942984.5915558, "line": "Deleted 9e:95:39:a8:01:4b dev eth-host11 master br1000 permanent"}
+{"unix_time": 1794942986.9208062, "line": "e2:a6:fc:63:7e:25 dev eth-host31 master br1000 permanent"}
+{"unix_time": 1794942986.9262285, "line": "e2:a6:fc:63:7e:25 dev eth-host31 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942986.934105, "line": "de:c7:69:39:11:16 dev eth-host32 master br1000 permanent"}
+{"unix_time": 1794942986.9385114, "line": "de:c7:69:39:11:16 dev eth-host32 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942986.9475548, "line": "00:00:00:00:00:21 dev vni1000 master br1000 "}
+{"unix_time": 1794942986.960624, "line": "00:00:00:00:00:31 dev eth-host31 master br1000 "}
+{"unix_time": 1794942986.9637952, "line": "00:00:00:00:00:32 dev eth-host32 master br1000 "}
+{"unix_time": 1794942986.9672658, "line": "00:00:00:00:00:22 dev vni1000 master br1000 "}
+{"unix_time": 1794942987.0591722, "line": "00:00:00:00:00:21 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942987.0598648, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942987.0600233, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1794942987.0601478, "line": "00:00:00:00:00:22 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942987.0604906, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942987.0606644, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1794942987.060781, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942987.0608788, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1794942987.0609748, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942987.061072, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1794942987.2114995, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942987.2126572, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942987.2130864, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942987.21354, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942987.2140675, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942987.2143512, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942987.2145267, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942987.2251604, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942987.3047793, "line": "ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942987.3049006, "line": "ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942987.3050072, "line": "ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942987.3051133, "line": "ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942987.3861737, "line": "2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942987.3862941, "line": "2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942987.3864532, "line": "2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942987.3865762, "line": "2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942987.724517, "line": "Deleted 3a:53:f1:e1:3b:8e dev eth-host21 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942987.724653, "line": "Deleted 3a:53:f1:e1:3b:8e dev eth-host21 master br1000 permanent"}
+{"unix_time": 1794942987.8464544, "line": "Deleted 4e:eb:19:89:c3:5d dev eth-host22 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942987.8468091, "line": "Deleted 4e:eb:19:89:c3:5d dev eth-host22 master br1000 permanent"}
+{"unix_time": 1794942990.156736, "line": "3a:53:f1:e1:3b:8e dev eth-host21 master br1000 permanent"}
+{"unix_time": 1794942990.1575098, "line": "3a:53:f1:e1:3b:8e dev eth-host21 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942990.1651392, "line": "4e:eb:19:89:c3:5d dev eth-host22 master br1000 permanent"}
+{"unix_time": 1794942990.167254, "line": "4e:eb:19:89:c3:5d dev eth-host22 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942990.1709788, "line": "00:00:00:00:00:21 dev eth-host21 master br1000 "}
+{"unix_time": 1794942990.1804328, "line": "00:00:00:00:00:32 dev vni1000 master br1000 "}
+{"unix_time": 1794942990.1848793, "line": "00:00:00:00:00:31 dev vni1000 master br1000 "}
+{"unix_time": 1794942990.189902, "line": "00:00:00:00:00:22 dev eth-host22 master br1000 "}
+{"unix_time": 1794942990.2851803, "line": "00:00:00:00:00:32 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942990.2853322, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1794942990.2854521, "line": "00:00:00:00:00:31 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942990.2855864, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1794942990.285722, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942990.2858486, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1794942990.28643, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942990.2866504, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1794942990.440311, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942990.4437041, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942990.445413, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942990.4513133, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942990.4530675, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942990.4544845, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942990.454615, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942990.4564533, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942990.5533333, "line": "2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942990.5534542, "line": "2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942990.5535583, "line": "2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942990.553673, "line": "2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942990.646769, "line": "ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942990.6471088, "line": "ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942990.647248, "line": "ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942990.6474645, "line": "ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942991.018755, "line": "Deleted de:c7:69:39:11:16 dev eth-host32 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942991.021194, "line": "Deleted de:c7:69:39:11:16 dev eth-host32 master br1000 permanent"}
+{"unix_time": 1794942991.0603623, "line": "Deleted e2:a6:fc:63:7e:25 dev eth-host31 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942991.060531, "line": "Deleted e2:a6:fc:63:7e:25 dev eth-host31 master br1000 permanent"}
+{"unix_time": 1794942993.3728914, "line": "9e:95:39:a8:01:4b dev eth-host11 master br1000 permanent"}
+{"unix_time": 1794942993.3801434, "line": "9e:95:39:a8:01:4b dev eth-host11 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942993.3845158, "line": "8e:98:13:8a:a3:73 dev eth-host12 master br1000 permanent"}
+{"unix_time": 1794942993.3858485, "line": "8e:98:13:8a:a3:73 dev eth-host12 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942993.4047856, "line": "00:00:00:00:00:11 dev eth-host11 master br1000 "}
+{"unix_time": 1794942993.405114, "line": "00:00:00:00:00:21 dev vni1000 master br1000 "}
+{"unix_time": 1794942993.4224932, "line": "00:00:00:00:00:22 dev vni1000 master br1000 "}
+{"unix_time": 1794942993.4264367, "line": "00:00:00:00:00:12 dev eth-host12 master br1000 "}
+{"unix_time": 1794942993.5143092, "line": "00:00:00:00:00:21 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942993.5145864, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942993.51475, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1794942993.5149457, "line": "00:00:00:00:00:22 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942993.5150688, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942993.5153804, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1794942993.5156476, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942993.5158064, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1794942993.5159426, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942993.5160496, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1794942993.668679, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942993.6701758, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942993.6779807, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942993.6798754, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942993.6830423, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942993.6834018, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942993.7006295, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942993.7008119, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942993.8554945, "line": "2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942993.8562958, "line": "2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942993.856417, "line": "2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942993.8585346, "line": "2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942993.8588626, "line": "ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942993.8589878, "line": "ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942993.8593159, "line": "ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942993.8595114, "line": "ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942994.2863774, "line": "Deleted 3a:53:f1:e1:3b:8e dev eth-host21 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942994.2865083, "line": "Deleted 3a:53:f1:e1:3b:8e dev eth-host21 master br1000 permanent"}
+{"unix_time": 1794942994.308229, "line": "Deleted 4e:eb:19:89:c3:5d dev eth-host22 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942994.3085532, "line": "Deleted 4e:eb:19:89:c3:5d dev eth-host22 master br1000 permanent"}
+{"unix_time": 1794942996.6079545, "line": "3a:53:f1:e1:3b:8e dev eth-host21 master br1000 permanent"}
+{"unix_time": 1794942996.6116025, "line": "3a:53:f1:e1:3b:8e dev eth-host21 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942996.620521, "line": "4e:eb:19:89:c3:5d dev eth-host22 master br1000 permanent"}
+{"unix_time": 1794942996.62091, "line": "4e:eb:19:89:c3:5d dev eth-host22 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942996.6294453, "line": "00:00:00:00:00:11 dev vni1000 master br1000 "}
+{"unix_time": 1794942996.6447597, "line": "00:00:00:00:00:12 dev vni1000 master br1000 "}
+{"unix_time": 1794942996.6450806, "line": "00:00:00:00:00:21 dev eth-host21 master br1000 "}
+{"unix_time": 1794942996.6452427, "line": "00:00:00:00:00:22 dev eth-host22 master br1000 "}
+{"unix_time": 1794942996.7442508, "line": "00:00:00:00:00:11 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942996.7446136, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1794942996.744974, "line": "00:00:00:00:00:12 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942996.7451353, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1794942996.7452667, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942996.745533, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1794942996.7457185, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942996.7458856, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1794942996.9040167, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942996.90695, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942996.9077184, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942996.9079301, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942996.9119663, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942996.9170876, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942996.9172642, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942996.919089, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942997.1110673, "line": "2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942997.111948, "line": "2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942997.1121, "line": "2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942997.1123028, "line": "2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794942997.1124675, "line": "ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794942997.1126242, "line": "ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794942997.1127677, "line": "ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942997.1129918, "line": "ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794942997.5724142, "line": "Deleted 9e:95:39:a8:01:4b dev eth-host11 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942997.5725598, "line": "Deleted 9e:95:39:a8:01:4b dev eth-host11 master br1000 permanent"}
+{"unix_time": 1794942997.5893133, "line": "Deleted 8e:98:13:8a:a3:73 dev eth-host12 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942997.5895545, "line": "Deleted 8e:98:13:8a:a3:73 dev eth-host12 master br1000 permanent"}
+{"unix_time": 1794942999.765905, "line": "de:c7:69:39:11:16 dev eth-host32 master br1000 permanent"}
+{"unix_time": 1794942999.768116, "line": "de:c7:69:39:11:16 dev eth-host32 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942999.7730815, "line": "e2:a6:fc:63:7e:25 dev eth-host31 master br1000 permanent"}
+{"unix_time": 1794942999.7786808, "line": "e2:a6:fc:63:7e:25 dev eth-host31 vlan 1 master br1000 permanent"}
+{"unix_time": 1794942999.7999017, "line": "00:00:00:00:00:21 dev vni1000 master br1000 "}
+{"unix_time": 1794942999.804303, "line": "00:00:00:00:00:32 dev eth-host32 master br1000 "}
+{"unix_time": 1794942999.8058374, "line": "00:00:00:00:00:22 dev vni1000 master br1000 "}
+{"unix_time": 1794942999.8080764, "line": "00:00:00:00:00:31 dev eth-host31 master br1000 "}
+{"unix_time": 1794942999.9054077, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942999.9061258, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1794942999.9066184, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794942999.9069142, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1794942999.907268, "line": "00:00:00:00:00:21 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942999.9076715, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942999.907974, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1794942999.908096, "line": "00:00:00:00:00:22 dev vni1000 extern_learn master br1000 "}
+{"unix_time": 1794942999.9082966, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794942999.9083903, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1794943000.0622044, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794943000.062808, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794943000.0637896, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794943000.0656946, "line": "Deleted 2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794943000.06631, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794943000.0674233, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794943000.0706792, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794943000.0711474, "line": "Deleted ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794943000.2187626, "line": "2e:4f:b9:de:d3:19 dev vni500 extern_learn master br500 "}
+{"unix_time": 1794943000.219118, "line": "2e:4f:b9:de:d3:19 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794943000.219322, "line": "2e:4f:b9:de:d3:19 dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1794943000.219455, "line": "2e:4f:b9:de:d3:19 dev vni500 self "}
+{"unix_time": 1794943000.2197568, "line": "ca:54:62:cb:f7:cf dev vni500 extern_learn master br500 "}
+{"unix_time": 1794943000.2198672, "line": "ca:54:62:cb:f7:cf dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1794943000.2200189, "line": "ca:54:62:cb:f7:cf dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1794943000.2201564, "line": "ca:54:62:cb:f7:cf dev vni500 self "}
+{"unix_time": 1794943000.691911, "line": "Deleted 4e:eb:19:89:c3:5d dev eth-host22 vlan 1 master br1000 permanent"}
+{"unix_time": 1794943000.6923127, "line": "Deleted 4e:eb:19:89:c3:5d dev eth-host22 master br1000 permanent"}
+{"unix_time": 1794943000.705813, "line": "Deleted 3a:53:f1:e1:3b:8e dev eth-host21 vlan 1 master br1000 permanent"}
+{"unix_time": 1794943000.706186, "line": "Deleted 3a:53:f1:e1:3b:8e dev eth-host21 master br1000 permanent"}
