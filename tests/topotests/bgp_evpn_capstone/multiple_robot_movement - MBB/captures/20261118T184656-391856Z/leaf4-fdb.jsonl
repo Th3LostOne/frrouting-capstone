@@ -1,0 +1,564 @@
+{"unix_time": 1795027625.526571, "line": "5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027625.5313325, "line": "5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027625.5335283, "line": "5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027625.534705, "line": "5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027625.8681922, "line": "92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027625.868458, "line": "92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027625.8689919, "line": "92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027625.8691792, "line": "92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027626.213363, "line": "22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027626.213631, "line": "22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027626.213834, "line": "22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027626.214098, "line": "22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027626.888945, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027626.8894298, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1795027626.8897336, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027626.8899255, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1795027626.8900933, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027626.890273, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1795027626.8904593, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027626.8906097, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1795027626.8907423, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027626.890867, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1795027626.8910635, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027626.891228, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1795027627.041104, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027627.0413172, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027627.041551, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027627.0417802, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027627.0420346, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027627.0424042, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027627.04259, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027627.0428102, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027627.0430071, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027627.0431373, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027627.043281, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027627.043414, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027630.1855083, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027630.1859646, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1795027630.18632, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027630.1867146, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1795027630.1869178, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027630.187212, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1795027630.1877122, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027630.1878853, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1795027630.1880112, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027630.1881318, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1795027630.1882079, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027630.18828, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1795027630.2362728, "line": "5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027630.2365847, "line": "5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027630.236792, "line": "5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027630.2370207, "line": "5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027630.2371528, "line": "92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027630.2372665, "line": "92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027630.237417, "line": "92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027630.2375047, "line": "92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027630.2376223, "line": "22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027630.2377133, "line": "22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027630.237783, "line": "22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027630.237874, "line": "22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027633.073917, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027633.0743122, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1795027633.0745747, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027633.0746741, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1795027633.074906, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027633.0751333, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1795027633.075357, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027633.0755894, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1795027633.0757294, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027633.075881, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1795027633.075968, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027633.076066, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1795027633.229959, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027633.2303941, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027633.230557, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027633.2325737, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027633.2335901, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027633.2380977, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027633.2383542, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027633.2427351, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027633.24317, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027633.243542, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027633.2436996, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027633.2437983, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027633.3876588, "line": "22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027633.3880599, "line": "22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027633.3882973, "line": "22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027633.3885298, "line": "22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027633.3887858, "line": "5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027633.3889618, "line": "5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027633.38911, "line": "5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027633.389306, "line": "5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027633.3894672, "line": "92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027633.3896618, "line": "92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027633.3897743, "line": "92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027633.3898695, "line": "92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027636.1860783, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027636.1873424, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1795027636.1875043, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027636.1876462, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1795027636.1878002, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027636.1879866, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1795027636.1883004, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027636.1885717, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1795027636.188748, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027636.188981, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1795027636.1891253, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027636.18925, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1795027636.338398, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027636.3388731, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027636.3394604, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027636.3398545, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027636.3500755, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027636.3524177, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027636.3527155, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027636.3541198, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027636.354297, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027636.3573616, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027636.3600295, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027636.3602347, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027636.5219598, "line": "92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027636.5221124, "line": "92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027636.5222666, "line": "92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027636.5230756, "line": "92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027636.5233135, "line": "22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027636.5244498, "line": "22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027636.5245383, "line": "22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027636.5246236, "line": "22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027636.5246887, "line": "5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027636.5247653, "line": "5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027636.5248733, "line": "5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027636.5249574, "line": "5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027639.3254123, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027639.3256292, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1795027639.3258953, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027639.3262408, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1795027639.3264146, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027639.3266377, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1795027639.3268, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027639.3269148, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1795027639.3270268, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027639.3271296, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1795027639.3272367, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027639.32735, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1795027639.4775724, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027639.4785957, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027639.479091, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027639.479267, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027639.4808574, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027639.483898, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027639.4906187, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027639.4934227, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027639.4966063, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027639.504688, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027639.5100641, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027639.510681, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027639.6550398, "line": "22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027639.656853, "line": "22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027639.6570034, "line": "22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027639.6571116, "line": "22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027639.6571817, "line": "92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027639.6573098, "line": "92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027639.657435, "line": "92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027639.657564, "line": "92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027639.7233777, "line": "5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027639.7236598, "line": "5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027639.7239425, "line": "5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027639.7240791, "line": "5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027642.5352597, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027642.5356, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1795027642.5359192, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027642.5361912, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1795027642.5363235, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027642.5365348, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1795027642.5367124, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027642.5369024, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1795027642.537132, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027642.537249, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1795027642.5373328, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027642.537413, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1795027642.6867802, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027642.688259, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027642.6901393, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027642.6903317, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027642.6910048, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027642.6912067, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027642.6963794, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027642.6965117, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027642.69793, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027642.7001758, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027642.7004423, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027642.7037425, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027642.9051268, "line": "92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027642.907201, "line": "92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027642.9075217, "line": "92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027642.9077618, "line": "92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027642.9079955, "line": "22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027642.908243, "line": "22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027642.908391, "line": "22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027642.9085636, "line": "22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027642.9087045, "line": "5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027642.9088137, "line": "5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027642.9089284, "line": "5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027642.9090452, "line": "5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027645.7897642, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027645.790099, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1795027645.7904253, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027645.7907233, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1795027645.790881, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027645.7910643, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1795027645.791215, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027645.7913442, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1795027645.7914577, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027645.7915473, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1795027645.7916605, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027645.7917514, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1795027645.942551, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027645.9454963, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027645.9486973, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027645.948823, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027645.9504063, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027645.9505184, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027645.9506729, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027645.9508765, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027645.9514487, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027645.9535291, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027645.9539378, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027645.9571607, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027646.0995712, "line": "5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027646.0997143, "line": "5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027646.099952, "line": "5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027646.1001256, "line": "5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027646.100286, "line": "92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027646.1004345, "line": "92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027646.1005504, "line": "92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027646.1007748, "line": "92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027646.1008956, "line": "22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027646.100998, "line": "22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027646.1011016, "line": "22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027646.1011975, "line": "22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027648.963596, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027648.964052, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1795027648.964362, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027648.9645405, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1795027648.964709, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027648.9649203, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1795027648.9651494, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027648.965354, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1795027648.9655344, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027648.966046, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1795027648.9661362, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027648.9662209, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1795027649.1195493, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027649.1197047, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027649.120113, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027649.1206064, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027649.1236734, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027649.1311743, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027649.1314516, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027649.1325774, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027649.1379266, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027649.1413956, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027649.1420805, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027649.1492, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027649.2879596, "line": "5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027649.2881432, "line": "5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027649.2885306, "line": "5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027649.2888217, "line": "5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027649.2889452, "line": "92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027649.2890348, "line": "92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027649.28917, "line": "92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027649.2892904, "line": "92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027649.2895215, "line": "22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027649.2896166, "line": "22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027649.2897134, "line": "22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027649.2898135, "line": "22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027652.1659892, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027652.1662176, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1795027652.1664538, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027652.166579, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1795027652.166732, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027652.1669202, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1795027652.1671221, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027652.1672564, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1795027652.1673472, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027652.1674478, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1795027652.1675375, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027652.1676173, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1795027652.3238475, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027652.3257036, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027652.3258724, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027652.3262208, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027652.328206, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027652.3287547, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027652.329363, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027652.330866, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027652.3334546, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027652.336616, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027652.3367395, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027652.3535202, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027652.4207664, "line": "5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027652.4208689, "line": "5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027652.4209535, "line": "5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027652.4210613, "line": "5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027652.472022, "line": "22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027652.4722245, "line": "22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027652.472366, "line": "22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027652.4724903, "line": "22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027652.4725876, "line": "92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027652.4727871, "line": "92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027652.4729192, "line": "92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027652.4735267, "line": "92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027655.3450956, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027655.3458889, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1795027655.3461087, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027655.3462694, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1795027655.3465335, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027655.3466568, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1795027655.3467748, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027655.346862, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1795027655.3469596, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027655.347056, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1795027655.3471513, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027655.3472462, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1795027655.5016494, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027655.5054996, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027655.505625, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027655.5065794, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027655.506735, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027655.508314, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027655.5106792, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027655.5116735, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027655.5121424, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027655.5136876, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027655.5162292, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027655.516859, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027655.668221, "line": "92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027655.6683986, "line": "92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027655.6684873, "line": "92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027655.6685898, "line": "92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027655.7340345, "line": "5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027655.734553, "line": "5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027655.7349453, "line": "5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027655.7351363, "line": "5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027655.7353213, "line": "22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027655.7354245, "line": "22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027655.7355788, "line": "22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027655.7357593, "line": "22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027658.5402987, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027658.5405798, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1795027658.540836, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027658.5421417, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1795027658.5423868, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027658.542616, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1795027658.5428405, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027658.5430675, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1795027658.5432525, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027658.543357, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1795027658.5436437, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027658.5439298, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1795027658.7057898, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027658.7059968, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027658.7260537, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027658.72652, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027658.726979, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027658.7272651, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027658.7275333, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027658.7277453, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027658.7280686, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027658.728245, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027658.728431, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027658.7286491, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027658.8604817, "line": "22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027658.8609545, "line": "22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027658.861121, "line": "22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027658.8612654, "line": "22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027658.861383, "line": "5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027658.861466, "line": "5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027658.8615823, "line": "5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027658.8616617, "line": "5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027658.861733, "line": "92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027658.861794, "line": "92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027658.8618724, "line": "92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027658.8619413, "line": "92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027661.8767834, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027661.8772728, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1795027661.877552, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027661.8777926, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1795027661.878122, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027661.8782794, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1795027661.8784237, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027661.8785408, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1795027661.9514546, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027661.951668, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1795027661.9518483, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027661.9520507, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1795027662.0012496, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027662.0014498, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027662.0016341, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027662.0017898, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027662.102876, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027662.103086, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027662.1039643, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027662.1041574, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027662.1042855, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027662.1050494, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027662.1052496, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027662.1053731, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027662.1055567, "line": "22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027662.1057096, "line": "22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027662.105835, "line": "22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027662.1059837, "line": "22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027662.2043896, "line": "92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027662.2045157, "line": "92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027662.2046325, "line": "92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027662.2047577, "line": "92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027662.204826, "line": "5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027662.2048876, "line": "5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027662.20498, "line": "5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027662.205049, "line": "5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027665.0271506, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027665.0277376, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1795027665.027995, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027665.02812, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1795027665.02847, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027665.028687, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1795027665.0288672, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027665.0291097, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1795027665.0292947, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027665.0294452, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1795027665.029569, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027665.0296812, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1795027665.1789694, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027665.1804278, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027665.1808512, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027665.1813781, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027665.181875, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027665.1822474, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027665.1843219, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027665.1854303, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027665.188377, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027665.1919687, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027665.1922722, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027665.192741, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027665.3792233, "line": "5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027665.37954, "line": "5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027665.3796818, "line": "5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027665.3799183, "line": "5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027665.3800986, "line": "22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027665.3802445, "line": "22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027665.3804202, "line": "22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027665.3806717, "line": "22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027665.3808312, "line": "92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027665.3810363, "line": "92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027665.3811967, "line": "92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027665.3812966, "line": "92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027668.3396976, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027668.3408375, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1795027668.3412435, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027668.3414476, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1795027668.3416278, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027668.3420184, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1795027668.342248, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027668.342546, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1795027668.34272, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027668.3428366, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1795027668.342957, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027668.3430576, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1795027668.4926805, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027668.4976468, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027668.5028799, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027668.5083835, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027668.5113907, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027668.5119495, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027668.5121393, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027668.5124655, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027668.5125875, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027668.512824, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027668.5129912, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027668.514734, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027668.7000089, "line": "92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027668.7012575, "line": "92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027668.7013762, "line": "92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027668.7017615, "line": "92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027668.7021275, "line": "5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027668.70232, "line": "5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027668.702549, "line": "5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027668.7026954, "line": "5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027668.7030106, "line": "22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027668.7031426, "line": "22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027668.7032661, "line": "22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027668.7033598, "line": "22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027671.6004994, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027671.60077, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1795027671.6010046, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027671.6012201, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1795027671.6014318, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027671.6015544, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1795027671.6016955, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027671.6018844, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1795027671.6020076, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027671.6021662, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1795027671.6022794, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027671.6023526, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1795027671.7545674, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027671.7566, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027671.7574172, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027671.7624152, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027671.764873, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027671.7720535, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027671.7721627, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027671.7722952, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027671.7728736, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027671.7730196, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027671.7774682, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027671.778992, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027671.9613776, "line": "5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027671.9618552, "line": "5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027671.9620185, "line": "5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027671.9621427, "line": "5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027671.9623048, "line": "22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027671.962493, "line": "22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027671.9626124, "line": "22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027671.962753, "line": "22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027671.9629452, "line": "92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027671.9630733, "line": "92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027671.963178, "line": "92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027671.9633121, "line": "92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027674.9213965, "line": "00:00:00:00:00:11 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027674.9225218, "line": "00:00:00:00:00:11 dev vni1000 self "}
+{"unix_time": 1795027674.9227834, "line": "00:00:00:00:00:12 dev vni1000 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027674.9229841, "line": "00:00:00:00:00:12 dev vni1000 self "}
+{"unix_time": 1795027674.9231906, "line": "00:00:00:00:00:22 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027674.9233966, "line": "00:00:00:00:00:22 dev vni1000 self "}
+{"unix_time": 1795027674.9235415, "line": "00:00:00:00:00:21 dev vni1000 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027674.9237316, "line": "00:00:00:00:00:21 dev vni1000 self "}
+{"unix_time": 1795027674.9238997, "line": "00:00:00:00:00:31 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027674.9241052, "line": "00:00:00:00:00:31 dev vni1000 self "}
+{"unix_time": 1795027674.9242196, "line": "00:00:00:00:00:32 dev vni1000 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027674.9243202, "line": "00:00:00:00:00:32 dev vni1000 self "}
+{"unix_time": 1795027675.0756674, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027675.0768645, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027675.0771708, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027675.0773497, "line": "Deleted 5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027675.0795279, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027675.0800297, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027675.083194, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027675.0836864, "line": "Deleted 92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027675.0839431, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027675.0871596, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027675.0911884, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027675.091393, "line": "Deleted 22:dd:09:f5:5e:c6 dev vni500 self "}
+{"unix_time": 1795027675.2266483, "line": "5a:b8:db:22:48:bc dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027675.2270136, "line": "5a:b8:db:22:48:bc dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027675.2271724, "line": "5a:b8:db:22:48:bc dev vni500 dst 10.0.0.1 self extern_learn "}
+{"unix_time": 1795027675.2273047, "line": "5a:b8:db:22:48:bc dev vni500 self "}
+{"unix_time": 1795027675.2275093, "line": "92:86:a4:7f:01:20 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027675.2277617, "line": "92:86:a4:7f:01:20 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027675.2280514, "line": "92:86:a4:7f:01:20 dev vni500 dst 10.0.0.2 self extern_learn "}
+{"unix_time": 1795027675.2283466, "line": "92:86:a4:7f:01:20 dev vni500 self "}
+{"unix_time": 1795027675.2285519, "line": "22:dd:09:f5:5e:c6 dev vni500 extern_learn master br500 "}
+{"unix_time": 1795027675.2287705, "line": "22:dd:09:f5:5e:c6 dev vni500 vlan 1 extern_learn master br500 "}
+{"unix_time": 1795027675.228938, "line": "22:dd:09:f5:5e:c6 dev vni500 dst 10.0.0.3 self extern_learn "}
+{"unix_time": 1795027675.2290637, "line": "22:dd:09:f5:5e:c6 dev vni500 self "}

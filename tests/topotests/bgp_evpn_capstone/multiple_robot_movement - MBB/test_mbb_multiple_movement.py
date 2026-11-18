@@ -1,5 +1,6 @@
 """Controlled dual-attachment MBB handoffs for six robots on the capstone fabric."""
 
+import importlib.util
 import json
 import math
 import os
@@ -20,7 +21,14 @@ sys.path.insert(0, str(CWD))
 sys.path.insert(0, str(CWD.parent.parent))
 
 import analyze_mbb
-from bgp_evpn_capstone.multiple_robot_movement import test_multiple_robot_movement as bbm
+# Load shared BBM helpers from the renamed experiment folder.
+_bbm_spec = importlib.util.spec_from_file_location(
+    "mbb_bbm_helpers",
+    CWD.parent / "multiple_robot_movement - BBM" / "test_multiple_robot_movement.py",
+)
+bbm = importlib.util.module_from_spec(_bbm_spec)
+_bbm_spec.loader.exec_module(bbm)
+from bgp_evpn_capstone.resource_monitor import ResourceMonitor
 from bgp_evpn_capstone.single_movement.capture_leaf_traffic import LineMonitor
 from bgp_evpn_capstone.single_movement.robot_roaming.test_robot_roaming import start_tshark
 
@@ -237,6 +245,7 @@ def test_mbb_multiple_movement():
 
     out = CWD / "captures" / datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S-%fZ")
     out.mkdir(parents=True)
+    resource_monitor = ResourceMonitor(topology, out)
     plan = [{
         "batch": index + 1, "cycle": index // len(bbm.CYCLE_OFFSETS) + 1,
         "moves": [
@@ -259,6 +268,7 @@ def test_mbb_multiple_movement():
     bbm.save_json(out / "movement.json", run)
     print(f"\nMBB results: {out}", flush=True)
     try:
+        resource_monitor.start()
         for host, robot in bbm.ROBOTS.items():
             run["interfaces"][host] = configure_robot(topology, host)
             agents[host] = RobotAgent(
@@ -326,6 +336,7 @@ def test_mbb_multiple_movement():
         time.sleep(max(DWELL_S, 1))
         run["after"] = bbm.snapshot(topology)
     finally:
+        resource_monitor.stop()
         if observer:
             observer.stop()
         for monitor in monitors:

@@ -1,6 +1,7 @@
 """Analyze the seven EVPN metrics and MBB ordering in a saved run."""
 
 import argparse
+import importlib.util
 import csv
 import json
 from pathlib import Path
@@ -8,7 +9,13 @@ import subprocess
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
-from bgp_evpn_capstone.multiple_robot_movement import analyze_movement as base
+# Keep standalone reanalysis working after the BBM folder rename.
+_base_spec = importlib.util.spec_from_file_location(
+    "mbb_base_analyzer",
+    Path(__file__).resolve().parent.parent / "multiple_robot_movement - BBM" / "analyze_movement.py",
+)
+base = importlib.util.module_from_spec(_base_spec)
+_base_spec.loader.exec_module(base)
 
 
 def captured_arps(folder, leaves):

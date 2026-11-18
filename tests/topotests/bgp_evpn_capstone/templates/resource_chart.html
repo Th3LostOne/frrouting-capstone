@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FRR · Live switch resources</title>
+<style>
+:root{color-scheme:dark;--bg:#0a121c;--panel:#111e2c;--border:#27394b;--ink:#e7f1fc;--muted:#a7bbcf;--grid:#263648;--accent:#53d2ff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#17314b,transparent 65%),var(--bg);color:var(--ink);font:14px system-ui,-apple-system,sans-serif}main{max-width:1440px;margin:auto;padding:32px 24px}header{display:flex;justify-content:space-between;gap:20px;align-items:center}.eyebrow{color:var(--accent);font-size:11px;letter-spacing:.16em;font-weight:700}h1{font-size:28px;letter-spacing:-.04em;margin:8px 0}p{color:var(--muted);line-height:1.6;margin:6px 0}nav{display:flex;gap:16px}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}.status{margin:22px 0 12px;padding:16px 18px;border:1px solid var(--border);border-radius:12px;background:var(--panel);display:flex;gap:16px;justify-content:space-between;align-items:center}#state{font-weight:650}#state::before{content:'●';color:var(--status-color,#eab75a);margin-right:9px}#run{font-size:12px;overflow-wrap:anywhere;max-width:100%;margin-top:5px}.controls{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:20px 0}#nodes{display:flex;flex-wrap:wrap;gap:8px}.node{display:flex;align-items:center;gap:6px;padding:7px 10px;border:1px solid var(--border);border-radius:7px;cursor:pointer;background:var(--panel)}.node input{accent-color:var(--color)}.swatch{height:3px;width:13px;background:var(--color)}select{background:var(--panel);color:var(--ink);border:1px solid var(--border);border-radius:6px;padding:7px}label{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{min-width:0;border:1px solid var(--border);border-radius:12px;padding:17px 16px 12px;background:var(--panel)}.card h2{font-size:14px;margin:0 0 4px;font-weight:650}.unit{color:var(--muted);font-size:11px}canvas{display:block;width:100%;height:210px;margin-top:10px}.hint{font-size:12px;margin:16px 0}.tablewrap{margin-top:22px;overflow:auto;border:1px solid var(--border);border-radius:12px;background:var(--panel)}table{width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap}caption{text-align:left;padding:16px;font-weight:650;font-size:14px}th,td{text-align:right;padding:10px 14px;border-top:1px solid var(--border)}th{font-weight:500;color:var(--muted)}th:first-child,td:first-child{text-align:left}.error{color:#ffb4b4;white-space:normal;min-width:120px}.foot{font-size:12px;margin-top:16px}@media(max-width:780px){main{padding:20px 12px}.grid{grid-template-columns:1fr}header,.status{align-items:flex-start;flex-direction:column}h1{font-size:24px}}
+</style>
+</head>
+<body><main>
+<header><div><div class="eyebrow">WAREHOUSE MOBILITY / CONTROL PLANE</div><h1>Live switch resources</h1><p>Follow routing work across the leaves and spines as robots move.</p></div><nav aria-label="Other dashboards"><a href="/">Topology</a><a href="/route-chart">EVPN route chart ↗</a></nav></header>
+<section class="status" aria-live="polite"><div><div id="state">Waiting for a monitored test</div><p id="run">Start the visualizer first, then run the BBM test with resource monitoring enabled.</p></div><div><span id="count">0</span> switch samples · <span id="age">no data yet</span></div></section>
+<div class="controls"><div id="nodes" aria-label="Switches to display"></div><label>Time window <select id="window"><option value="180">Last 3 minutes</option><option value="600">Last 10 minutes</option><option value="Infinity">Entire retained run</option></select></label></div>
+<section class="grid" id="charts" aria-label="Resource graphs"></section>
+<p class="hint">Horizontal axis: seconds since monitoring started. One color per switch; select switches above to compare them. Missing values stay blank. Rate graphs need two samples.</p>
+<div class="tablewrap"><table><caption>Latest measurements</caption><thead><tr><th>Switch</th><th>bgpd CPU</th><th>zebra CPU</th><th>bgpd MB</th><th>zebra MB</th><th>EVPN prefixes</th><th>InQ / OutQ</th><th>Peers up / total</th><th>Sampling error</th></tr></thead><tbody id="latest"></tbody></table></div>
+<p class="foot">System samples: normally 1 s · FRR queries: normally 5 s. Daemon CPU: 100% = one core. Machine CPU covers the shared Colima VM. BGP message rates include all BGP message types. InQ/OutQ are sampled FRR queues; short spikes between samples can be missed. CSVs remain in the run's capture folder after the page closes.</p>
+</main>
+<script>
+'use strict';
+const colors=['#53d2ff','#ffcb68','#f07aa5','#40d4ac','#bd9aff','#f59667','#8db8ff'];
+const knownNodes=['leaf1','leaf2','leaf3','leaf4','leaf5','spine1','spine2'];
+const series=new Map(), previous=new Map(), latest=new Map(), disabled=new Set();
+let runId=null, after=0, rowCount=0, lastSent=0, runLabel='', complete=false;
+const sum=(r,...keys)=>keys.every(k=>r[k]!==undefined && r[k]!==null && r[k]!=='') ? keys.reduce((n,k)=>n+Number(r[k]),0) : null;
+const mb=(r,k)=>sum(r,k)===null?null:Number(r[k])/1024;
+// First ten panels match plot_resources.py. The extra panels show measured queues and sessions.
+const panels=[
+ ['bgpd-cpu','bgpd CPU','% of one core','system',r=>sum(r,'bgpd_cpu_pct')],
+ ['zebra-cpu','zebra CPU','% of one core','system',r=>sum(r,'zebra_cpu_pct')],
+ ['bgpd-memory','bgpd memory','MB','system',r=>mb(r,'bgpd_rss_kb')],
+ ['zebra-memory','zebra memory','MB','system',r=>mb(r,'zebra_rss_kb')],
+ ['mac-table','MAC table · kernel','distinct local + remote MACs','system',r=>sum(r,'k_fdb_local','k_fdb_remote')],
+ ['vrf-routes','Routes in tenant VRF','BGP routes in VRF500','system',r=>sum(r,'k_vrf_routes')],
+ ['evpn-routes','EVPN table · BGP','prefixes, all EVPN route types','frr',r=>sum(r,'bgp_evpn_prefixes')],
+ ['bgp-messages','BGP messages','sent + received / second','frr',r=>sum(r,'bgp_msgs_rcvd','bgp_msgs_sent'),true],
+ ['bestpath-runs','BGP best-path calculations','calculations / second','frr',r=>sum(r,'bgp_bestpath_runs'),true],
+ ['machine-cpu','Whole machine CPU','% · shared Colima VM','system',r=>sum(r,'host_cpu_pct'),false,true],
+ ['bgp-queues','BGP queues','InQ + OutQ · summed over peers','frr',r=>sum(r,'bgp_inq','bgp_outq')],
+ ['bgp-peers','Established EVPN peers','sessions per switch','frr',r=>sum(r,'bgp_peers_up')]
+];
+const elements=new Map();
+for(const p of panels){
+ const card=document.createElement('article');card.className='card';
+ const title=document.createElement('h2');title.textContent=p[1];card.appendChild(title);
+ const unit=document.createElement('span');unit.className='unit';unit.textContent=p[2];card.appendChild(unit);
+ const canvas=document.createElement('canvas');canvas.setAttribute('role','img');canvas.setAttribute('aria-label',p[1]);card.appendChild(canvas);
+ document.getElementById('charts').appendChild(card);elements.set(p[0],canvas);series.set(p[0],new Map());
+}
+function color(node){return colors[Math.max(0,knownNodes.indexOf(node))%colors.length];}
+for(const node of knownNodes){
+ const label=document.createElement('label');label.className='node';label.style.setProperty('--color',color(node));
+ const input=document.createElement('input');input.type='checkbox';input.checked=true;input.addEventListener('change',()=>{input.checked?disabled.delete(node):disabled.add(node);render();});
+ const swatch=document.createElement('span');swatch.className='swatch';label.append(input,swatch,document.createTextNode(node));document.getElementById('nodes').appendChild(label);
+}
+function reset(){rowCount=0;lastSent=0;runLabel='';complete=false;previous.clear();latest.clear();for(const values of series.values())values.clear();}
+function accept(event){
+ runLabel=event.label||runLabel;lastSent=Math.max(lastSent,event.sent_at||0);complete=event.state==='complete';
+ for(const row of event.rows||[]){
+  if(!row.node || !Number.isFinite(row.t_s))continue;
+  rowCount++;const current=latest.get(row.node)||{};current[event.kind]=row;latest.set(row.node,current);
+  for(const p of panels){
+   if(p[3]!==event.kind || (p[7] && row.node!==knownNodes[0]))continue;
+   const key=p[0]+':'+row.node;let value=p[4](row);
+   if(p[5]){const before=previous.get(key);previous.set(key,{t:row.t_unix,v:value});value=before && value!==null && before.v!==null && row.t_unix>before.t && value>=before.v?(value-before.v)/(row.t_unix-before.t):null;}
+   if(value!==null && !Number.isFinite(value))value=null;
+   const name=p[7]?'Colima VM':row.node, values=series.get(p[0]);
+   const points=values.get(name)||[];points.push({x:row.t_s,y:value});if(points.length>2000)points.splice(0,points.length-2000);values.set(name,points);
+  }
+ }
+}
+const fmt=(v,d=1)=>v===null||v===undefined||!Number.isFinite(Number(v))?'—':Number(v).toFixed(d);
+function table(){
+ const body=document.getElementById('latest');body.replaceChildren();
+ for(const node of knownNodes){const item=latest.get(node);if(!item)continue;const s=item.system||{},f=item.frr||{};
+  const values=[node,fmt(s.bgpd_cpu_pct)+'%',fmt(s.zebra_cpu_pct)+'%',fmt(mb(s,'bgpd_rss_kb')),fmt(mb(s,'zebra_rss_kb')),fmt(f.bgp_evpn_prefixes,0),fmt(f.bgp_inq,0)+' / '+fmt(f.bgp_outq,0),fmt(f.bgp_peers_up,0)+' / '+fmt(f.bgp_peers,0),[s.error,f.error].filter(Boolean).join('; ')||'—'];
+  const tr=document.createElement('tr');for(let i=0;i<values.length;i++){const td=document.createElement('td');td.textContent=values[i];if(i===0)td.style.color=color(node);if(i===8 && values[i]!=='—')td.className='error';tr.appendChild(td);}body.appendChild(tr);
+ }
+}
+function render(){
+ let end=10;for(const values of series.values())for(const points of values.values())if(points.length)end=Math.max(end,points[points.length-1].x);
+ const start=Math.max(0,end-Number(document.getElementById('window').value));
+ for(const p of panels){
+  const canvas=elements.get(p[0]),rect=canvas.getBoundingClientRect(),w=rect.width,h=rect.height,dpr=window.devicePixelRatio||1;
+  canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);const ctx=canvas.getContext('2d');ctx.scale(dpr,dpr);
+  const left=48,right=w-14,top=12,bottom=h-28;
+  let ymax=0,hasData=false;
+  for(const [node,points] of series.get(p[0])){if(disabled.has(node))continue;for(const point of points)if(point.x>=start&&point.x<=end&&point.y!==null){hasData=true;ymax=Math.max(ymax,point.y);}}
+  ymax=ymax>0?ymax*1.12:1;ctx.font='11px system-ui';ctx.fillStyle='#a7bbcf';ctx.strokeStyle='#263648';ctx.lineWidth=1;
+  for(let i=0;i<=4;i++){const y=bottom-(bottom-top)*i/4;ctx.beginPath();ctx.moveTo(left,y);ctx.lineTo(right,y);ctx.stroke();ctx.textAlign='right';ctx.fillText((ymax*i/4).toLocaleString(undefined,{maximumFractionDigits:ymax<5?1:0}),left-7,y+4);}
+  ctx.textAlign='center';for(let i=0;i<=4;i++){const t=start+(end-start)*i/4;ctx.fillText(t.toFixed(0)+' s',left+(right-left)*i/4,h-8);}
+  ctx.save();ctx.beginPath();ctx.rect(left,top,right-left,bottom-top);ctx.clip();
+  for(const [node,points] of series.get(p[0])){
+   if(disabled.has(node))continue;ctx.strokeStyle=p[7]?'#b6c8da':color(node);ctx.fillStyle=ctx.strokeStyle;ctx.lineWidth=1.7;ctx.beginPath();let joined=false;
+   for(const point of points){if(point.x<start||point.x>end||point.y===null){joined=false;continue;}const x=left+(point.x-start)/(end-start)*(right-left),y=bottom-point.y/ymax*(bottom-top);if(joined)ctx.lineTo(x,y);else ctx.moveTo(x,y);joined=true;}
+   ctx.stroke();for(const point of points){if(point.x<start||point.x>end||point.y===null)continue;const x=left+(point.x-start)/(end-start)*(right-left),y=bottom-point.y/ymax*(bottom-top);ctx.beginPath();ctx.arc(x,y,1.7,0,Math.PI*2);ctx.fill();}
+  }ctx.restore();
+  if(!hasData){ctx.textAlign='center';ctx.fillStyle='#a7bbcf';ctx.fillText('Waiting for measurements',w/2,h/2);}
+ }table();
+}
+function status(connected){
+ const element=document.getElementById('state'),age=lastSent?Math.max(0,Date.now()/1000-lastSent):null;
+ element.textContent=!connected?'Cannot reach visualizer server':!rowCount?'Waiting for a monitored test':complete?'Run complete · measurements retained':age>12?'No recent samples · check the test terminal':'Live measurements';
+ element.style.setProperty('--status-color',connected && rowCount && (complete||age<=12)?'#40d4ac':'#eab75a');
+ document.getElementById('count').textContent=rowCount.toLocaleString();document.getElementById('age').textContent=age===null?'no data yet':Math.floor(age)+' s since last update';
+ document.getElementById('run').textContent=runLabel||'Start the visualizer first, then run the BBM test with resource monitoring enabled.';
+}
+async function poll(){
+ try{
+  const query=new URLSearchParams({after:String(after),run:String(runId===null?-1:runId)});
+  const response=await fetch('/resource-data?'+query,{cache:'no-store',signal:AbortSignal.timeout(4000)});if(!response.ok)throw new Error('HTTP '+response.status);
+  const data=await response.json();if(runId!==data.run){reset();after=0;runId=data.run;}
+  for(const event of data.samples){if(event.seq>after){accept(event);after=event.seq;}}
+  status(true);render();
+ }catch(error){status(false);}finally{setTimeout(poll,1000);}
+}
+document.getElementById('window').addEventListener('change',render);
+new ResizeObserver(render).observe(document.getElementById('charts'));
+render();poll();
+</script>
+</body>
+</html>

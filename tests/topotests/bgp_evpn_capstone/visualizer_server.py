@@ -10,7 +10,10 @@ browser clients in real time.
 # standard library logging module used to configure Flask/Werkzeug log output
 from flask import Flask, render_template, request
 from flask_socketio import SocketIO, emit
+from collections import deque
 import logging
+import threading
+import time
 
 # suppress standard Werkzeug request logs to focus on mobility/debug messages
 log = logging.getLogger('werkzeug')
@@ -28,6 +31,16 @@ socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Topology events kept so browsers that connect late (or refresh) see the graph.
 event_history = []
+
+# Samples from resource_monitor.py (CPU, memory, table sizes per switch).
+# They are kept apart from event_history: the /resource-chart page asks for
+# them once a second, so they are not replayed or broadcast to the other pages.
+# 2000 samples is roughly 30 minutes at one sample per second.
+resource_samples = deque(maxlen=2000)
+resource_lock = threading.Lock()
+# "run" changes on every RESOURCE_RESET (and server restart) so an open page
+# knows to start its graphs again; "seq" numbers the samples within a run.
+resource_state = {"run": int(time.time()), "seq": 0}
 
 
 @socketio.on('connect')
@@ -48,6 +61,26 @@ def route_chart():
     return render_template('route_chart.html')
 
 
+@app.route('/resource-chart')
+def resource_chart():
+    """Serve the live switch resource page (CPU, memory, table sizes)."""
+    return render_template('resource_chart.html')
+
+
+@app.route('/resource-data')
+def resource_data():
+    """Return the resource samples newer than ?after=<seq>.
+
+    A page that is still on an older run (?run=<id>) gets everything.
+    """
+    after = request.args.get('after', 0, type=int)
+    with resource_lock:
+        if request.args.get('run', -1, type=int) != resource_state["run"]:
+            after = 0
+        samples = [s for s in resource_samples if s["seq"] > after]
+        return {"run": resource_state["run"], "samples": samples}, 200
+
+
 @app.route('/health')
 def health():
     """Basic liveness endpoint used by optional test-side startup checks."""
@@ -60,6 +93,19 @@ def receive_event():
 
     # parse request JSON body into a Python dict/list (or None if missing).
     data = request.json
+
+    # resource monitor samples are stored for /resource-data, not broadcast.
+    if isinstance(data, dict) and data.get('action') in ('RESOURCE_RESET', 'RESOURCE_SAMPLE'):
+        with resource_lock:
+            if data['action'] == 'RESOURCE_RESET':
+                resource_samples.clear()
+                resource_state["run"] += 1
+                resource_state["seq"] = 0
+            else:
+                resource_state["seq"] += 1
+                data["seq"] = resource_state["seq"]
+                resource_samples.append(data)
+        return {"status": "success"}, 200
 
     if isinstance(data, dict):
         if data.get('action') == 'RESET':
@@ -80,6 +126,7 @@ if __name__ == '__main__':
     print("=========================================")
     print(" EVPN Visualizer starting on port 5000")
     print(" Open http://localhost:5000 in your browser")
+    print(" Switch resources: http://localhost:5000/resource-chart")
     print("=========================================")
 
     # Start the Socket.IO development server.
@@ -87,4 +134,3 @@ if __name__ == '__main__':
     # - port=5000 is the externally mapped visualizer port.
     # - allow_unsafe_werkzeug=True permits Werkzeug in this non-production setup.
     socketio.run(app, host='0.0.0.0', port=5000, allow_unsafe_werkzeug=True)
-    

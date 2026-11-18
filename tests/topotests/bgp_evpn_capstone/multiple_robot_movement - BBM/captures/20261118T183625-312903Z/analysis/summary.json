@@ -1,0 +1,1418 @@
+{
+  "moves_planned": 96,
+  "moves_completed": 96,
+  "batch_mappings_correct": 96,
+  "mobility_success_rate": 1.0,
+  "final_mappings_correct": 6,
+  "final_mappings": {
+    "host11": {
+      "actual_leaf": "leaf1",
+      "expected_vtep": "10.0.0.1",
+      "observed_vtep": "10.0.0.1",
+      "correct": true
+    },
+    "host12": {
+      "actual_leaf": "leaf1",
+      "expected_vtep": "10.0.0.1",
+      "observed_vtep": "10.0.0.1",
+      "correct": true
+    },
+    "host21": {
+      "actual_leaf": "leaf2",
+      "expected_vtep": "10.0.0.2",
+      "observed_vtep": "10.0.0.2",
+      "correct": true
+    },
+    "host22": {
+      "actual_leaf": "leaf2",
+      "expected_vtep": "10.0.0.2",
+      "observed_vtep": "10.0.0.2",
+      "correct": true
+    },
+    "host31": {
+      "actual_leaf": "leaf3",
+      "expected_vtep": "10.0.0.3",
+      "observed_vtep": "10.0.0.3",
+      "correct": true
+    },
+    "host32": {
+      "actual_leaf": "leaf3",
+      "expected_vtep": "10.0.0.3",
+      "observed_vtep": "10.0.0.3",
+      "correct": true
+    }
+  },
+  "batches": [
+    {
+      "batch": 1,
+      "launch_spread_ms": 16.702,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 2,
+      "launch_spread_ms": 3.298,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 3,
+      "launch_spread_ms": 1.105,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 4,
+      "launch_spread_ms": 0.723,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 5,
+      "launch_spread_ms": 8.869,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 6,
+      "launch_spread_ms": 1.657,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 7,
+      "launch_spread_ms": 4.088,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 8,
+      "launch_spread_ms": 2.158,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 9,
+      "launch_spread_ms": 4.198,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 10,
+      "launch_spread_ms": 4.531,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 11,
+      "launch_spread_ms": 9.724,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 12,
+      "launch_spread_ms": 3.008,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 13,
+      "launch_spread_ms": 1.53,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 14,
+      "launch_spread_ms": 9.327,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 15,
+      "launch_spread_ms": 5.26,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        }
+      }
+    },
+    {
+      "batch": 16,
+      "launch_spread_ms": 2.066,
+      "completed": 6,
+      "correct": 6,
+      "mappings": {
+        "host11": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host12": {
+          "actual_leaf": "leaf1",
+          "expected_vtep": "10.0.0.1",
+          "observed_vtep": "10.0.0.1",
+          "correct": true
+        },
+        "host21": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host22": {
+          "actual_leaf": "leaf2",
+          "expected_vtep": "10.0.0.2",
+          "observed_vtep": "10.0.0.2",
+          "correct": true
+        },
+        "host31": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        },
+        "host32": {
+          "actual_leaf": "leaf3",
+          "expected_vtep": "10.0.0.3",
+          "observed_vtep": "10.0.0.3",
+          "correct": true
+        }
+      }
+    }
+  ],
+  "origin_nlri_estimate": {
+    "withdraw MAC/IP": 96,
+    "withdraw MAC-only": 96,
+    "advertise MAC-only": 96,
+    "advertise MAC/IP": 96
+  },
+  "wire_nlri_counts": {
+    "spine1": {
+      "in withdraw MAC/IP": 480,
+      "in withdraw MAC-only": 480,
+      "out withdraw MAC/IP": 480,
+      "out withdraw MAC-only": 480,
+      "in advertise MAC-only": 480,
+      "out advertise MAC-only": 480,
+      "in advertise MAC/IP": 480,
+      "out advertise MAC/IP": 480
+    },
+    "spine2": {
+      "in withdraw MAC/IP": 480,
+      "in withdraw MAC-only": 480,
+      "out withdraw MAC/IP": 480,
+      "out withdraw MAC-only": 480,
+      "in advertise MAC-only": 480,
+      "out advertise MAC-only": 480,
+      "in advertise MAC/IP": 480,
+      "out advertise MAC/IP": 480
+    }
+  },
+  "evpn_route_counts": {
+    "before": {
+      "leaf1": 25,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    },
+    "batch-1": {
+      "leaf1": 26,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    },
+    "batch-2": {
+      "leaf1": 26,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    },
+    "batch-3": {
+      "leaf1": 26,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    },
+    "batch-4": {
+      "leaf1": 26,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    },
+    "batch-5": {
+      "leaf1": 26,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    },
+    "batch-6": {
+      "leaf1": 26,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    },
+    "batch-7": {
+      "leaf1": 26,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    },
+    "batch-8": {
+      "leaf1": 26,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    },
+    "batch-9": {
+      "leaf1": 26,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    },
+    "batch-10": {
+      "leaf1": 26,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    },
+    "batch-11": {
+      "leaf1": 26,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    },
+    "batch-12": {
+      "leaf1": 26,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    },
+    "batch-13": {
+      "leaf1": 26,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    },
+    "batch-14": {
+      "leaf1": 26,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    },
+    "batch-15": {
+      "leaf1": 26,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    },
+    "batch-16": {
+      "leaf1": 26,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    },
+    "after": {
+      "leaf1": 26,
+      "leaf2": 26,
+      "leaf3": 26,
+      "leaf4": 26,
+      "leaf5": 26,
+      "spine1": 26,
+      "spine2": 26
+    }
+  },
+  "dad": {
+    "events": [],
+    "duplicate_samples": [],
+    "missing_zebra_logs": []
+  },
+  "bgp_sessions": {
+    "spine1/eth-leaf1": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine1/eth-leaf2": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine1/eth-leaf3": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine1/eth-leaf4": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine1/eth-leaf5": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine2/eth-leaf1": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine2/eth-leaf2": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine2/eth-leaf3": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine2/eth-leaf4": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    },
+    "spine2/eth-leaf5": {
+      "down_checkpoints": [],
+      "missing_checkpoints": [],
+      "drops": 0,
+      "establishments": 0,
+      "counter_reset": false
+    }
+  },
+  "capture_errors": {},
+  "learning_errors": [],
+  "robots": {
+    "host11": {
+      "moves_completed": 16,
+      "correct_mappings": 16,
+      "origin_nlri_estimate": {
+        "withdraw MAC/IP": 16,
+        "withdraw MAC-only": 16,
+        "advertise MAC-only": 16,
+        "advertise MAC/IP": 16
+      },
+      "sequence_observations": [
+        {
+          "batch": 6,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.11",
+          "value": 1
+        },
+        {
+          "batch": 8,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 8,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.11",
+          "value": 1
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 2
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.11",
+          "value": 2
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.11",
+          "value": 1
+        }
+      ]
+    },
+    "host12": {
+      "moves_completed": 16,
+      "correct_mappings": 16,
+      "origin_nlri_estimate": {
+        "withdraw MAC/IP": 16,
+        "withdraw MAC-only": 16,
+        "advertise MAC-only": 16,
+        "advertise MAC/IP": 16
+      },
+      "sequence_observations": [
+        {
+          "batch": 15,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.12",
+          "value": 1
+        }
+      ]
+    },
+    "host21": {
+      "moves_completed": 16,
+      "correct_mappings": 16,
+      "origin_nlri_estimate": {
+        "withdraw MAC/IP": 16,
+        "withdraw MAC-only": 16,
+        "advertise MAC-only": 16,
+        "advertise MAC/IP": 16
+      },
+      "sequence_observations": [
+        {
+          "batch": 1,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 1,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.21",
+          "value": 1
+        },
+        {
+          "batch": 14,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 14,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.21",
+          "value": 1
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 2
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.21",
+          "value": 2
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 3
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.21",
+          "value": 3
+        }
+      ]
+    },
+    "host22": {
+      "moves_completed": 16,
+      "correct_mappings": 16,
+      "origin_nlri_estimate": {
+        "withdraw MAC/IP": 16,
+        "withdraw MAC-only": 16,
+        "advertise MAC-only": 16,
+        "advertise MAC/IP": 16
+      },
+      "sequence_observations": [
+        {
+          "batch": 1,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 1,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.22",
+          "value": 1
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.22",
+          "value": 1
+        },
+        {
+          "batch": 8,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 8,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.22",
+          "value": 1
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 2
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.22",
+          "value": 2
+        },
+        {
+          "batch": 13,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 13,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.22",
+          "value": 1
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 15,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.22",
+          "value": 1
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 2
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.22",
+          "value": 2
+        }
+      ]
+    },
+    "host31": {
+      "moves_completed": 16,
+      "correct_mappings": 16,
+      "origin_nlri_estimate": {
+        "withdraw MAC/IP": 16,
+        "withdraw MAC-only": 16,
+        "advertise MAC-only": 16,
+        "advertise MAC/IP": 16
+      },
+      "sequence_observations": [
+        {
+          "batch": 6,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.31",
+          "value": 1
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.31",
+          "value": 1
+        }
+      ]
+    },
+    "host32": {
+      "moves_completed": 16,
+      "correct_mappings": 16,
+      "origin_nlri_estimate": {
+        "withdraw MAC/IP": 16,
+        "withdraw MAC-only": 16,
+        "advertise MAC-only": 16,
+        "advertise MAC/IP": 16
+      },
+      "sequence_observations": [
+        {
+          "batch": 1,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 1,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.32",
+          "value": 1
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 6,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.32",
+          "value": 1
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 9,
+          "leaf": "leaf1",
+          "rd": "10.0.0.1:1000",
+          "ip": "45.0.0.32",
+          "value": 1
+        },
+        {
+          "batch": 14,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 14,
+          "leaf": "leaf2",
+          "rd": "10.0.0.2:1000",
+          "ip": "45.0.0.32",
+          "value": 1
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "",
+          "value": 1
+        },
+        {
+          "batch": 16,
+          "leaf": "leaf3",
+          "rd": "10.0.0.3:1000",
+          "ip": "45.0.0.32",
+          "value": 1
+        }
+      ]
+    }
+  }
+}

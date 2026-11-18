@@ -5,8 +5,44 @@ Run this experiment inside the existing `frr-dev` container. The folder name con
 ```bash
 cd /home/frr/frr/tests/topotests
 sudo -E env ENABLE_LIVE_ROUTE_GRAPH=false pytest -s -q \
-  "bgp_evpn_capstone/MBB - multiple movement/test_mbb_multiple_movement.py"
+  "bgp_evpn_capstone/multiple_robot_movement - MBB/test_mbb_multiple_movement.py"
 ```
+
+## Live resource dashboard
+
+The MBB test starts the same `ResourceMonitor` used by BBM and stops it in its
+cleanup block. It records all seven switches, including robot bond setup,
+baseline learning, and every handoff batch. The shared dashboard resets its
+previous samples when the new monitor connects.
+
+In a container terminal, start the visualizer (restart an older process with
+Ctrl+C first):
+
+```bash
+cd /home/frr/frr/tests/topotests/bgp_evpn_capstone
+python3 visualizer_server.py
+```
+
+On your Mac, open <http://localhost:5001/resource-chart>. Leave the server running.
+In a second terminal attached to `frr-dev`, run:
+
+```bash
+cd /home/frr/frr/tests/topotests
+sudo -E env ENABLE_LIVE_RESOURCE_GRAPH=true ENABLE_LIVE_ROUTE_GRAPH=false \
+  MONITOR_INTERVAL_S=1 MONITOR_FRR_INTERVAL_S=5 \
+  pytest -s "bgp_evpn_capstone/multiple_robot_movement - MBB/test_mbb_multiple_movement.py"
+```
+
+System measurements normally arrive every second and FRR measurements every
+five seconds. CPU and counter-rate graphs need two samples. When monitoring
+finishes, the page retains the measurements and shows "Run complete". Run BBM
+and MBB separately; they share one live resource dashboard.
+
+Each MBB capture folder also contains `resources-system.csv` and
+`resources-frr.csv`. CSV recording continues if the visualizer is unavailable.
+Use `ENABLE_LIVE_RESOURCE_GRAPH=false` to disable live publishing while keeping
+the CSVs. `MONITOR_FRR_INTERVAL_S=0` disables FRR polling. The separate route-count
+dashboard can be enabled with `ENABLE_LIVE_ROUTE_GRAPH=true`.
 
 ## Handoff model
 
@@ -25,7 +61,7 @@ The default workload matches the current BBM paths and robot identities. Four cy
 ```bash
 sudo -E env ENABLE_LIVE_ROUTE_GRAPH=false MBB_CYCLES=4 \
   MBB_OVERLAP_S=0.5 MBB_DWELL_S=2.0 pytest -s -q \
-  "bgp_evpn_capstone/MBB - multiple movement/test_mbb_multiple_movement.py"
+  "bgp_evpn_capstone/multiple_robot_movement - MBB/test_mbb_multiple_movement.py"
 ```
 
 For a short validation use `MBB_CYCLES=1`, giving 24 planned moves. To display the existing route chart, start the visualizer first and set `ENABLE_LIVE_ROUTE_GRAPH=true`. Its route-count plot receives the regular sampler updates. The topology drawing does not model the additional bond cables.
@@ -53,7 +89,7 @@ The pytest assertions validate completed handoffs, captures and the MBB ordering
 ## Reanalyze a saved run
 
 ```bash
-cd "/home/frr/frr/tests/topotests/bgp_evpn_capstone/MBB - multiple movement"
+cd "/home/frr/frr/tests/topotests/bgp_evpn_capstone/multiple_robot_movement - MBB"
 python3 analyze_mbb.py captures/YOUR_RUN_FOLDER
 ```
 

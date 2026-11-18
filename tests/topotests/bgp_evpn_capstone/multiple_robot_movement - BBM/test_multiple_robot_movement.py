@@ -11,7 +11,14 @@ from pathlib import Path
 import pytest
 
 from bgp_evpn_capstone import test_evpn_capstone as lab
-from bgp_evpn_capstone.multiple_robot_movement import analyze_movement
+import importlib.util
+
+# Load the adjacent analyzer even when the experiment folder contains spaces.
+_analyzer_spec = importlib.util.spec_from_file_location(
+    "bbm_analyze_movement", Path(__file__).with_name("analyze_movement.py"))
+analyze_movement = importlib.util.module_from_spec(_analyzer_spec)
+_analyzer_spec.loader.exec_module(analyze_movement)
+from bgp_evpn_capstone.resource_monitor import ResourceMonitor
 from bgp_evpn_capstone.single_movement.robot_roaming.test_robot_roaming import (
     start_tshark,
 )
@@ -168,6 +175,7 @@ def test_multiple_robot_movement():
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S-%fZ")
     out = Path(__file__).parent / "captures" / stamp
     out.mkdir(parents=True)
+    resource_monitor = ResourceMonitor(topology, out)
     vteps = {name: lab.LEAVES[name]["lo"] for name in MOVING_LEAVES}
     locations = {host: robot["home"] for host, robot in ROBOTS.items()}
     disabled, batches, captures = set(), [], {}
@@ -189,7 +197,9 @@ def test_multiple_robot_movement():
     save_json(out / "movement.json", run)
     print(f"\nMultiple robot movement results: {out}", flush=True)
 
+
     try:
+        resource_monitor.start()
         for spine in SPINES:
             captures[spine] = start_tshark(
                 topology.net[spine], out / f"{spine}-bgp.pcap",
@@ -247,6 +257,7 @@ def test_multiple_robot_movement():
         time.sleep(DWELL_S)
         run["after"] = snapshot(topology)
     finally:
+        resource_monitor.stop()
         for capture in captures.values():
             capture.stop()
         run["capture_returncodes"] = {name: cap.returncode for name, cap in captures.items()}

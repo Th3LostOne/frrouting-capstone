@@ -96,25 +96,21 @@ int remote_neigh_count(struct zebra_mac *zmac)
 int zebra_evpn_rem_neigh_install(struct zebra_evpn *zevpn,
 				 struct zebra_neigh *n, bool was_static)
 {
-	struct interface *vlan_if;
-	int flags;
-	int ret = 0;
+	/* Remote L2VNI neighbors are used for kernel ARP/ND suppression.
+	 * Do not install them: GARP must be able to update a migrated host's
+	 * neighbor entry without zebra restoring the old remote MAC.
+	 * Keep the EVPN neighbor active in zebra; L3VNI next-hop neighbors are
+	 * installed separately and are unaffected by this function.
+	 */
+	(void)zevpn;
+	(void)was_static;
 
 	if (!(n->flags & ZEBRA_NEIGH_REMOTE))
 		return 0;
 
-	vlan_if = zevpn_map_to_svi(zevpn, true);
-	if (!vlan_if)
-		return -1;
-
-	flags = DPLANE_NTF_EXT_LEARNED;
-	if (n->flags & ZEBRA_NEIGH_ROUTER_FLAG)
-		flags |= DPLANE_NTF_ROUTER;
 	ZEBRA_NEIGH_SET_ACTIVE(n);
 
-	dplane_rem_neigh_add(vlan_if, &n->ip, &n->emac, flags, was_static);
-
-	return ret;
+	return 0;
 }
 
 /*

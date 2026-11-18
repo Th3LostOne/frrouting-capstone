@@ -5,8 +5,8 @@ def pytest_collection_modifyitems(items):
     for item in items:
         node = item
         while node is not None:
-            if "MBB - multiple movement" in node.nodeid:
+            if "multiple_robot_movement - MBB" in node.nodeid:
                 node._nodeid = node.nodeid.replace(
-                    "MBB - multiple movement", "mbb_multiple_movement"
+                    "multiple_robot_movement - MBB", "mbb_multiple_movement"
                 )
             node = node.parent
