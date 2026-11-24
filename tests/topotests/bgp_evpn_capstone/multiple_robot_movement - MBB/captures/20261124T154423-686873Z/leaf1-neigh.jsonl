@@ -1,0 +1,903 @@
+{"unix_time": 1795535071.487457, "line": "45.0.0.11 dev br1000 lladdr 00:00:00:00:00:11 STALE"}
+{"unix_time": 1795535071.5231624, "line": "45.0.0.12 dev br1000 lladdr 00:00:00:00:00:12 STALE"}
+{"unix_time": 1795535071.553411, "line": "45.0.0.21 dev br1000 lladdr 00:00:00:00:00:21 STALE"}
+{"unix_time": 1795535071.589113, "line": "45.0.0.22 dev br1000 lladdr 00:00:00:00:00:22 STALE"}
+{"unix_time": 1795535071.621711, "line": "45.0.0.31 dev br1000 lladdr 00:00:00:00:00:31 STALE"}
+{"unix_time": 1795535071.6599143, "line": "45.0.0.32 dev br1000 lladdr 00:00:00:00:00:32 STALE"}
+{"unix_time": 1795535071.7174258, "line": "10.0.0.2 dev br500 lladdr e2:f3:86:b4:7f:35 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535071.7175586, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535071.71772, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535071.717907, "line": "10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535071.7180593, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535071.7182047, "line": "10.0.0.3 dev br500 lladdr 06:ac:af:d8:a3:f6 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535071.71834, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535071.7184553, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535071.7185104, "line": "10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535071.7185917, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535071.9018953, "line": "dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535071.9038892, "line": "dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535071.9048066, "line": "dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535071.905995, "line": "dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535072.1891847, "line": "dev vni1000 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535072.1893141, "line": "dev eth-host31 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535072.1917245, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535072.2014272, "line": "dev eth-host32 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535072.3006618, "line": "dev vni1000 lladdr 00:00:00:00:00:12 extern_learn  REACHABLE"}
+{"unix_time": 1795535072.3008926, "line": "dev vni1000 lladdr 00:00:00:00:00:12 extern_learn  REACHABLE"}
+{"unix_time": 1795535072.3010685, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:12 extern_learn  REACHABLE"}
+{"unix_time": 1795535072.3012679, "line": "dev vni1000 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535072.301443, "line": "dev vni1000 lladdr 00:00:00:00:00:11 extern_learn  REACHABLE"}
+{"unix_time": 1795535072.3016007, "line": "dev vni1000 lladdr 00:00:00:00:00:11 extern_learn  REACHABLE"}
+{"unix_time": 1795535072.30178, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:11 extern_learn  REACHABLE"}
+{"unix_time": 1795535072.3020546, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535072.3021877, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:22 extern_learn  REACHABLE"}
+{"unix_time": 1795535072.3023179, "line": "dev vni1000 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535072.3024452, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:21 extern_learn  REACHABLE"}
+{"unix_time": 1795535072.3026333, "line": "dev vni1000 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535072.401584, "line": "45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535072.401713, "line": "Deleted 45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535072.40183, "line": "45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535072.4019654, "line": "Deleted 45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535072.402091, "line": "45.0.0.31 dev br1000  FAILED"}
+{"unix_time": 1795535072.4022324, "line": "Deleted 45.0.0.31 dev br1000  FAILED"}
+{"unix_time": 1795535072.402411, "line": "45.0.0.32 dev br1000  FAILED"}
+{"unix_time": 1795535072.4025538, "line": "Deleted 45.0.0.32 dev br1000  FAILED"}
+{"unix_time": 1795535072.4520755, "line": "10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535072.4524076, "line": "Deleted 10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535072.45266, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535072.4537523, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535072.454234, "line": "Deleted 10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535072.4546463, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535072.4548368, "line": "10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535072.4550607, "line": "Deleted 10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535072.4552472, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535072.455441, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535072.4556208, "line": "Deleted 10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535072.4557874, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535072.8200326, "line": "Deleted ff02::16 dev eth-host12 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535072.8249795, "line": "Deleted ff02::16 dev eth-host11 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535072.8427525, "line": "Deleted dev eth-host12 lladdr 8e:c4:42:a9:bc:83 PERMANENT"}
+{"unix_time": 1795535072.8518553, "line": "Deleted dev eth-host12 lladdr 8e:c4:42:a9:bc:83 PERMANENT"}
+{"unix_time": 1795535072.8657706, "line": "Deleted dev eth-host11 lladdr 8e:c6:09:af:f4:6a PERMANENT"}
+{"unix_time": 1795535072.8659935, "line": "Deleted dev eth-host11 lladdr 8e:c6:09:af:f4:6a PERMANENT"}
+{"unix_time": 1795535075.1093116, "line": "dev eth-host22 lladdr a6:1d:8b:d0:61:96 PERMANENT"}
+{"unix_time": 1795535075.1109245, "line": "dev eth-host22 lladdr a6:1d:8b:d0:61:96 PERMANENT"}
+{"unix_time": 1795535075.121154, "line": "dev eth-host21 lladdr d2:05:77:65:e4:f0 PERMANENT"}
+{"unix_time": 1795535075.123545, "line": "dev eth-host21 lladdr d2:05:77:65:e4:f0 PERMANENT"}
+{"unix_time": 1795535075.4355817, "line": "dev vni1000 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535075.4425623, "line": "45.0.0.32 dev br1000 lladdr 00:00:00:00:00:32 STALE"}
+{"unix_time": 1795535075.459892, "line": "dev eth-host22 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535075.462288, "line": "dev eth-host21 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535075.4680674, "line": "dev vni1000 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535075.478215, "line": "45.0.0.22 dev br1000 lladdr 00:00:00:00:00:22 STALE"}
+{"unix_time": 1795535075.4806676, "line": "45.0.0.21 dev br1000 lladdr 00:00:00:00:00:21 STALE"}
+{"unix_time": 1795535075.4838083, "line": "45.0.0.31 dev br1000 lladdr 00:00:00:00:00:31 STALE"}
+{"unix_time": 1795535075.5548522, "line": "dev vni1000 lladdr 00:00:00:00:00:32 extern_learn  REACHABLE"}
+{"unix_time": 1795535075.5552273, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:32 extern_learn  REACHABLE"}
+{"unix_time": 1795535075.5557165, "line": "dev vni1000 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535075.5558364, "line": "dev vni1000 lladdr 00:00:00:00:00:31 extern_learn  REACHABLE"}
+{"unix_time": 1795535075.5559561, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:31 extern_learn  REACHABLE"}
+{"unix_time": 1795535075.5560832, "line": "dev vni1000 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535075.556249, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:11 extern_learn  REACHABLE"}
+{"unix_time": 1795535075.5563917, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535075.5564752, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:12 extern_learn  REACHABLE"}
+{"unix_time": 1795535075.5566657, "line": "dev vni1000 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535075.6011422, "line": "10.0.0.2 dev br500 lladdr e2:f3:86:b4:7f:35 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535075.6013043, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535075.6014163, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535075.6015317, "line": "10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535075.6016467, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535075.6017864, "line": "10.0.0.3 dev br500 lladdr 06:ac:af:d8:a3:f6 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535075.6019025, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535075.6020412, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535075.6021533, "line": "10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535075.6022522, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535075.967464, "line": "Deleted ff02::1:ff2d:6890 dev eth-host32 lladdr 33:33:ff:2d:68:90 NOARP"}
+{"unix_time": 1795535075.967582, "line": "Deleted ff02::16 dev eth-host32 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535075.9914377, "line": "Deleted dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535075.9946434, "line": "Deleted dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535076.0371668, "line": "Deleted ff02::16 dev eth-host31 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535076.037482, "line": "Deleted ff02::1:fff0:91e6 dev eth-host31 lladdr 33:33:ff:f0:91:e6 NOARP"}
+{"unix_time": 1795535076.0557778, "line": "Deleted dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535076.057376, "line": "Deleted dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535078.2884433, "line": "dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535078.2974124, "line": "dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535078.301302, "line": "dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535078.3028448, "line": "dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535078.3123336, "line": "dev vni1000 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535078.3156006, "line": "dev eth-host31 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535078.3291419, "line": "dev vni1000 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535078.3325198, "line": "dev eth-host32 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535078.425714, "line": "dev vni1000 lladdr 00:00:00:00:00:22 extern_learn  REACHABLE"}
+{"unix_time": 1795535078.4259205, "line": "dev vni1000 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535078.4260664, "line": "dev vni1000 lladdr 00:00:00:00:00:21 extern_learn  REACHABLE"}
+{"unix_time": 1795535078.4262383, "line": "dev vni1000 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535078.42636, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:12 extern_learn  REACHABLE"}
+{"unix_time": 1795535078.4265325, "line": "dev vni1000 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535078.4268134, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:11 extern_learn  REACHABLE"}
+{"unix_time": 1795535078.4271107, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535078.5283046, "line": "45.0.0.31 dev br1000  FAILED"}
+{"unix_time": 1795535078.530475, "line": "Deleted 45.0.0.31 dev br1000  FAILED"}
+{"unix_time": 1795535078.5328066, "line": "45.0.0.32 dev br1000  FAILED"}
+{"unix_time": 1795535078.535319, "line": "Deleted 45.0.0.32 dev br1000  FAILED"}
+{"unix_time": 1795535078.5383432, "line": "45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535078.5420728, "line": "Deleted 45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535078.5439591, "line": "45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535078.545777, "line": "Deleted 45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535078.5728986, "line": "45.0.0.12 dev br1000 lladdr 00:00:00:00:00:12 STALE"}
+{"unix_time": 1795535078.579778, "line": "10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535078.5799508, "line": "Deleted 10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535078.5803692, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535078.5863721, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535078.5932336, "line": "Deleted 10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535078.5934403, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535078.593688, "line": "10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535078.5938444, "line": "Deleted 10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535078.6002824, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535078.6034045, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535078.6035905, "line": "Deleted 10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535078.6037452, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535078.6038446, "line": "45.0.0.31 dev br1000 lladdr 00:00:00:00:00:31 STALE"}
+{"unix_time": 1795535078.6040118, "line": "45.0.0.11 dev br1000 lladdr 00:00:00:00:00:11 STALE"}
+{"unix_time": 1795535078.606589, "line": "45.0.0.32 dev br1000 lladdr 00:00:00:00:00:32 STALE"}
+{"unix_time": 1795535078.6507676, "line": "10.0.0.3 dev br500 lladdr 06:ac:af:d8:a3:f6 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535078.6532562, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535078.6533616, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535078.6534762, "line": "10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535078.6535845, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535078.7349617, "line": "10.0.0.2 dev br500 lladdr e2:f3:86:b4:7f:35 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535078.73522, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535078.735328, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535078.7356112, "line": "10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535078.7358747, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535079.0937195, "line": "Deleted ff02::1:ffd0:6196 dev eth-host22 lladdr 33:33:ff:d0:61:96 NOARP"}
+{"unix_time": 1795535079.0941, "line": "Deleted ff02::16 dev eth-host22 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535079.1021986, "line": "Deleted dev eth-host22 lladdr a6:1d:8b:d0:61:96 PERMANENT"}
+{"unix_time": 1795535079.1026645, "line": "Deleted dev eth-host22 lladdr a6:1d:8b:d0:61:96 PERMANENT"}
+{"unix_time": 1795535079.1424787, "line": "Deleted ff02::16 dev eth-host21 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535079.1450195, "line": "Deleted ff02::1:ff65:e4f0 dev eth-host21 lladdr 33:33:ff:65:e4:f0 NOARP"}
+{"unix_time": 1795535079.1678874, "line": "Deleted dev eth-host21 lladdr d2:05:77:65:e4:f0 PERMANENT"}
+{"unix_time": 1795535079.1686795, "line": "Deleted dev eth-host21 lladdr d2:05:77:65:e4:f0 PERMANENT"}
+{"unix_time": 1795535081.4521062, "line": "dev eth-host11 lladdr 8e:c6:09:af:f4:6a PERMANENT"}
+{"unix_time": 1795535081.454326, "line": "dev eth-host11 lladdr 8e:c6:09:af:f4:6a PERMANENT"}
+{"unix_time": 1795535081.4644635, "line": "dev eth-host12 lladdr 8e:c4:42:a9:bc:83 PERMANENT"}
+{"unix_time": 1795535081.488571, "line": "dev eth-host12 lladdr 8e:c4:42:a9:bc:83 PERMANENT"}
+{"unix_time": 1795535081.4981403, "line": "dev vni1000 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535081.5001676, "line": "dev eth-host11 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535081.502561, "line": "dev eth-host12 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535081.5059676, "line": "dev vni1000 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535081.585477, "line": "dev vni1000 lladdr 00:00:00:00:00:32 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.5857096, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:32 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.5859506, "line": "dev vni1000 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535081.58617, "line": "dev vni1000 lladdr 00:00:00:00:00:31 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.5864391, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:31 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.5874543, "line": "dev vni1000 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535081.5881612, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:21 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.5882726, "line": "dev vni1000 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535081.5884492, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:22 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.5885918, "line": "dev vni1000 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535081.6881075, "line": "45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535081.6882663, "line": "Deleted 45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535081.6887102, "line": "45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535081.6891015, "line": "Deleted 45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535081.6892831, "line": "45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535081.6908731, "line": "Deleted 45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535081.6958556, "line": "45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535081.6961675, "line": "Deleted 45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535081.7403026, "line": "10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535081.7499535, "line": "Deleted 10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535081.75009, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.7512329, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.7524035, "line": "Deleted 10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.7534573, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535081.7560604, "line": "10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535081.7594686, "line": "Deleted 10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535081.7602394, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.7603965, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.7625837, "line": "Deleted 10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.7626975, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535081.7655635, "line": "45.0.0.21 dev br1000 lladdr 00:00:00:00:00:21 STALE"}
+{"unix_time": 1795535081.79881, "line": "45.0.0.12 dev br1000 lladdr 00:00:00:00:00:12 STALE"}
+{"unix_time": 1795535081.805767, "line": "45.0.0.22 dev br1000 lladdr 00:00:00:00:00:22 STALE"}
+{"unix_time": 1795535081.8134644, "line": "45.0.0.11 dev br1000 lladdr 00:00:00:00:00:11 STALE"}
+{"unix_time": 1795535081.8560903, "line": "10.0.0.2 dev br500 lladdr e2:f3:86:b4:7f:35 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535081.8563788, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.8564963, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.856614, "line": "10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.8567727, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535081.856885, "line": "10.0.0.3 dev br500 lladdr 06:ac:af:d8:a3:f6 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535081.856997, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.8570905, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.8571956, "line": "10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535081.8573003, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535082.3010004, "line": "Deleted ff02::1:ff2d:6890 dev eth-host32 lladdr 33:33:ff:2d:68:90 NOARP"}
+{"unix_time": 1795535082.302663, "line": "Deleted ff02::16 dev eth-host32 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535082.3130422, "line": "Deleted dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535082.3151262, "line": "Deleted dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535082.3179278, "line": "Deleted ff02::16 dev eth-host31 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535082.3191447, "line": "Deleted ff02::1:fff0:91e6 dev eth-host31 lladdr 33:33:ff:f0:91:e6 NOARP"}
+{"unix_time": 1795535082.3385704, "line": "Deleted dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535082.3386931, "line": "Deleted dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535084.59316, "line": "dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535084.5988238, "line": "dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535084.6048348, "line": "dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535084.6091378, "line": "dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535084.61484, "line": "dev eth-host32 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535084.6271958, "line": "dev vni1000 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535084.629461, "line": "dev eth-host31 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535084.6326735, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535084.727055, "line": "dev vni1000 lladdr 00:00:00:00:00:12 extern_learn  REACHABLE"}
+{"unix_time": 1795535084.7272215, "line": "dev vni1000 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535084.7273705, "line": "dev vni1000 lladdr 00:00:00:00:00:11 extern_learn  REACHABLE"}
+{"unix_time": 1795535084.727505, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535084.727712, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:21 extern_learn  REACHABLE"}
+{"unix_time": 1795535084.7278326, "line": "dev vni1000 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535084.7280746, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:22 extern_learn  REACHABLE"}
+{"unix_time": 1795535084.728303, "line": "dev vni1000 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535084.830952, "line": "45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535084.8323996, "line": "Deleted 45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535084.83261, "line": "45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535084.8327506, "line": "Deleted 45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535084.8331213, "line": "45.0.0.32 dev br1000  FAILED"}
+{"unix_time": 1795535084.8360686, "line": "Deleted 45.0.0.32 dev br1000  FAILED"}
+{"unix_time": 1795535084.838963, "line": "45.0.0.31 dev br1000  FAILED"}
+{"unix_time": 1795535084.839734, "line": "Deleted 45.0.0.31 dev br1000  FAILED"}
+{"unix_time": 1795535084.8421948, "line": "45.0.0.32 dev br1000 lladdr 00:00:00:00:00:32 STALE"}
+{"unix_time": 1795535084.8812795, "line": "10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535084.8821032, "line": "Deleted 10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535084.8873403, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535084.8895197, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535084.8897202, "line": "Deleted 10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535084.8905833, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535084.8936048, "line": "10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535084.8938158, "line": "Deleted 10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535084.894003, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535084.8941338, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535084.8943536, "line": "Deleted 10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535084.8957756, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535084.8959022, "line": "45.0.0.31 dev br1000 lladdr 00:00:00:00:00:31 STALE"}
+{"unix_time": 1795535084.8959928, "line": "45.0.0.21 dev br1000 lladdr 00:00:00:00:00:21 STALE"}
+{"unix_time": 1795535084.8995335, "line": "45.0.0.22 dev br1000 lladdr 00:00:00:00:00:22 STALE"}
+{"unix_time": 1795535085.0512798, "line": "10.0.0.3 dev br500 lladdr 06:ac:af:d8:a3:f6 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535085.051535, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535085.0518446, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535085.0519977, "line": "10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535085.0521405, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535085.052418, "line": "10.0.0.2 dev br500 lladdr e2:f3:86:b4:7f:35 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535085.0525546, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535085.052775, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535085.0529351, "line": "10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535085.0530772, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535085.4373271, "line": "Deleted ff02::1:ffaf:f46a dev eth-host11 lladdr 33:33:ff:af:f4:6a NOARP"}
+{"unix_time": 1795535085.4402294, "line": "Deleted ff02::16 dev eth-host11 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535085.4412153, "line": "Deleted ff02::16 dev eth-host12 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535085.4413056, "line": "Deleted ff02::1:ffa9:bc83 dev eth-host12 lladdr 33:33:ff:a9:bc:83 NOARP"}
+{"unix_time": 1795535085.4614441, "line": "Deleted dev eth-host12 lladdr 8e:c4:42:a9:bc:83 PERMANENT"}
+{"unix_time": 1795535085.461633, "line": "Deleted dev eth-host12 lladdr 8e:c4:42:a9:bc:83 PERMANENT"}
+{"unix_time": 1795535085.4764597, "line": "Deleted dev eth-host11 lladdr 8e:c6:09:af:f4:6a PERMANENT"}
+{"unix_time": 1795535085.476621, "line": "Deleted dev eth-host11 lladdr 8e:c6:09:af:f4:6a PERMANENT"}
+{"unix_time": 1795535087.7071297, "line": "dev eth-host21 lladdr d2:05:77:65:e4:f0 PERMANENT"}
+{"unix_time": 1795535087.7072453, "line": "dev eth-host21 lladdr d2:05:77:65:e4:f0 PERMANENT"}
+{"unix_time": 1795535087.7137349, "line": "dev eth-host22 lladdr a6:1d:8b:d0:61:96 PERMANENT"}
+{"unix_time": 1795535087.7164578, "line": "dev eth-host22 lladdr a6:1d:8b:d0:61:96 PERMANENT"}
+{"unix_time": 1795535087.727722, "line": "dev vni1000 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535087.7331202, "line": "dev vni1000 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535087.7364106, "line": "dev eth-host22 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535087.738598, "line": "dev eth-host21 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535087.8377326, "line": "dev vni1000 lladdr 00:00:00:00:00:32 extern_learn  REACHABLE"}
+{"unix_time": 1795535087.8383884, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:32 extern_learn  REACHABLE"}
+{"unix_time": 1795535087.8386366, "line": "dev vni1000 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535087.8388083, "line": "dev vni1000 lladdr 00:00:00:00:00:31 extern_learn  REACHABLE"}
+{"unix_time": 1795535087.838998, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:31 extern_learn  REACHABLE"}
+{"unix_time": 1795535087.8391728, "line": "dev vni1000 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535087.8393435, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:12 extern_learn  REACHABLE"}
+{"unix_time": 1795535087.8394175, "line": "dev vni1000 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535087.839539, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:11 extern_learn  REACHABLE"}
+{"unix_time": 1795535087.839832, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535087.9396892, "line": "45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535087.9425316, "line": "Deleted 45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535087.942798, "line": "45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535087.9458597, "line": "Deleted 45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535087.9490612, "line": "45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535087.9506304, "line": "Deleted 45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535087.9534178, "line": "45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535087.9562004, "line": "Deleted 45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535087.9905717, "line": "10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535087.992349, "line": "Deleted 10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535087.9930644, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535087.993822, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535087.9939883, "line": "Deleted 10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535087.9941344, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535087.9996898, "line": "10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535088.000013, "line": "Deleted 10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535088.0018601, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535088.0032713, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535088.0048084, "line": "Deleted 10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535088.0075414, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535088.0140393, "line": "45.0.0.12 dev br1000 lladdr 00:00:00:00:00:12 STALE"}
+{"unix_time": 1795535088.0175948, "line": "45.0.0.22 dev br1000 lladdr 00:00:00:00:00:22 STALE"}
+{"unix_time": 1795535088.0248497, "line": "45.0.0.21 dev br1000 lladdr 00:00:00:00:00:21 STALE"}
+{"unix_time": 1795535088.0251238, "line": "45.0.0.11 dev br1000 lladdr 00:00:00:00:00:11 STALE"}
+{"unix_time": 1795535088.176201, "line": "10.0.0.2 dev br500 lladdr e2:f3:86:b4:7f:35 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535088.176406, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535088.1765661, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535088.1767952, "line": "10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535088.1770065, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535088.1773698, "line": "10.0.0.3 dev br500 lladdr 06:ac:af:d8:a3:f6 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535088.17773, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535088.1779125, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535088.1781244, "line": "10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535088.1782994, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535088.5860455, "line": "Deleted ff02::1:ff2d:6890 dev eth-host32 lladdr 33:33:ff:2d:68:90 NOARP"}
+{"unix_time": 1795535088.588629, "line": "Deleted ff02::16 dev eth-host32 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535088.602367, "line": "Deleted ff02::16 dev eth-host31 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535088.6039395, "line": "Deleted ff02::1:fff0:91e6 dev eth-host31 lladdr 33:33:ff:f0:91:e6 NOARP"}
+{"unix_time": 1795535088.6104631, "line": "Deleted dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535088.6106362, "line": "Deleted dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535088.618443, "line": "Deleted dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535088.6195362, "line": "Deleted dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535090.8710985, "line": "dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535090.873178, "line": "dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535090.877176, "line": "dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535090.8846095, "line": "dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535090.9033766, "line": "dev eth-host31 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535090.9064085, "line": "dev eth-host32 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535090.9093459, "line": "dev vni1000 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535090.9134922, "line": "dev vni1000 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535091.013379, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:11 extern_learn  REACHABLE"}
+{"unix_time": 1795535091.0143437, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535091.014805, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:12 extern_learn  REACHABLE"}
+{"unix_time": 1795535091.0150313, "line": "dev vni1000 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535091.015241, "line": "dev vni1000 lladdr 00:00:00:00:00:21 extern_learn  REACHABLE"}
+{"unix_time": 1795535091.0154219, "line": "dev vni1000 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535091.0156136, "line": "dev vni1000 lladdr 00:00:00:00:00:22 extern_learn  REACHABLE"}
+{"unix_time": 1795535091.015753, "line": "dev vni1000 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535091.1250935, "line": "45.0.0.31 dev br1000  FAILED"}
+{"unix_time": 1795535091.1272373, "line": "Deleted 45.0.0.31 dev br1000  FAILED"}
+{"unix_time": 1795535091.1303296, "line": "45.0.0.32 dev br1000  FAILED"}
+{"unix_time": 1795535091.130591, "line": "Deleted 45.0.0.32 dev br1000  FAILED"}
+{"unix_time": 1795535091.134401, "line": "45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535091.1383069, "line": "Deleted 45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535091.1386492, "line": "45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535091.1415484, "line": "Deleted 45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535091.1678987, "line": "10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535091.1685476, "line": "Deleted 10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535091.1687226, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535091.1689627, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535091.1690779, "line": "Deleted 10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535091.1692154, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535091.1709425, "line": "10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535091.1719952, "line": "Deleted 10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535091.1775417, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535091.1778498, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535091.1790338, "line": "Deleted 10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535091.182907, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535091.2040117, "line": "45.0.0.11 dev br1000 lladdr 00:00:00:00:00:11 STALE"}
+{"unix_time": 1795535091.2060344, "line": "45.0.0.32 dev br1000 lladdr 00:00:00:00:00:32 STALE"}
+{"unix_time": 1795535091.2061155, "line": "45.0.0.12 dev br1000 lladdr 00:00:00:00:00:12 STALE"}
+{"unix_time": 1795535091.2065766, "line": "45.0.0.31 dev br1000 lladdr 00:00:00:00:00:31 STALE"}
+{"unix_time": 1795535091.368807, "line": "10.0.0.3 dev br500 lladdr 06:ac:af:d8:a3:f6 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535091.3690908, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535091.369327, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535091.3695726, "line": "10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535091.3698382, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535091.3700783, "line": "10.0.0.2 dev br500 lladdr e2:f3:86:b4:7f:35 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535091.3702998, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535091.3705053, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535091.3706276, "line": "10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535091.3707728, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535091.817999, "line": "Deleted ff02::1:ffd0:6196 dev eth-host22 lladdr 33:33:ff:d0:61:96 NOARP"}
+{"unix_time": 1795535091.8181562, "line": "Deleted ff02::16 dev eth-host22 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535091.8409781, "line": "Deleted ff02::16 dev eth-host21 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535091.8418798, "line": "Deleted ff02::1:ff65:e4f0 dev eth-host21 lladdr 33:33:ff:65:e4:f0 NOARP"}
+{"unix_time": 1795535091.8485165, "line": "Deleted dev eth-host22 lladdr a6:1d:8b:d0:61:96 PERMANENT"}
+{"unix_time": 1795535091.8486867, "line": "Deleted dev eth-host22 lladdr a6:1d:8b:d0:61:96 PERMANENT"}
+{"unix_time": 1795535091.866449, "line": "Deleted dev eth-host21 lladdr d2:05:77:65:e4:f0 PERMANENT"}
+{"unix_time": 1795535091.8666823, "line": "Deleted dev eth-host21 lladdr d2:05:77:65:e4:f0 PERMANENT"}
+{"unix_time": 1795535094.0771408, "line": "dev eth-host11 lladdr 8e:c6:09:af:f4:6a PERMANENT"}
+{"unix_time": 1795535094.0774183, "line": "dev eth-host11 lladdr 8e:c6:09:af:f4:6a PERMANENT"}
+{"unix_time": 1795535094.0869148, "line": "dev eth-host12 lladdr 8e:c4:42:a9:bc:83 PERMANENT"}
+{"unix_time": 1795535094.1084943, "line": "dev eth-host12 lladdr 8e:c4:42:a9:bc:83 PERMANENT"}
+{"unix_time": 1795535094.1114957, "line": "dev vni1000 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535094.1136687, "line": "dev eth-host11 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535094.1139412, "line": "dev vni1000 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535094.1140456, "line": "dev eth-host12 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535094.2044382, "line": "dev vni1000 lladdr 00:00:00:00:00:32 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.2046235, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:32 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.2048311, "line": "dev vni1000 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535094.2050683, "line": "dev vni1000 lladdr 00:00:00:00:00:31 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.2052162, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:31 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.2053401, "line": "dev vni1000 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535094.20557, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:22 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.205768, "line": "dev vni1000 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535094.2060404, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:21 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.206214, "line": "dev vni1000 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535094.3063245, "line": "45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535094.306697, "line": "Deleted 45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535094.3071923, "line": "45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535094.3091793, "line": "Deleted 45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535094.309393, "line": "45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535094.3095975, "line": "Deleted 45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535094.313406, "line": "45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535094.3171532, "line": "Deleted 45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535094.362588, "line": "10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535094.3642733, "line": "Deleted 10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535094.365295, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.3702197, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.3703787, "line": "Deleted 10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.3741422, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535094.376197, "line": "10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535094.3770514, "line": "Deleted 10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535094.3772175, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.377378, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.3775225, "line": "Deleted 10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.3776424, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535094.3777354, "line": "45.0.0.12 dev br1000 lladdr 00:00:00:00:00:12 STALE"}
+{"unix_time": 1795535094.3778038, "line": "45.0.0.11 dev br1000 lladdr 00:00:00:00:00:11 STALE"}
+{"unix_time": 1795535094.3809884, "line": "45.0.0.22 dev br1000 lladdr 00:00:00:00:00:22 STALE"}
+{"unix_time": 1795535094.38508, "line": "45.0.0.21 dev br1000 lladdr 00:00:00:00:00:21 STALE"}
+{"unix_time": 1795535094.4344957, "line": "10.0.0.3 dev br500 lladdr 06:ac:af:d8:a3:f6 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535094.4346998, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.4348128, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.434933, "line": "10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.43504, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535094.537143, "line": "10.0.0.2 dev br500 lladdr e2:f3:86:b4:7f:35 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535094.537475, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.5377505, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.5380058, "line": "10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535094.538334, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535094.840804, "line": "Deleted ff02::1:ff2d:6890 dev eth-host32 lladdr 33:33:ff:2d:68:90 NOARP"}
+{"unix_time": 1795535094.8423104, "line": "Deleted ff02::16 dev eth-host32 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535094.8514848, "line": "Deleted dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535094.8517299, "line": "Deleted dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535094.9455965, "line": "Deleted ff02::16 dev eth-host31 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535094.9461555, "line": "Deleted ff02::1:fff0:91e6 dev eth-host31 lladdr 33:33:ff:f0:91:e6 NOARP"}
+{"unix_time": 1795535094.9685094, "line": "Deleted dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535094.9686575, "line": "Deleted dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535097.1607907, "line": "dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535097.1630092, "line": "dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535097.1645594, "line": "dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535097.1684175, "line": "dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535097.1896858, "line": "dev eth-host32 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535097.1898675, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535097.190937, "line": "dev eth-host31 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535097.194614, "line": "dev vni1000 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535097.2979894, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:22 extern_learn  REACHABLE"}
+{"unix_time": 1795535097.298232, "line": "dev vni1000 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535097.2983756, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:21 extern_learn  REACHABLE"}
+{"unix_time": 1795535097.299428, "line": "dev vni1000 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535097.2995658, "line": "dev vni1000 lladdr 00:00:00:00:00:11 extern_learn  REACHABLE"}
+{"unix_time": 1795535097.2998173, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535097.300005, "line": "dev vni1000 lladdr 00:00:00:00:00:12 extern_learn  REACHABLE"}
+{"unix_time": 1795535097.3001668, "line": "dev vni1000 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535097.402622, "line": "45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535097.4033248, "line": "Deleted 45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535097.4034562, "line": "45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535097.4070063, "line": "Deleted 45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535097.410418, "line": "45.0.0.32 dev br1000  FAILED"}
+{"unix_time": 1795535097.4114747, "line": "Deleted 45.0.0.32 dev br1000  FAILED"}
+{"unix_time": 1795535097.4121318, "line": "45.0.0.31 dev br1000  FAILED"}
+{"unix_time": 1795535097.4127328, "line": "Deleted 45.0.0.31 dev br1000  FAILED"}
+{"unix_time": 1795535097.4593005, "line": "10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535097.4596622, "line": "Deleted 10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535097.4599748, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535097.4680762, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535097.4682295, "line": "Deleted 10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535097.4685426, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535097.4704406, "line": "10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535097.4705622, "line": "Deleted 10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535097.4780211, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535097.4823382, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535097.4837193, "line": "Deleted 10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535097.484877, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535097.4915447, "line": "45.0.0.32 dev br1000 lladdr 00:00:00:00:00:32 STALE"}
+{"unix_time": 1795535097.4932976, "line": "45.0.0.21 dev br1000 lladdr 00:00:00:00:00:21 STALE"}
+{"unix_time": 1795535097.497707, "line": "45.0.0.31 dev br1000 lladdr 00:00:00:00:00:31 STALE"}
+{"unix_time": 1795535097.4979036, "line": "45.0.0.22 dev br1000 lladdr 00:00:00:00:00:22 STALE"}
+{"unix_time": 1795535097.6543036, "line": "10.0.0.2 dev br500 lladdr e2:f3:86:b4:7f:35 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535097.6546009, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535097.6547673, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535097.6549966, "line": "10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535097.6551855, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535097.655348, "line": "10.0.0.3 dev br500 lladdr 06:ac:af:d8:a3:f6 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535097.6557024, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535097.6558845, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535097.6560621, "line": "10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535097.6562142, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535098.0673332, "line": "Deleted ff02::1:ffaf:f46a dev eth-host11 lladdr 33:33:ff:af:f4:6a NOARP"}
+{"unix_time": 1795535098.0675247, "line": "Deleted ff02::16 dev eth-host11 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535098.0700758, "line": "Deleted ff02::16 dev eth-host12 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535098.0702567, "line": "Deleted ff02::1:ffa9:bc83 dev eth-host12 lladdr 33:33:ff:a9:bc:83 NOARP"}
+{"unix_time": 1795535098.0928707, "line": "Deleted dev eth-host11 lladdr 8e:c6:09:af:f4:6a PERMANENT"}
+{"unix_time": 1795535098.0932417, "line": "Deleted dev eth-host11 lladdr 8e:c6:09:af:f4:6a PERMANENT"}
+{"unix_time": 1795535098.121453, "line": "Deleted dev eth-host12 lladdr 8e:c4:42:a9:bc:83 PERMANENT"}
+{"unix_time": 1795535098.1215878, "line": "Deleted dev eth-host12 lladdr 8e:c4:42:a9:bc:83 PERMANENT"}
+{"unix_time": 1795535100.354316, "line": "dev eth-host22 lladdr a6:1d:8b:d0:61:96 PERMANENT"}
+{"unix_time": 1795535100.362235, "line": "dev eth-host22 lladdr a6:1d:8b:d0:61:96 PERMANENT"}
+{"unix_time": 1795535100.365753, "line": "dev eth-host21 lladdr d2:05:77:65:e4:f0 PERMANENT"}
+{"unix_time": 1795535100.369508, "line": "dev eth-host21 lladdr d2:05:77:65:e4:f0 PERMANENT"}
+{"unix_time": 1795535100.4009552, "line": "dev eth-host21 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535100.4057164, "line": "dev eth-host22 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535100.4176219, "line": "dev vni1000 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535100.4194763, "line": "dev vni1000 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535100.5141075, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:12 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.514366, "line": "dev vni1000 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535100.5146418, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:11 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.5148542, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535100.5151007, "line": "dev vni1000 lladdr 00:00:00:00:00:31 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.5152564, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:31 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.5155227, "line": "dev vni1000 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535100.515791, "line": "dev vni1000 lladdr 00:00:00:00:00:32 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.517766, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:32 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.5179124, "line": "dev vni1000 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535100.6178722, "line": "45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535100.6207032, "line": "Deleted 45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535100.6252027, "line": "45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535100.6274464, "line": "Deleted 45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535100.6313102, "line": "45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535100.6316364, "line": "Deleted 45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535100.6331084, "line": "45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535100.6378899, "line": "Deleted 45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535100.6670625, "line": "10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535100.6675036, "line": "Deleted 10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535100.66778, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.6681178, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.6683102, "line": "Deleted 10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.6684887, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535100.6687303, "line": "10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535100.672451, "line": "Deleted 10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535100.6745586, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.6747098, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.675025, "line": "Deleted 10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.675317, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535100.7037635, "line": "45.0.0.21 dev br1000 lladdr 00:00:00:00:00:21 STALE"}
+{"unix_time": 1795535100.7160575, "line": "45.0.0.11 dev br1000 lladdr 00:00:00:00:00:11 STALE"}
+{"unix_time": 1795535100.7174883, "line": "45.0.0.12 dev br1000 lladdr 00:00:00:00:00:12 STALE"}
+{"unix_time": 1795535100.7295773, "line": "45.0.0.22 dev br1000 lladdr 00:00:00:00:00:22 STALE"}
+{"unix_time": 1795535100.8607569, "line": "10.0.0.3 dev br500 lladdr 06:ac:af:d8:a3:f6 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535100.861044, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.8612213, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.861371, "line": "10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.861529, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535100.8616672, "line": "10.0.0.2 dev br500 lladdr e2:f3:86:b4:7f:35 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535100.861812, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.861959, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.8620837, "line": "10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535100.8622277, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535101.290302, "line": "Deleted ff02::16 dev eth-host31 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535101.290902, "line": "Deleted ff02::1:fff0:91e6 dev eth-host31 lladdr 33:33:ff:f0:91:e6 NOARP"}
+{"unix_time": 1795535101.2976248, "line": "Deleted ff02::1:ff2d:6890 dev eth-host32 lladdr 33:33:ff:2d:68:90 NOARP"}
+{"unix_time": 1795535101.299403, "line": "Deleted ff02::16 dev eth-host32 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535101.321753, "line": "Deleted dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535101.3219633, "line": "Deleted dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535101.3344798, "line": "Deleted dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535101.334642, "line": "Deleted dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535103.580595, "line": "dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535103.5863817, "line": "dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535103.5868325, "line": "dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535103.5872474, "line": "dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535103.605171, "line": "dev eth-host32 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535103.6079583, "line": "dev vni1000 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535103.611695, "line": "dev vni1000 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535103.611918, "line": "dev eth-host31 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535103.709934, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:12 extern_learn  REACHABLE"}
+{"unix_time": 1795535103.7102597, "line": "dev vni1000 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535103.7107337, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:11 extern_learn  REACHABLE"}
+{"unix_time": 1795535103.7110198, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535103.7111769, "line": "dev vni1000 lladdr 00:00:00:00:00:21 extern_learn  REACHABLE"}
+{"unix_time": 1795535103.7113073, "line": "dev vni1000 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535103.7115052, "line": "dev vni1000 lladdr 00:00:00:00:00:22 extern_learn  REACHABLE"}
+{"unix_time": 1795535103.711663, "line": "dev vni1000 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535103.8135383, "line": "45.0.0.32 dev br1000  FAILED"}
+{"unix_time": 1795535103.8171296, "line": "Deleted 45.0.0.32 dev br1000  FAILED"}
+{"unix_time": 1795535103.8187723, "line": "45.0.0.31 dev br1000  FAILED"}
+{"unix_time": 1795535103.819628, "line": "Deleted 45.0.0.31 dev br1000  FAILED"}
+{"unix_time": 1795535103.8200095, "line": "45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535103.821007, "line": "Deleted 45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535103.8227668, "line": "45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535103.8241408, "line": "Deleted 45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535103.866623, "line": "10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535103.8672068, "line": "Deleted 10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535103.8676078, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535103.8690488, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535103.8759844, "line": "Deleted 10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535103.8826902, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535103.8917227, "line": "10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535103.8918924, "line": "Deleted 10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535103.895948, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535103.896097, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535103.8961744, "line": "Deleted 10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535103.8962512, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535103.8963463, "line": "45.0.0.12 dev br1000 lladdr 00:00:00:00:00:12 STALE"}
+{"unix_time": 1795535103.8965414, "line": "45.0.0.31 dev br1000 lladdr 00:00:00:00:00:31 STALE"}
+{"unix_time": 1795535103.8966486, "line": "45.0.0.11 dev br1000 lladdr 00:00:00:00:00:11 STALE"}
+{"unix_time": 1795535103.8984692, "line": "45.0.0.32 dev br1000 lladdr 00:00:00:00:00:32 STALE"}
+{"unix_time": 1795535104.0443542, "line": "10.0.0.3 dev br500 lladdr 06:ac:af:d8:a3:f6 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535104.0447025, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535104.0448508, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535104.045048, "line": "10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535104.0453227, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535104.0457566, "line": "10.0.0.2 dev br500 lladdr e2:f3:86:b4:7f:35 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535104.0458412, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535104.046017, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535104.0461535, "line": "10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535104.04623, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535104.4733052, "line": "Deleted ff02::16 dev eth-host21 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535104.4736204, "line": "Deleted ff02::1:ff65:e4f0 dev eth-host21 lladdr 33:33:ff:65:e4:f0 NOARP"}
+{"unix_time": 1795535104.5014162, "line": "Deleted ff02::1:ffd0:6196 dev eth-host22 lladdr 33:33:ff:d0:61:96 NOARP"}
+{"unix_time": 1795535104.5043147, "line": "Deleted ff02::16 dev eth-host22 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535104.5045066, "line": "Deleted dev eth-host21 lladdr d2:05:77:65:e4:f0 PERMANENT"}
+{"unix_time": 1795535104.5048356, "line": "Deleted dev eth-host21 lladdr d2:05:77:65:e4:f0 PERMANENT"}
+{"unix_time": 1795535104.5136507, "line": "Deleted dev eth-host22 lladdr a6:1d:8b:d0:61:96 PERMANENT"}
+{"unix_time": 1795535104.5139222, "line": "Deleted dev eth-host22 lladdr a6:1d:8b:d0:61:96 PERMANENT"}
+{"unix_time": 1795535106.7399747, "line": "dev eth-host11 lladdr 8e:c6:09:af:f4:6a PERMANENT"}
+{"unix_time": 1795535106.7450733, "line": "dev eth-host11 lladdr 8e:c6:09:af:f4:6a PERMANENT"}
+{"unix_time": 1795535106.751397, "line": "dev eth-host12 lladdr 8e:c4:42:a9:bc:83 PERMANENT"}
+{"unix_time": 1795535106.7558186, "line": "dev eth-host12 lladdr 8e:c4:42:a9:bc:83 PERMANENT"}
+{"unix_time": 1795535106.764978, "line": "dev eth-host11 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535106.8843238, "line": "dev vni1000 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535106.9024494, "line": "dev eth-host12 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535106.9232807, "line": "dev vni1000 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535106.9354556, "line": "dev vni1000 lladdr 00:00:00:00:00:31 extern_learn  REACHABLE"}
+{"unix_time": 1795535106.9355927, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:31 extern_learn  REACHABLE"}
+{"unix_time": 1795535106.9356966, "line": "dev vni1000 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535107.0153224, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:22 extern_learn  REACHABLE"}
+{"unix_time": 1795535107.0157228, "line": "dev vni1000 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535107.0161507, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:21 extern_learn  REACHABLE"}
+{"unix_time": 1795535107.01639, "line": "dev vni1000 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535107.0165744, "line": "dev vni1000 lladdr 00:00:00:00:00:32 extern_learn  REACHABLE"}
+{"unix_time": 1795535107.0168047, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:32 extern_learn  REACHABLE"}
+{"unix_time": 1795535107.017208, "line": "dev vni1000 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535107.0177684, "line": "45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535107.0181253, "line": "Deleted 45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535107.1204674, "line": "45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535107.1227942, "line": "Deleted 45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535107.1239555, "line": "45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535107.1242197, "line": "Deleted 45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535107.125611, "line": "45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535107.1270456, "line": "Deleted 45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535107.1697505, "line": "10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535107.1726716, "line": "Deleted 10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535107.1729474, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535107.1734722, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535107.1738474, "line": "Deleted 10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535107.1739838, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535107.1749988, "line": "10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535107.175377, "line": "Deleted 10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535107.177418, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535107.1818607, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535107.1821063, "line": "Deleted 10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535107.1870792, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535107.200817, "line": "45.0.0.12 dev br1000 lladdr 00:00:00:00:00:12 STALE"}
+{"unix_time": 1795535107.2011015, "line": "45.0.0.21 dev br1000 lladdr 00:00:00:00:00:21 STALE"}
+{"unix_time": 1795535107.2085145, "line": "45.0.0.22 dev br1000 lladdr 00:00:00:00:00:22 STALE"}
+{"unix_time": 1795535107.343377, "line": "10.0.0.3 dev br500 lladdr 06:ac:af:d8:a3:f6 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535107.3435562, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535107.3436463, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535107.3437874, "line": "10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535107.343913, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535107.3440752, "line": "10.0.0.2 dev br500 lladdr e2:f3:86:b4:7f:35 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535107.34428, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535107.3445203, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535107.3446774, "line": "10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535107.3447795, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535107.7065918, "line": "Deleted ff02::16 dev eth-host31 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535107.7067597, "line": "Deleted ff02::1:fff0:91e6 dev eth-host31 lladdr 33:33:ff:f0:91:e6 NOARP"}
+{"unix_time": 1795535107.725711, "line": "Deleted dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535107.72595, "line": "Deleted dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535107.7579775, "line": "Deleted ff02::1:ff2d:6890 dev eth-host32 lladdr 33:33:ff:2d:68:90 NOARP"}
+{"unix_time": 1795535107.758117, "line": "Deleted ff02::16 dev eth-host32 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535107.7774932, "line": "Deleted dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535107.777598, "line": "Deleted dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535109.9888942, "line": "dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535109.989798, "line": "dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535109.991834, "line": "dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535109.9987917, "line": "dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535110.022153, "line": "dev vni1000 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535110.029207, "line": "dev eth-host32 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535110.0314152, "line": "dev eth-host31 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535110.0374973, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535110.1371887, "line": "dev vni1000 lladdr 00:00:00:00:00:12 extern_learn  REACHABLE"}
+{"unix_time": 1795535110.138246, "line": "dev vni1000 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535110.1386163, "line": "dev vni1000 lladdr 00:00:00:00:00:11 extern_learn  REACHABLE"}
+{"unix_time": 1795535110.1388729, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535110.1390939, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:22 extern_learn  REACHABLE"}
+{"unix_time": 1795535110.1393006, "line": "dev vni1000 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535110.1395874, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:21 extern_learn  REACHABLE"}
+{"unix_time": 1795535110.1398802, "line": "dev vni1000 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535110.244703, "line": "45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535110.2502365, "line": "Deleted 45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535110.2506764, "line": "45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535110.252653, "line": "Deleted 45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535110.2529726, "line": "45.0.0.32 dev br1000  FAILED"}
+{"unix_time": 1795535110.2585838, "line": "Deleted 45.0.0.32 dev br1000  FAILED"}
+{"unix_time": 1795535110.2593243, "line": "45.0.0.31 dev br1000  FAILED"}
+{"unix_time": 1795535110.2609217, "line": "Deleted 45.0.0.31 dev br1000  FAILED"}
+{"unix_time": 1795535110.29093, "line": "10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535110.2935684, "line": "Deleted 10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535110.2950287, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535110.2977188, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535110.2993464, "line": "Deleted 10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535110.302226, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535110.3268254, "line": "45.0.0.11 dev br1000 lladdr 00:00:00:00:00:11 STALE"}
+{"unix_time": 1795535110.3287435, "line": "45.0.0.31 dev br1000 lladdr 00:00:00:00:00:31 STALE"}
+{"unix_time": 1795535110.3309944, "line": "45.0.0.21 dev br1000 lladdr 00:00:00:00:00:21 STALE"}
+{"unix_time": 1795535110.332958, "line": "45.0.0.22 dev br1000 lladdr 00:00:00:00:00:22 STALE"}
+{"unix_time": 1795535110.3331828, "line": "45.0.0.32 dev br1000 lladdr 00:00:00:00:00:32 STALE"}
+{"unix_time": 1795535110.4706326, "line": "10.0.0.3 dev br500 lladdr 06:ac:af:d8:a3:f6 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535110.4709642, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535110.471104, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535110.4712636, "line": "10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535110.4714332, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535110.8265843, "line": "Deleted ff02::16 dev eth-host12 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535110.8280568, "line": "Deleted ff02::1:ffa9:bc83 dev eth-host12 lladdr 33:33:ff:a9:bc:83 NOARP"}
+{"unix_time": 1795535110.838124, "line": "Deleted dev eth-host12 lladdr 8e:c4:42:a9:bc:83 PERMANENT"}
+{"unix_time": 1795535110.8383162, "line": "Deleted dev eth-host12 lladdr 8e:c4:42:a9:bc:83 PERMANENT"}
+{"unix_time": 1795535110.8766496, "line": "Deleted ff02::1:ffaf:f46a dev eth-host11 lladdr 33:33:ff:af:f4:6a NOARP"}
+{"unix_time": 1795535110.8768811, "line": "Deleted ff02::16 dev eth-host11 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535110.9055235, "line": "Deleted dev eth-host11 lladdr 8e:c6:09:af:f4:6a PERMANENT"}
+{"unix_time": 1795535110.9056315, "line": "Deleted dev eth-host11 lladdr 8e:c6:09:af:f4:6a PERMANENT"}
+{"unix_time": 1795535113.1537106, "line": "dev eth-host22 lladdr a6:1d:8b:d0:61:96 PERMANENT"}
+{"unix_time": 1795535113.1552753, "line": "dev eth-host22 lladdr a6:1d:8b:d0:61:96 PERMANENT"}
+{"unix_time": 1795535113.1554203, "line": "dev eth-host21 lladdr d2:05:77:65:e4:f0 PERMANENT"}
+{"unix_time": 1795535113.1555521, "line": "dev eth-host21 lladdr d2:05:77:65:e4:f0 PERMANENT"}
+{"unix_time": 1795535113.1659043, "line": "dev vni1000 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535113.1753342, "line": "dev eth-host21 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535113.1758163, "line": "dev eth-host22 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535113.1796818, "line": "dev vni1000 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535113.2782693, "line": "dev vni1000 lladdr 00:00:00:00:00:32 extern_learn  REACHABLE"}
+{"unix_time": 1795535113.2786458, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:32 extern_learn  REACHABLE"}
+{"unix_time": 1795535113.27897, "line": "dev vni1000 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535113.279349, "line": "dev vni1000 lladdr 00:00:00:00:00:31 extern_learn  REACHABLE"}
+{"unix_time": 1795535113.2795439, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:31 extern_learn  REACHABLE"}
+{"unix_time": 1795535113.2798767, "line": "dev vni1000 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535113.2802129, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:12 extern_learn  REACHABLE"}
+{"unix_time": 1795535113.2803578, "line": "dev vni1000 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535113.2804904, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:11 extern_learn  REACHABLE"}
+{"unix_time": 1795535113.280653, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535113.3890274, "line": "45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535113.3934932, "line": "Deleted 45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535113.3948388, "line": "45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535113.396557, "line": "Deleted 45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535113.3977182, "line": "45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535113.3983026, "line": "Deleted 45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535113.4336765, "line": "10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535113.435102, "line": "Deleted 10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535113.4354186, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535113.436473, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535113.4382815, "line": "Deleted 10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535113.4405043, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535113.4662943, "line": "45.0.0.22 dev br1000 lladdr 00:00:00:00:00:22 STALE"}
+{"unix_time": 1795535113.466962, "line": "45.0.0.21 dev br1000 lladdr 00:00:00:00:00:21 STALE"}
+{"unix_time": 1795535113.4719224, "line": "45.0.0.12 dev br1000 lladdr 00:00:00:00:00:12 STALE"}
+{"unix_time": 1795535113.605774, "line": "10.0.0.2 dev br500 lladdr e2:f3:86:b4:7f:35 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535113.6065142, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535113.6067502, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535113.6069171, "line": "10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535113.6071725, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535113.964457, "line": "Deleted ff02::1:ff2d:6890 dev eth-host32 lladdr 33:33:ff:2d:68:90 NOARP"}
+{"unix_time": 1795535113.9645612, "line": "Deleted ff02::16 dev eth-host32 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535113.9705029, "line": "Deleted dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535113.9706242, "line": "Deleted dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535114.0292623, "line": "Deleted ff02::16 dev eth-host31 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535114.0294533, "line": "Deleted ff02::1:fff0:91e6 dev eth-host31 lladdr 33:33:ff:f0:91:e6 NOARP"}
+{"unix_time": 1795535114.0464628, "line": "Deleted dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535114.04665, "line": "Deleted dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535116.2774901, "line": "dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535116.2805552, "line": "dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535116.2878425, "line": "dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535116.2896366, "line": "dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535116.296203, "line": "dev eth-host31 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535116.3201907, "line": "dev vni1000 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535116.3215272, "line": "dev eth-host32 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535116.3217437, "line": "dev vni1000 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535116.4075897, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:12 extern_learn  REACHABLE"}
+{"unix_time": 1795535116.4078171, "line": "dev vni1000 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535116.4080868, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:11 extern_learn  REACHABLE"}
+{"unix_time": 1795535116.408403, "line": "dev vni1000 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535116.4091966, "line": "dev vni1000 lladdr 00:00:00:00:00:22 extern_learn  REACHABLE"}
+{"unix_time": 1795535116.409416, "line": "dev vni1000 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535116.4095953, "line": "dev vni1000 lladdr 00:00:00:00:00:21 extern_learn  REACHABLE"}
+{"unix_time": 1795535116.4097433, "line": "dev vni1000 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535116.511899, "line": "45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535116.5120742, "line": "Deleted 45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535116.5161614, "line": "45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535116.5174718, "line": "Deleted 45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535116.5182471, "line": "45.0.0.31 dev br1000  FAILED"}
+{"unix_time": 1795535116.51934, "line": "Deleted 45.0.0.31 dev br1000  FAILED"}
+{"unix_time": 1795535116.520031, "line": "45.0.0.32 dev br1000  FAILED"}
+{"unix_time": 1795535116.5226693, "line": "Deleted 45.0.0.32 dev br1000  FAILED"}
+{"unix_time": 1795535116.5281103, "line": "45.0.0.31 dev br1000 lladdr 00:00:00:00:00:31 STALE"}
+{"unix_time": 1795535116.5627701, "line": "10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535116.5628936, "line": "Deleted 10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535116.566725, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535116.5722365, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535116.574514, "line": "Deleted 10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535116.5766113, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535116.576797, "line": "10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535116.5805938, "line": "Deleted 10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535116.5837173, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535116.5838764, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535116.5841093, "line": "Deleted 10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535116.584709, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535116.5849605, "line": "45.0.0.11 dev br1000 lladdr 00:00:00:00:00:11 STALE"}
+{"unix_time": 1795535116.5882673, "line": "45.0.0.12 dev br1000 lladdr 00:00:00:00:00:12 STALE"}
+{"unix_time": 1795535116.5885675, "line": "45.0.0.32 dev br1000 lladdr 00:00:00:00:00:32 STALE"}
+{"unix_time": 1795535116.7294755, "line": "10.0.0.2 dev br500 lladdr e2:f3:86:b4:7f:35 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535116.7296405, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535116.7297506, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535116.7298508, "line": "10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535116.729951, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535116.7300491, "line": "10.0.0.3 dev br500 lladdr 06:ac:af:d8:a3:f6 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535116.7301476, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535116.7302513, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535116.7303433, "line": "10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535116.730442, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535117.1001463, "line": "Deleted ff02::16 dev eth-host21 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535117.103416, "line": "Deleted ff02::1:ff65:e4f0 dev eth-host21 lladdr 33:33:ff:65:e4:f0 NOARP"}
+{"unix_time": 1795535117.1272392, "line": "Deleted ff02::1:ffd0:6196 dev eth-host22 lladdr 33:33:ff:d0:61:96 NOARP"}
+{"unix_time": 1795535117.1289303, "line": "Deleted ff02::16 dev eth-host22 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535117.1337814, "line": "Deleted dev eth-host21 lladdr d2:05:77:65:e4:f0 PERMANENT"}
+{"unix_time": 1795535117.1339502, "line": "Deleted dev eth-host21 lladdr d2:05:77:65:e4:f0 PERMANENT"}
+{"unix_time": 1795535117.138515, "line": "Deleted dev eth-host22 lladdr a6:1d:8b:d0:61:96 PERMANENT"}
+{"unix_time": 1795535117.1387565, "line": "Deleted dev eth-host22 lladdr a6:1d:8b:d0:61:96 PERMANENT"}
+{"unix_time": 1795535119.3822968, "line": "dev eth-host11 lladdr 8e:c6:09:af:f4:6a PERMANENT"}
+{"unix_time": 1795535119.3868868, "line": "dev eth-host11 lladdr 8e:c6:09:af:f4:6a PERMANENT"}
+{"unix_time": 1795535119.3958247, "line": "dev eth-host12 lladdr 8e:c4:42:a9:bc:83 PERMANENT"}
+{"unix_time": 1795535119.3990273, "line": "dev eth-host12 lladdr 8e:c4:42:a9:bc:83 PERMANENT"}
+{"unix_time": 1795535119.4099226, "line": "dev eth-host11 lladdr 00:00:00:00:00:11 REACHABLE"}
+{"unix_time": 1795535119.4128017, "line": "dev eth-host12 lladdr 00:00:00:00:00:12 REACHABLE"}
+{"unix_time": 1795535119.4165595, "line": "dev vni1000 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535119.418535, "line": "dev vni1000 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535119.521521, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:21 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.5219488, "line": "dev vni1000 lladdr 00:00:00:00:00:21 REACHABLE"}
+{"unix_time": 1795535119.5221448, "line": "10.0.0.2 dev vni1000 lladdr 00:00:00:00:00:22 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.5223496, "line": "dev vni1000 lladdr 00:00:00:00:00:22 REACHABLE"}
+{"unix_time": 1795535119.5225794, "line": "dev vni1000 lladdr 00:00:00:00:00:31 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.5228071, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:31 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.5230372, "line": "dev vni1000 lladdr 00:00:00:00:00:31 REACHABLE"}
+{"unix_time": 1795535119.5233164, "line": "dev vni1000 lladdr 00:00:00:00:00:32 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.5234923, "line": "10.0.0.3 dev vni1000 lladdr 00:00:00:00:00:32 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.5236804, "line": "dev vni1000 lladdr 00:00:00:00:00:32 REACHABLE"}
+{"unix_time": 1795535119.622517, "line": "45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535119.6229053, "line": "Deleted 45.0.0.11 dev br1000  FAILED"}
+{"unix_time": 1795535119.6232471, "line": "45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535119.6279411, "line": "Deleted 45.0.0.12 dev br1000  FAILED"}
+{"unix_time": 1795535119.6301827, "line": "45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535119.6319385, "line": "Deleted 45.0.0.21 dev br1000  FAILED"}
+{"unix_time": 1795535119.6327689, "line": "45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535119.6344163, "line": "Deleted 45.0.0.22 dev br1000  FAILED"}
+{"unix_time": 1795535119.6740694, "line": "10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535119.678502, "line": "Deleted 10.0.0.2 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535119.679292, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.6794305, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.6798668, "line": "Deleted 10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.6806815, "line": "Deleted dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535119.6826713, "line": "10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535119.6837335, "line": "Deleted 10.0.0.3 dev br500  FAILED proto zebra "}
+{"unix_time": 1795535119.6850529, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.686596, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.6880066, "line": "Deleted 10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.6895518, "line": "Deleted dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535119.6958244, "line": "45.0.0.12 dev br1000 lladdr 00:00:00:00:00:12 STALE"}
+{"unix_time": 1795535119.7045453, "line": "45.0.0.11 dev br1000 lladdr 00:00:00:00:00:11 STALE"}
+{"unix_time": 1795535119.7090118, "line": "45.0.0.22 dev br1000 lladdr 00:00:00:00:00:22 STALE"}
+{"unix_time": 1795535119.7127678, "line": "45.0.0.21 dev br1000 lladdr 00:00:00:00:00:21 STALE"}
+{"unix_time": 1795535119.8557324, "line": "10.0.0.3 dev br500 lladdr 06:ac:af:d8:a3:f6 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535119.85612, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.8563187, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.856444, "line": "10.0.0.3 dev vni500 lladdr 06:ac:af:d8:a3:f6 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.85655, "line": "dev vni500 lladdr 06:ac:af:d8:a3:f6 REACHABLE"}
+{"unix_time": 1795535119.856683, "line": "10.0.0.2 dev br500 lladdr e2:f3:86:b4:7f:35 extern_learn  NOARP proto zebra "}
+{"unix_time": 1795535119.8567882, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.8569248, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.8570309, "line": "10.0.0.2 dev vni500 lladdr e2:f3:86:b4:7f:35 extern_learn  REACHABLE"}
+{"unix_time": 1795535119.8571525, "line": "dev vni500 lladdr e2:f3:86:b4:7f:35 REACHABLE"}
+{"unix_time": 1795535120.2740638, "line": "Deleted ff02::16 dev eth-host31 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535120.274568, "line": "Deleted ff02::1:fff0:91e6 dev eth-host31 lladdr 33:33:ff:f0:91:e6 NOARP"}
+{"unix_time": 1795535120.2750275, "line": "Deleted ff02::1:ff2d:6890 dev eth-host32 lladdr 33:33:ff:2d:68:90 NOARP"}
+{"unix_time": 1795535120.2783616, "line": "Deleted ff02::16 dev eth-host32 lladdr 33:33:00:00:00:16 NOARP"}
+{"unix_time": 1795535120.2925577, "line": "Deleted dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535120.2928605, "line": "Deleted dev eth-host32 lladdr 66:40:71:2d:68:90 PERMANENT"}
+{"unix_time": 1795535120.3045635, "line": "Deleted dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}
+{"unix_time": 1795535120.3047092, "line": "Deleted dev eth-host31 lladdr 82:58:54:f0:91:e6 PERMANENT"}

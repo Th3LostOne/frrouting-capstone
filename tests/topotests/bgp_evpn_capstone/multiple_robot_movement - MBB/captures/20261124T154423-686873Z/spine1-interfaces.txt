@@ -1,0 +1,6 @@
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000\    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth-leaf1@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000\    link/ether 42:75:b5:52:b5:92 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+3: eth-leaf2@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000\    link/ether 3a:20:a6:b8:5e:c0 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+4: eth-leaf3@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000\    link/ether 56:e6:43:e4:01:cd brd ff:ff:ff:ff:ff:ff link-netnsid 2
+5: eth-leaf4@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000\    link/ether ba:f4:65:ac:24:4a brd ff:ff:ff:ff:ff:ff link-netnsid 3
+6: eth-leaf5@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000\    link/ether 2e:d3:f0:1b:f5:d3 brd ff:ff:ff:ff:ff:ff link-netnsid 4
